@@ -1,0 +1,350 @@
+/* ===========================================================
+   VELHA GUARDA — Ledger de Mercado
+   Paleta: ferro/parchment, tipografia de gravação + ledger
+   =========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --ink:        #14120f;
+  --ink-2:      #1c1915;
+  --panel:      #211d17;
+  --panel-2:    #29241d;
+  --hairline:   #3a3227;
+  --parchment:  #e9dfc8;
+  --muted:      #a8987d;
+  --gold:       #c9a24b;
+  --gold-dim:   #8a7233;
+  --rust:       #a23b2e;
+  --rust-dim:   #6e2c22;
+  --steel:      #7c9490;
+
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Crimson Text', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius: 3px;
+}
+
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior: smooth; }
+
+body{
+  margin:0;
+  background:
+    radial-gradient(ellipse at top, #1c1712 0%, var(--ink) 55%),
+    var(--ink);
+  color: var(--parchment);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+::selection{ background: var(--gold-dim); color: var(--ink); }
+
+a{ color: var(--gold); }
+
+/* ---------- layout shell ---------- */
+.wrap{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* ---------- banner / hero ---------- */
+.banner{
+  position: relative;
+  padding: 56px 20px 40px;
+  text-align: center;
+  border-bottom: 1px solid var(--hairline);
+  background:
+    linear-gradient(180deg, rgba(201,162,75,0.08), transparent 70%);
+}
+
+.sigil{
+  width: 56px; height: 56px;
+  margin: 0 auto 18px;
+  color: var(--gold);
+  opacity: .92;
+}
+
+.banner h1{
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: .12em;
+  font-size: clamp(28px, 5vw, 44px);
+  margin: 0;
+  color: var(--parchment);
+  text-shadow: 0 1px 0 rgba(0,0,0,.4);
+}
+
+.banner .sub{
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.banner .sub em{
+  font-style: normal;
+  color: var(--gold);
+}
+
+/* ---------- controls ---------- */
+.controls{
+  margin-top: 34px;
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px 18px;
+  align-items: end;
+}
+
+.field label{
+  display:block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+
+.field select,
+.field input[type="number"]{
+  width: 100%;
+  background: var(--ink-2);
+  border: 1px solid var(--hairline);
+  color: var(--parchment);
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 9px 10px;
+  border-radius: var(--radius);
+}
+
+.field select:focus,
+.field input:focus,
+button:focus-visible{
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+}
+
+.tiers{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tier-chip{
+  font-family: var(--font-mono);
+  font-size: 12px;
+  border: 1px solid var(--hairline);
+  background: var(--ink-2);
+  color: var(--muted);
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  user-select: none;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.tier-chip[aria-pressed="true"]{
+  border-color: var(--gold);
+  color: var(--ink);
+  background: var(--gold);
+  font-weight: 600;
+}
+
+.premium-toggle{
+  display:flex; align-items:center; gap:8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+.premium-toggle input{ accent-color: var(--gold); width:16px; height:16px; }
+
+.btn{
+  font-family: var(--font-display);
+  letter-spacing: .08em;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--gold);
+  color: var(--ink);
+  border: none;
+  padding: 11px 18px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: filter .15s, transform .1s;
+}
+.btn:hover{ filter: brightness(1.12); }
+.btn:active{ transform: translateY(1px); }
+.btn[disabled]{ opacity:.55; cursor: progress; }
+
+/* ---------- status ---------- */
+.status{
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+  min-height: 18px;
+}
+.status.err{ color: var(--rust); }
+
+/* ---------- ledger table ---------- */
+.ledger-scroll{
+  margin-top: 20px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+table.ledger{
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+}
+
+table.ledger thead th{
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--panel-2);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--hairline);
+  cursor: pointer;
+  white-space: nowrap;
+}
+table.ledger thead th:hover{ color: var(--gold); }
+table.ledger thead th.sorted{ color: var(--gold); }
+
+table.ledger tbody tr.row{
+  border-bottom: 1px solid var(--hairline);
+  cursor: pointer;
+  transition: background .12s;
+}
+table.ledger tbody tr.row:hover{ background: rgba(201,162,75,0.06); }
+table.ledger tbody tr.row:last-child{ border-bottom: none; }
+
+table.ledger td{
+  padding: 11px 14px;
+  vertical-align: middle;
+}
+
+.tier-sigil{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width: 26px; height: 26px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gold);
+  margin-right: 10px;
+}
+
+.item-name{ font-weight: 600; color: var(--parchment); }
+.item-cat{ display:block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+.num{ font-family: var(--font-mono); font-size: 14.5px; text-align: right; }
+.city-cell{ font-family: var(--font-mono); font-size: 13px; color: var(--steel); }
+
+.profit-pos{ color: var(--gold); font-weight: 600; }
+.profit-neg{ color: var(--rust); font-weight: 600; }
+
+.vol-badge{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+.vol-badge.hot{ color: var(--ink); background: var(--gold); border-color: var(--gold); }
+
+/* ---------- expandable detail (recipe breakdown) ---------- */
+tr.detail{ display:none; }
+tr.detail.open{ display: table-row; }
+tr.detail td{
+  background: var(--ink-2);
+  padding: 16px 20px 20px 50px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.recipe-title{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.recipe-grid{
+  display:grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 6px 18px;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  max-width: 560px;
+}
+.recipe-grid .h{ color: var(--muted); font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; padding-bottom:4px; border-bottom:1px solid var(--hairline); }
+.recipe-grid .sum{ border-top: 1px solid var(--hairline); margin-top: 4px; padding-top: 6px; color: var(--gold); }
+
+.city-compare{
+  margin-top: 14px;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.city-pill{
+  font-family: var(--font-mono);
+  font-size: 12px;
+  border: 1px solid var(--hairline);
+  padding: 5px 10px;
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+.city-pill.best{ border-color: var(--gold); color: var(--gold); }
+
+/* ---------- empty / footer ---------- */
+.empty{
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+footer{
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hairline);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+footer a{ color: var(--steel); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 720px){
+  .ledger-scroll{ overflow-x: auto; }
+  table.ledger{ min-width: 720px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  *{ transition: none !important; }
+}

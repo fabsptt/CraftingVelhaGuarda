@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velha Guarda — Ledger de Mercado (Albion Online)</title>
+<meta name="description" content="Ledger de mercado da guilda Velha Guarda: lucro de crafting e itens mais vendidos por tier e cidade, servidor Europa.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="banner">
+  <svg class="sigil" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M32 4 L56 16 V34 C56 48 46 57 32 60 C18 57 8 48 8 34 V16 Z" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M32 14 L32 44 M22 24 L42 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+  <h1>Velha Guarda</h1>
+  <p class="sub">Ledger de Mercado — <em>Servidor Europa</em> · Albion Online Data Project</p>
+</header>
+
+<div class="wrap">
+
+  <section class="controls" aria-label="Filtros">
+    <div class="field">
+      <label for="cidade">Cidade</label>
+      <select id="cidade">
+        <option value="ALL" selected>Comparar todas</option>
+        <option value="Martlock">Martlock</option>
+        <option value="Bridgewatch">Bridgewatch</option>
+        <option value="Lymhurst">Lymhurst</option>
+        <option value="Fort Sterling">Fort Sterling</option>
+        <option value="Thetford">Thetford</option>
+        <option value="Caerleon">Caerleon</option>
+        <option value="Brecilien">Brecilien</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Tiers</label>
+      <div class="tiers" id="tiers" role="group" aria-label="Filtrar por tier">
+        <button class="tier-chip" data-tier="T4" aria-pressed="true" type="button">T4</button>
+        <button class="tier-chip" data-tier="T5" aria-pressed="true" type="button">T5</button>
+        <button class="tier-chip" data-tier="T6" aria-pressed="true" type="button">T6</button>
+        <button class="tier-chip" data-tier="T7" aria-pressed="true" type="button">T7</button>
+        <button class="tier-chip" data-tier="T8" aria-pressed="true" type="button">T8</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="categoria">Categoria</label>
+      <select id="categoria">
+        <option value="ALL" selected>Todas</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="ordenar">Ordenar por</label>
+      <select id="ordenar">
+        <option value="lucro" selected>Maior lucro</option>
+        <option value="margem">Maior margem %</option>
+        <option value="volume">Mais vendidos</option>
+        <option value="nome">Nome</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="imposto">Imposto de venda</label>
+      <div class="premium-toggle">
+        <input type="checkbox" id="premium" checked>
+        <label for="premium" style="margin:0;">Tenho Premium (4%) — sem Premium: 8%</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <button class="btn" id="btnAtualizar" type="button">Atualizar preços</button>
+    </div>
+  </section>
+
+  <p class="status" id="status">A aguardar atualização — clica em "Atualizar preços" para ir buscar dados ao mercado.</p>
+
+  <div class="ledger-scroll">
+    <table class="ledger" id="tabela">
+      <thead>
+        <tr>
+          <th data-sort="nome">Item</th>
+          <th data-sort="cidade">Cidade</th>
+          <th class="num" data-sort="venda">Venda</th>
+          <th class="num" data-sort="custo">Custo</th>
+          <th class="num" data-sort="lucro">Lucro</th>
+          <th class="num" data-sort="margem">Margem</th>
+          <th class="num" data-sort="volume">Vol.</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr><td colspan="7" class="empty">Sem dados ainda. Clica em "Atualizar preços" acima.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>
+      Preços via <a href="https://www.albion-online-data.com/" target="_blank" rel="noopener">Albion Online Data Project</a> (dados enviados por jogadores — podem ter atraso ou faltar para itens pouco negociados).
+      "Vol." é uma estimativa de itens transacionados nos últimos dias, usada como indicador de "mais vendido".
+      Quantidades de recursos em <code>recipes.json</code> são estimativas — ajusta conforme o teu foco de crafting para valores exatos.
+      Lucro = preço de venda instantâneo × (1 − imposto) − custo de compra instantânea dos materiais, na mesma cidade.
+    </p>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
