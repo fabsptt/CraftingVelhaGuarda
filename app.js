@@ -172,6 +172,10 @@ async function fetchVolume(ids, citiesParam) {
   return index;
 }
 
+function iconUrl(itemId, size = 80) {
+  return `https://render.albiononline.com/v1/item/${itemId}.png?quality=1&size=${size}`;
+}
+
 function chunk(arr, size) {
   const out = [];
   for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
@@ -235,17 +239,19 @@ function renderTabela() {
     });
   }
 
-  const dirKey = els.ordenar.value === 'nome' ? null : (sortState.key || els.ordenar.value);
+  if (!grouped.length) {
+    els.tbody.innerHTML = `<tr><td colspan="7" class="empty">Sem resultados para estes filtros — experimenta outra combinação de tier/cidade/categoria.</td></tr>`;
+    document.getElementById('destaques').innerHTML = '';
+    return;
+  }
+
+  renderDestaques(grouped.slice().sort((a, b) => b.lucro - a.lucro).slice(0, 3));
+
   const sortKey = mapOrdenarToKey(els.ordenar.value, sortState.key);
   grouped.sort((a, b) => {
     if (sortKey === 'nome') return a.nome.localeCompare(b.nome);
     return (b[sortKey] - a[sortKey]) * (sortState.dir === 1 ? -1 : 1);
   });
-
-  if (!grouped.length) {
-    els.tbody.innerHTML = `<tr><td colspan="7" class="empty">Sem resultados para estes filtros — experimenta outra combinação de tier/cidade/categoria.</td></tr>`;
-    return;
-  }
 
   const maxVol = Math.max(1, ...grouped.map(r => r.volume));
   els.tbody.innerHTML = '';
@@ -255,10 +261,12 @@ function renderTabela() {
     tr.className = 'row';
     tr.innerHTML = `
       <td>
-        <span class="tier-sigil">${r.tier}</span>
-        <span class="item-name">${r.nome}
-          <span class="item-cat">${r.categoria}</span>
-        </span>
+        <div class="item-cell">
+          <img class="item-icon" src="${iconUrl(r.id)}" alt="" loading="lazy" width="40" height="40">
+          <span class="item-name">${r.nome}
+            <span class="item-cat"><span class="tier-sigil">${r.tier}</span>${r.categoria}</span>
+          </span>
+        </div>
       </td>
       <td class="city-cell">${r.cidade}${cidadeSel === 'ALL' ? ' <span style="color:var(--muted)">(melhor)</span>' : ''}</td>
       <td class="num">${fmt(r.venda)}</td>
@@ -279,6 +287,29 @@ function renderTabela() {
   });
 }
 
+function renderDestaques(top3) {
+  const host = document.getElementById('destaques');
+  if (!top3.length) { host.innerHTML = ''; return; }
+
+  host.innerHTML = `
+    <div class="destaques-title">🏆 Vale mais a pena craftar agora</div>
+    <div class="destaques-grid">
+      ${top3.map((r, i) => `
+        <div class="destaque-card ${i === 0 ? 'first' : ''}">
+          <img src="${iconUrl(r.id, 96)}" alt="${r.nome}" loading="lazy" width="56" height="56">
+          <div class="destaque-info">
+            <div class="destaque-nome"><span class="tier-sigil">${r.tier}</span>${r.nome}</div>
+            <div class="destaque-onde">compra em materiais, vende em <strong>${r.cidade}</strong></div>
+            <div class="destaque-lucro ${r.lucro >= 0 ? 'profit-pos' : 'profit-neg'}">
+              +${fmt(r.lucro)} prata/un. <span class="destaque-margem">(${r.margem.toFixed(0)}% margem)</span>
+            </div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
 function renderDetalhe(r) {
   let comparacao = '';
   if (r._todas && r._todas.length > 1) {
@@ -290,10 +321,11 @@ function renderDetalhe(r) {
   }
 
   return `
-    <div class="recipe-title">Receita — ${r.qty}× ${r.material} (${r.matId})</div>
+    <div class="recipe-title">Receita — ${r.qty}× ${r.material}</div>
     <div class="recipe-grid">
       <div class="h">Material</div><div class="h">Qtd.</div><div class="h">Preço un.</div><div class="h">Subtotal</div>
-      <div>${r.material}</div><div>${r.qty}</div><div>${fmt(r.matUnit)}</div><div>${fmt(r.qty * r.matUnit)}</div>
+      <div class="mat-cell"><img class="mat-icon" src="${iconUrl(r.matId, 48)}" alt="" loading="lazy" width="22" height="22">${r.material}</div>
+      <div>${r.qty}</div><div>${fmt(r.matUnit)}</div><div>${fmt(r.qty * r.matUnit)}</div>
       <div class="sum">Custo total</div><div class="sum"></div><div class="sum"></div><div class="sum">${fmt(r.custo)}</div>
     </div>
     ${comparacao}
