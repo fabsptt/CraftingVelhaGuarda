@@ -1,5 +1,5 @@
 {
-  "_nota": "Quantidades de recursos são estimativas representativas (fórmula por tier), não os valores exatos do jogo. Ajusta os campos 'materials' abaixo com os valores reais do teu foco de crafting (visíveis no jogo, na estação de crafting) para cálculos 100% precisos.",
+  "_nota": "Quantidades de recursos são estimativas representativas (fórmula por tier), não os valores exatos do jogo. Ajusta os campos em 'quantidades_por_tier' com os valores reais do teu foco de crafting para cálculos 100% precisos. Os nomes e IDs dos itens (SET1/SET2/SET3, etc.) correspondem aos itens reais do jogo — o campo 'en' é o nome oficial em inglês, útil para confirmar no mercado in-game.",
   "materials": {
     "METALBAR": { "nome": "Barra de Metal", "tiers": ["T4_METALBAR","T5_METALBAR","T6_METALBAR","T7_METALBAR","T8_METALBAR"] },
     "PLANKS":   { "nome": "Tábuas",         "tiers": ["T4_PLANKS","T5_PLANKS","T6_PLANKS","T7_PLANKS","T8_PLANKS"] },
@@ -12,23 +12,41 @@
     "arma":       { "T4": 16, "T5": 24, "T6": 32, "T7": 40, "T8": 48 }
   },
   "itens": [
-    { "base": "HEAD_PLATE_SET1",   "nome": "Elmo de Placas",     "categoria": "Armadura - Cabeça", "material": "METALBAR", "peso": "peca_leve" },
-    { "base": "ARMOR_PLATE_SET1",  "nome": "Peitoral de Placas", "categoria": "Armadura - Peito",  "material": "METALBAR", "peso": "peca_pesada" },
-    { "base": "SHOES_PLATE_SET1",  "nome": "Botas de Placas",    "categoria": "Armadura - Pés",    "material": "METALBAR", "peso": "peca_leve" },
+    { "base": "HEAD_PLATE_SET1",  "nome": "Elmo de Soldado",    "en": "Soldier Helmet",  "categoria": "Placas - Cabeça", "material": "METALBAR", "peso": "peca_leve" },
+    { "base": "HEAD_PLATE_SET2",  "nome": "Elmo de Cavaleiro",  "en": "Knight Helmet",   "categoria": "Placas - Cabeça", "material": "METALBAR", "peso": "peca_leve" },
+    { "base": "HEAD_PLATE_SET3",  "nome": "Elmo de Guardião",   "en": "Guardian Helmet", "categoria": "Placas - Cabeça", "material": "METALBAR", "peso": "peca_leve" },
+    { "base": "ARMOR_PLATE_SET1", "nome": "Armadura de Soldado",   "en": "Soldier Armor",   "categoria": "Placas - Peito", "material": "METALBAR", "peso": "peca_pesada" },
+    { "base": "ARMOR_PLATE_SET2", "nome": "Armadura de Cavaleiro", "en": "Knight Armor",    "categoria": "Placas - Peito", "material": "METALBAR", "peso": "peca_pesada" },
+    { "base": "ARMOR_PLATE_SET3", "nome": "Armadura de Guardião",  "en": "Guardian Armor",  "categoria": "Placas - Peito", "material": "METALBAR", "peso": "peca_pesada" },
+    { "base": "SHOES_PLATE_SET1", "nome": "Botas de Soldado",    "en": "Soldier Boots",  "categoria": "Placas - Pés", "material": "METALBAR", "peso": "peca_leve" },
+    { "base": "SHOES_PLATE_SET2", "nome": "Botas de Cavaleiro",  "en": "Knight Boots",   "categoria": "Placas - Pés", "material": "METALBAR", "peso": "peca_leve" },
+    { "base": "SHOES_PLATE_SET3", "nome": "Botas de Guardião",   "en": "Guardian Boots", "categoria": "Placas - Pés", "material": "METALBAR", "peso": "peca_leve" },
 
-    { "base": "HEAD_LEATHER_SET1",  "nome": "Capuz de Couro",     "categoria": "Armadura - Cabeça", "material": "LEATHER", "peso": "peca_leve" },
-    { "base": "ARMOR_LEATHER_SET1", "nome": "Colete de Couro",    "categoria": "Armadura - Peito",  "material": "LEATHER", "peso": "peca_pesada" },
-    { "base": "SHOES_LEATHER_SET1", "nome": "Botas de Couro",     "categoria": "Armadura - Pés",    "material": "LEATHER", "peso": "peca_leve" },
+    { "base": "HEAD_LEATHER_SET1",  "nome": "Capuz de Mercenário", "en": "Mercenary Hood",  "categoria": "Couro - Cabeça", "material": "LEATHER", "peso": "peca_leve" },
+    { "base": "HEAD_LEATHER_SET2",  "nome": "Capuz de Caçador",    "en": "Hunter Hood",     "categoria": "Couro - Cabeça", "material": "LEATHER", "peso": "peca_leve" },
+    { "base": "HEAD_LEATHER_SET3",  "nome": "Capuz de Assassino",  "en": "Assassin Hood",   "categoria": "Couro - Cabeça", "material": "LEATHER", "peso": "peca_leve" },
+    { "base": "ARMOR_LEATHER_SET1", "nome": "Casaco de Mercenário", "en": "Mercenary Jacket", "categoria": "Couro - Peito", "material": "LEATHER", "peso": "peca_pesada" },
+    { "base": "ARMOR_LEATHER_SET2", "nome": "Casaco de Caçador",    "en": "Hunter Jacket",    "categoria": "Couro - Peito", "material": "LEATHER", "peso": "peca_pesada" },
+    { "base": "ARMOR_LEATHER_SET3", "nome": "Casaco de Assassino",  "en": "Assassin Jacket",  "categoria": "Couro - Peito", "material": "LEATHER", "peso": "peca_pesada" },
+    { "base": "SHOES_LEATHER_SET1", "nome": "Sapatos de Mercenário", "en": "Mercenary Shoes", "categoria": "Couro - Pés", "material": "LEATHER", "peso": "peca_leve" },
+    { "base": "SHOES_LEATHER_SET2", "nome": "Sapatos de Caçador",    "en": "Hunter Shoes",    "categoria": "Couro - Pés", "material": "LEATHER", "peso": "peca_leve" },
+    { "base": "SHOES_LEATHER_SET3", "nome": "Sapatos de Assassino",  "en": "Assassin Shoes",  "categoria": "Couro - Pés", "material": "LEATHER", "peso": "peca_leve" },
 
-    { "base": "HEAD_CLOTH_SET1",  "nome": "Capuz de Tecido",   "categoria": "Armadura - Cabeça", "material": "CLOTH", "peso": "peca_leve" },
-    { "base": "ARMOR_CLOTH_SET1", "nome": "Túnica de Tecido",  "categoria": "Armadura - Peito",  "material": "CLOTH", "peso": "peca_pesada" },
-    { "base": "SHOES_CLOTH_SET1", "nome": "Sapatos de Tecido", "categoria": "Armadura - Pés",    "material": "CLOTH", "peso": "peca_leve" },
+    { "base": "HEAD_CLOTH_SET1",  "nome": "Capuz de Erudito", "en": "Scholar Cowl", "categoria": "Tecido - Cabeça", "material": "CLOTH", "peso": "peca_leve" },
+    { "base": "HEAD_CLOTH_SET2",  "nome": "Capuz de Clérigo", "en": "Cleric Cowl",  "categoria": "Tecido - Cabeça", "material": "CLOTH", "peso": "peca_leve" },
+    { "base": "HEAD_CLOTH_SET3",  "nome": "Capuz de Mago",    "en": "Mage Cowl",    "categoria": "Tecido - Cabeça", "material": "CLOTH", "peso": "peca_leve" },
+    { "base": "ARMOR_CLOTH_SET1", "nome": "Túnica de Erudito", "en": "Scholar Robe", "categoria": "Tecido - Peito", "material": "CLOTH", "peso": "peca_pesada" },
+    { "base": "ARMOR_CLOTH_SET2", "nome": "Túnica de Clérigo", "en": "Cleric Robe",  "categoria": "Tecido - Peito", "material": "CLOTH", "peso": "peca_pesada" },
+    { "base": "ARMOR_CLOTH_SET3", "nome": "Túnica de Mago",    "en": "Mage Robe",    "categoria": "Tecido - Peito", "material": "CLOTH", "peso": "peca_pesada" },
+    { "base": "SHOES_CLOTH_SET1", "nome": "Sandálias de Erudito", "en": "Scholar Sandals", "categoria": "Tecido - Pés", "material": "CLOTH", "peso": "peca_leve" },
+    { "base": "SHOES_CLOTH_SET2", "nome": "Sandálias de Clérigo", "en": "Cleric Sandals",  "categoria": "Tecido - Pés", "material": "CLOTH", "peso": "peca_leve" },
+    { "base": "SHOES_CLOTH_SET3", "nome": "Sandálias de Mago",    "en": "Mage Sandals",    "categoria": "Tecido - Pés", "material": "CLOTH", "peso": "peca_leve" },
 
-    { "base": "MAIN_SWORD",        "nome": "Espada",            "categoria": "Arma - Espada",  "material": "METALBAR", "peso": "arma" },
-    { "base": "MAIN_AXE",          "nome": "Machado",           "categoria": "Arma - Machado", "material": "METALBAR", "peso": "arma" },
-    { "base": "MAIN_MACE",         "nome": "Maça",              "categoria": "Arma - Maça",    "material": "METALBAR", "peso": "arma" },
-    { "base": "2H_BOW",            "nome": "Arco",              "categoria": "Arma - Arco",    "material": "PLANKS",   "peso": "arma" },
-    { "base": "MAIN_CURSEDSTAFF",  "nome": "Cajado Amaldiçoado","categoria": "Arma - Cajado",  "material": "PLANKS",   "peso": "arma" },
-    { "base": "MAIN_HOLYSTAFF",    "nome": "Cajado Sagrado",    "categoria": "Arma - Cajado",  "material": "PLANKS",   "peso": "arma" }
+    { "base": "MAIN_SWORD",        "nome": "Espada Larga",       "en": "Broadsword",   "categoria": "Arma - Espada",  "material": "METALBAR", "peso": "arma" },
+    { "base": "MAIN_AXE",          "nome": "Machado de Batalha", "en": "Battleaxe",    "categoria": "Arma - Machado", "material": "METALBAR", "peso": "arma" },
+    { "base": "MAIN_MACE",         "nome": "Maça",               "en": "Mace",         "categoria": "Arma - Maça",    "material": "METALBAR", "peso": "arma" },
+    { "base": "2H_BOW",            "nome": "Arco de Guerra",     "en": "Warbow",       "categoria": "Arma - Arco",    "material": "PLANKS",   "peso": "arma" },
+    { "base": "MAIN_CURSEDSTAFF",  "nome": "Cajado Amaldiçoado", "en": "Cursed Staff", "categoria": "Arma - Cajado",  "material": "PLANKS",   "peso": "arma" },
+    { "base": "MAIN_HOLYSTAFF",    "nome": "Cajado Sagrado",     "en": "Holy Staff",   "categoria": "Arma - Cajado",  "material": "PLANKS",   "peso": "arma" }
   ]
 }
