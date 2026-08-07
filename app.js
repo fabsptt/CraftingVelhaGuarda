@@ -205,7 +205,7 @@ function calcularLinhas(finishedItems) {
       const volume = VOLUME_INDEX[item.id]?.[city] || 0;
 
       rows.push({
-        id: item.id, nome: item.nome, tier: item.tier, categoria: item.categoria,
+        id: item.id, nome: item.nome, en: item.en, tier: item.tier, categoria: item.categoria,
         cidade: city, venda, custo, lucro, margem, volume,
         material: matDef.nome, matId, qty, matUnit: priceMat.sell_price_min,
       });
@@ -262,9 +262,9 @@ function renderTabela() {
     tr.innerHTML = `
       <td>
         <div class="item-cell">
-          <img class="item-icon" src="${iconUrl(r.id)}" alt="" loading="lazy" width="40" height="40">
+          <img class="item-icon" src="${iconUrl(r.id)}" alt="" loading="lazy" width="40" height="40" onerror="this.style.opacity=0.15">
           <span class="item-name">${r.nome}
-            <span class="item-cat"><span class="tier-sigil">${r.tier}</span>${r.categoria}</span>
+            <span class="item-cat"><span class="tier-sigil">${r.tier}</span>${r.categoria} · <em>${r.en}</em></span>
           </span>
         </div>
       </td>
@@ -296,10 +296,10 @@ function renderDestaques(top3) {
     <div class="destaques-grid">
       ${top3.map((r, i) => `
         <div class="destaque-card ${i === 0 ? 'first' : ''}">
-          <img src="${iconUrl(r.id, 96)}" alt="${r.nome}" loading="lazy" width="56" height="56">
+          <img src="${iconUrl(r.id, 96)}" alt="${r.nome}" loading="lazy" width="56" height="56" onerror="this.style.opacity=0.15">
           <div class="destaque-info">
             <div class="destaque-nome"><span class="tier-sigil">${r.tier}</span>${r.nome}</div>
-            <div class="destaque-onde">compra em materiais, vende em <strong>${r.cidade}</strong></div>
+            <div class="destaque-onde"><em>${r.en}</em> · vende em <strong>${r.cidade}</strong></div>
             <div class="destaque-lucro ${r.lucro >= 0 ? 'profit-pos' : 'profit-neg'}">
               +${fmt(r.lucro)} prata/un. <span class="destaque-margem">(${r.margem.toFixed(0)}% margem)</span>
             </div>
@@ -324,7 +324,7 @@ function renderDetalhe(r) {
     <div class="recipe-title">Receita — ${r.qty}× ${r.material}</div>
     <div class="recipe-grid">
       <div class="h">Material</div><div class="h">Qtd.</div><div class="h">Preço un.</div><div class="h">Subtotal</div>
-      <div class="mat-cell"><img class="mat-icon" src="${iconUrl(r.matId, 48)}" alt="" loading="lazy" width="22" height="22">${r.material}</div>
+      <div class="mat-cell"><img class="mat-icon" src="${iconUrl(r.matId, 48)}" alt="" loading="lazy" width="22" height="22" onerror="this.style.opacity=0.15">${r.material}</div>
       <div>${r.qty}</div><div>${fmt(r.matUnit)}</div><div>${fmt(r.qty * r.matUnit)}</div>
       <div class="sum">Custo total</div><div class="sum"></div><div class="sum"></div><div class="sum">${fmt(r.custo)}</div>
     </div>
