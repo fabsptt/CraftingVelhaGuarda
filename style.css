@@ -308,7 +308,7 @@ table.ledger td{
 .item-cat em{ font-style: italic; color: var(--steel); }
 .item-cat .tier-sigil{ width:18px; height:18px; font-size:9px; margin-right:6px; }
 
-.quality-badge{
+.quality-badge, .enchant-badge{
   display:inline-flex;
   align-items:center;
   font-family: var(--font-mono);
@@ -320,11 +320,11 @@ table.ledger td{
   border: 1px solid var(--hairline);
   color: var(--muted);
 }
-.quality-badge.q1{ color: var(--muted); }
-.quality-badge.q2{ color: var(--steel); border-color: var(--steel); }
-.quality-badge.q3{ color: #7fb0e0; border-color: #7fb0e0; }
-.quality-badge.q4{ color: var(--gold); border-color: var(--gold-dim); }
-.quality-badge.q5{ color: var(--ink); background: var(--gold); border-color: var(--gold); }
+.enchant-badge.e0{ color: var(--muted); }
+.enchant-badge.e1{ color: var(--steel); border-color: var(--steel); }
+.enchant-badge.e2{ color: #7fb0e0; border-color: #7fb0e0; }
+.enchant-badge.e3{ color: var(--gold); border-color: var(--gold-dim); }
+.enchant-badge.e4{ color: var(--ink); background: var(--gold); border-color: var(--gold); }
 
 .mat-icon{
   width: 22px; height: 22px;
