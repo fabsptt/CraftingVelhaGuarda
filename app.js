@@ -78,9 +78,13 @@ function itemId(tier, base, enchant) {
   return enchant > 0 ? `${tier}_${base}@${enchant}` : `${tier}_${base}`;
 }
 
-// materiais refinados enchantados seguem o padrão T{tier}_{RECURSO}_LEVEL{n}@{n} (n=1..4); base é só T{tier}_{RECURSO}
+// materiais refinados (barra/tábua/tecido/couro) seguem uma nomenclatura diferente do equipamento quando encantados
 function matIdFor(tier, resourceKey, enchant) {
   return enchant > 0 ? `${tier}_${resourceKey}_LEVEL${enchant}@${enchant}` : `${tier}_${resourceKey}`;
+}
+
+function qtyFor(materialEntry, tier) {
+  return materialEntry.qtd ?? RECIPES.quantidades_por_tier[materialEntry.peso][tier];
 }
 
 /* ---------- construir lista de item ids necessários ---------- */
@@ -89,11 +93,13 @@ function idsNecessarios(tiers) {
   const materials = new Set();
 
   for (const item of RECIPES.itens) {
+    const enchants = item.semEncantamento ? [0] : ENCHANTS;
     for (const t of tiers) {
-      for (const e of ENCHANTS) {
-        // craftar um item .N precisa de materiais também .N (o encantamento do material tem de coincidir com o do item)
-        materials.add(matIdFor(t, item.material, e));
+      for (const e of enchants) {
         finished.push({ ...item, tier: t, enchant: e, id: itemId(t, item.base, e) });
+        for (const m of item.materiais) {
+          materials.add(matIdFor(t, m.material, e));
+        }
       }
     }
   }
@@ -117,11 +123,9 @@ async function atualizar() {
 
     const citiesParam = CITIES.map(encodeURIComponent).join(',');
 
-    // preços atuais
-    setStatus(`A obter preços de ${allIds.length} itens (todos os tiers × encantamentos .0–.4) em ${CITIES.length} cidades…`);
+    setStatus(`A obter preços de ${allIds.length} itens (todos os tiers × encantamentos) em ${CITIES.length} cidades…`);
     PRICE_INDEX = await fetchPrices(allIds, citiesParam);
 
-    // histórico (proxy de volume — "mais vendidos"), tolera falha
     setStatus('A obter histórico de transações (mais vendidos)…');
     try {
       VOLUME_INDEX = await fetchVolume(finished.map(f => f.id), citiesParam);
@@ -142,7 +146,6 @@ async function atualizar() {
 }
 
 async function fetchPrices(ids, citiesParam) {
-  // a API/servidor têm um limite de comprimento de URL — lotes pequenos evitam erro "URI too long"
   const chunks = chunk(ids, 45);
   const index = {};
   let falhas = 0;
@@ -216,27 +219,37 @@ function calcularLinhas(finishedItems) {
   const rows = [];
 
   for (const item of finishedItems) {
-    const qty = RECIPES.quantidades_por_tier[item.peso][item.tier];
-    const matDef = RECIPES.materials[item.material];
-    const matId = matIdFor(item.tier, item.material, item.enchant);
-    const matNome = `${RARIDADE_MATERIAL[item.enchant]} ${matDef.nome}`.trim();
+    // resolve cada material da receita (pode ser 1 ou vários) para este tier/encantamento
+    const materiaisResolvidos = item.materiais.map(m => ({
+      matId: matIdFor(item.tier, m.material, item.enchant),
+      nome: `${RARIDADE_MATERIAL[item.enchant]} ${RECIPES.materials[m.material].nome}`.trim(),
+      qty: qtyFor(m, item.tier),
+    }));
 
     for (const city of CITIES) {
       const priceFinished = PRICE_INDEX[item.id]?.[city];
-      const priceMat = PRICE_INDEX[matId]?.[city];
-      if (!priceFinished || !priceMat) continue;
-      if (!priceFinished.sell_price_min || !priceMat.sell_price_min) continue;
+      if (!priceFinished || !priceFinished.sell_price_min) continue;
+
+      let custo = 0;
+      let materiaisCompletos = true;
+      const materiaisLinha = [];
+      for (const m of materiaisResolvidos) {
+        const priceMat = PRICE_INDEX[m.matId]?.[city];
+        if (!priceMat || !priceMat.sell_price_min) { materiaisCompletos = false; break; }
+        const subtotal = priceMat.sell_price_min * m.qty;
+        custo += subtotal;
+        materiaisLinha.push({ ...m, unit: priceMat.sell_price_min, subtotal });
+      }
+      if (!materiaisCompletos) continue;
 
       const venda = priceFinished.sell_price_min;
-      const custo = priceMat.sell_price_min * qty;
       const lucro = venda * (1 - tax) - custo;
       const margem = custo > 0 ? (lucro / custo) * 100 : 0;
       const volume = VOLUME_INDEX[item.id]?.[city] || 0;
 
       rows.push({
         id: item.id, nome: item.nome, en: item.en, tier: item.tier, enchant: item.enchant, categoria: item.categoria,
-        cidade: city, venda, custo, lucro, margem, volume,
-        material: matNome, matId, qty, matUnit: priceMat.sell_price_min,
+        cidade: city, venda, custo, lucro, margem, volume, materiais: materiaisLinha,
       });
     }
   }
@@ -255,7 +268,6 @@ function renderTabela() {
     (enchSel === 'ALL' || r.enchant === Number(enchSel))
   );
 
-  // no modo "comparar todas" (cidade) mostramos só a melhor cidade por item+encantamento, com comparação no detalhe
   let grouped = rows;
   if (cidadeSel === 'ALL') {
     const byItem = {};
@@ -288,7 +300,7 @@ function renderTabela() {
   const maxVol = Math.max(1, ...grouped.map(r => r.volume));
   els.tbody.innerHTML = '';
 
-  grouped.forEach((r, idx) => {
+  grouped.forEach((r) => {
     const tr = document.createElement('tr');
     tr.className = 'row';
     tr.innerHTML = `
@@ -352,22 +364,28 @@ function renderDetalhe(r) {
     comparacao = `<div class="recipe-title" style="margin-top:16px;">Lucro por cidade (${r.tier}.${r.enchant})</div><div class="city-compare">${pills}</div>`;
   }
 
-  const outrosEnchants = ROWS.filter(x => x.tier === r.tier && x.categoria === r.categoria && x.nome === r.nome && x.cidade === r.cidade && x.enchant !== r.enchant);
   let enchantsHtml = '';
-  if (outrosEnchants.length) {
-    const pills = [r, ...outrosEnchants]
-      .slice().sort((a, b) => a.enchant - b.enchant)
-      .map(x => `<span class="city-pill ${x.enchant === r.enchant ? 'best' : ''}">${x.tier}.${x.enchant}: ${fmt(x.venda)}</span>`)
-      .join('');
-    enchantsHtml = `<div class="recipe-title" style="margin-top:16px;">Preço de venda por encantamento em ${r.cidade}</div><div class="city-compare">${pills}</div>`;
+  if (r.enchant !== undefined) {
+    const outrosEnchants = ROWS.filter(x => x.tier === r.tier && x.categoria === r.categoria && x.nome === r.nome && x.cidade === r.cidade && x.enchant !== r.enchant);
+    if (outrosEnchants.length) {
+      const pills = [r, ...outrosEnchants]
+        .slice().sort((a, b) => a.enchant - b.enchant)
+        .map(x => `<span class="city-pill ${x.enchant === r.enchant ? 'best' : ''}">${x.tier}.${x.enchant}: ${fmt(x.venda)}</span>`)
+        .join('');
+      enchantsHtml = `<div class="recipe-title" style="margin-top:16px;">Preço de venda por encantamento em ${r.cidade}</div><div class="city-compare">${pills}</div>`;
+    }
   }
 
+  const linhasMateriais = r.materiais.map(m => `
+      <div class="mat-cell"><img class="mat-icon" src="${iconUrl(m.matId, 48)}" alt="" loading="lazy" width="22" height="22" onerror="this.style.opacity=0.15">${m.nome}</div>
+      <div>${m.qty}</div><div>${fmt(m.unit)}</div><div>${fmt(m.subtotal)}</div>
+  `).join('');
+
   return `
-    <div class="recipe-title">Receita — ${r.qty}× ${r.material} <span style="color:var(--muted)">(encantamento ${r.enchant} — igual ao do item)</span></div>
+    <div class="recipe-title">Receita — ${r.materiais.length > 1 ? 'vários materiais' : '1 material'} <span style="color:var(--muted)">(encantamento ${r.enchant} — igual ao do item)</span></div>
     <div class="recipe-grid">
       <div class="h">Material</div><div class="h">Qtd.</div><div class="h">Preço un.</div><div class="h">Subtotal</div>
-      <div class="mat-cell"><img class="mat-icon" src="${iconUrl(r.matId, 48)}" alt="" loading="lazy" width="22" height="22" onerror="this.style.opacity=0.15">${r.material}</div>
-      <div>${r.qty}</div><div>${fmt(r.matUnit)}</div><div>${fmt(r.qty * r.matUnit)}</div>
+      ${linhasMateriais}
       <div class="sum">Custo total</div><div class="sum"></div><div class="sum"></div><div class="sum">${fmt(r.custo)}</div>
     </div>
     ${enchantsHtml}
