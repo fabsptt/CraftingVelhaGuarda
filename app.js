@@ -6,12 +6,21 @@
 const API_BASE = 'https://europe.albion-online-data.com/api/v2/stats';
 const CITIES = ['Martlock', 'Bridgewatch', 'Lymhurst', 'Fort Sterling', 'Thetford', 'Caerleon', 'Brecilien'];
 const TIERS = ['T4', 'T5', 'T6', 'T7', 'T8'];
+const QUALITIES = [1, 2, 3, 4, 5];
+const QUALITY_INFO = {
+  1: { nome: 'Normal',      estrelas: 0 },
+  2: { nome: 'Boa',         estrelas: 1 },
+  3: { nome: 'Notável',     estrelas: 2 },
+  4: { nome: 'Excelente',   estrelas: 3 },
+  5: { nome: 'Obra-prima',  estrelas: 4 },
+};
 
 const els = {
   status: document.getElementById('status'),
   tbody: document.getElementById('tbody'),
   cidade: document.getElementById('cidade'),
   categoria: document.getElementById('categoria'),
+  qualidade: document.getElementById('qualidade'),
   ordenar: document.getElementById('ordenar'),
   premium: document.getElementById('premium'),
   btn: document.getElementById('btnAtualizar'),
@@ -19,7 +28,7 @@ const els = {
 };
 
 let RECIPES = null;
-let PRICE_INDEX = {};   // itemId -> city -> {sell_price_min, buy_price_min}
+let PRICE_INDEX = {};   // itemId -> city -> quality -> {sell_price_min, buy_price_min}
 let VOLUME_INDEX = {};  // itemId -> city -> total item_count (últimos dias)
 let ROWS = [];           // linhas calculadas prontas a renderizar
 let sortState = { key: 'lucro', dir: -1 };
@@ -51,7 +60,7 @@ function bindEvents() {
     });
   });
 
-  [els.cidade, els.categoria, els.ordenar].forEach(el =>
+  [els.cidade, els.categoria, els.qualidade, els.ordenar].forEach(el =>
     el.addEventListener('change', () => { if (ROWS.length) renderTabela(); })
   );
 
@@ -118,7 +127,7 @@ async function atualizar() {
     }
 
     calcularLinhas(finished);
-    setStatus(`Atualizado — ${ROWS.length} combinações item/cidade prontas. Fonte: Albion Online Data Project.`);
+    setStatus(`Atualizado — ${ROWS.length} combinações item/cidade/qualidade prontas. Fonte: Albion Online Data Project.`);
     renderTabela();
   } catch (err) {
     console.error(err);
@@ -130,17 +139,19 @@ async function atualizar() {
 
 async function fetchPrices(ids, citiesParam) {
   // a API aceita muitos ids numa só chamada, separados por vírgula
-  const chunks = chunk(ids, 180); // margem de segurança para o comprimento do URL
+  const chunks = chunk(ids, 150); // margem de segurança para o comprimento do URL (mais qualidades = resposta maior)
   const index = {};
+  const qualitiesParam = QUALITIES.join(',');
 
   for (const c of chunks) {
-    const url = `${API_BASE}/prices/${c.join(',')}.json?locations=${citiesParam}&qualities=1`;
+    const url = `${API_BASE}/prices/${c.join(',')}.json?locations=${citiesParam}&qualities=${qualitiesParam}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Falha ao obter preços (${res.status})`);
     const data = await res.json();
     for (const row of data) {
       index[row.item_id] ??= {};
-      index[row.item_id][row.city] = {
+      index[row.item_id][row.city] ??= {};
+      index[row.item_id][row.city][row.quality] = {
         sell_price_min: row.sell_price_min || 0,
         buy_price_min: row.buy_price_min || 0,
       };
@@ -172,8 +183,8 @@ async function fetchVolume(ids, citiesParam) {
   return index;
 }
 
-function iconUrl(itemId, size = 80) {
-  return `https://render.albiononline.com/v1/item/${itemId}.png?quality=1&size=${size}`;
+function iconUrl(itemId, size = 80, quality = 1) {
+  return `https://render.albiononline.com/v1/item/${itemId}.png?quality=${quality}&size=${size}`;
 }
 
 function chunk(arr, size) {
@@ -182,7 +193,7 @@ function chunk(arr, size) {
   return out;
 }
 
-/* ---------- cálculo de lucro por item/cidade ---------- */
+/* ---------- cálculo de lucro por item/cidade/qualidade ---------- */
 function calcularLinhas(finishedItems) {
   const tax = els.premium.checked ? 0.04 : 0.08;
   const rows = [];
@@ -193,22 +204,26 @@ function calcularLinhas(finishedItems) {
     const matId = matDef.tiers[TIERS.indexOf(item.tier)];
 
     for (const city of CITIES) {
-      const priceFinished = PRICE_INDEX[item.id]?.[city];
-      const priceMat = PRICE_INDEX[matId]?.[city];
-      if (!priceFinished || !priceMat) continue;
-      if (!priceFinished.sell_price_min || !priceMat.sell_price_min) continue;
+      // custo dos materiais é sempre calculado com qualidade Normal (a mais comum de comprar para craftar)
+      const priceMat = PRICE_INDEX[matId]?.[city]?.[1];
+      if (!priceMat || !priceMat.sell_price_min) continue;
 
-      const venda = priceFinished.sell_price_min;
-      const custo = priceMat.sell_price_min * qty;
-      const lucro = venda * (1 - tax) - custo;
-      const margem = custo > 0 ? (lucro / custo) * 100 : 0;
-      const volume = VOLUME_INDEX[item.id]?.[city] || 0;
+      for (const q of QUALITIES) {
+        const priceFinished = PRICE_INDEX[item.id]?.[city]?.[q];
+        if (!priceFinished || !priceFinished.sell_price_min) continue;
 
-      rows.push({
-        id: item.id, nome: item.nome, en: item.en, tier: item.tier, categoria: item.categoria,
-        cidade: city, venda, custo, lucro, margem, volume,
-        material: matDef.nome, matId, qty, matUnit: priceMat.sell_price_min,
-      });
+        const venda = priceFinished.sell_price_min;
+        const custo = priceMat.sell_price_min * qty;
+        const lucro = venda * (1 - tax) - custo;
+        const margem = custo > 0 ? (lucro / custo) * 100 : 0;
+        const volume = VOLUME_INDEX[item.id]?.[city] || 0;
+
+        rows.push({
+          id: item.id, nome: item.nome, en: item.en, tier: item.tier, categoria: item.categoria,
+          cidade: city, qualidade: q, venda, custo, lucro, margem, volume,
+          material: matDef.nome, matId, qty, matUnit: priceMat.sell_price_min,
+        });
+      }
     }
   }
   ROWS = rows;
@@ -218,19 +233,22 @@ function calcularLinhas(finishedItems) {
 function renderTabela() {
   const cidadeSel = els.cidade.value;
   const catSel = els.categoria.value;
+  const qualSel = els.qualidade.value; // 'ALL' ou '1'..'5'
 
   let rows = ROWS.filter(r =>
     (cidadeSel === 'ALL' || r.cidade === cidadeSel) &&
-    (catSel === 'ALL' || r.categoria === catSel)
+    (catSel === 'ALL' || r.categoria === catSel) &&
+    (qualSel === 'ALL' || r.qualidade === Number(qualSel))
   );
 
-  // no modo "comparar todas" mostramos só a melhor cidade por item, com comparação no detalhe
+  // no modo "comparar todas" (cidade) mostramos só a melhor cidade por item+qualidade, com comparação no detalhe
   let grouped = rows;
   if (cidadeSel === 'ALL') {
     const byItem = {};
     for (const r of rows) {
-      byItem[r.id] ??= [];
-      byItem[r.id].push(r);
+      const key = `${r.id}__${r.qualidade}`;
+      byItem[key] ??= [];
+      byItem[key].push(r);
     }
     grouped = Object.values(byItem).map(list => {
       const melhor = list.slice().sort((a, b) => b.lucro - a.lucro)[0];
@@ -262,9 +280,9 @@ function renderTabela() {
     tr.innerHTML = `
       <td>
         <div class="item-cell">
-          <img class="item-icon" src="${iconUrl(r.id)}" alt="" loading="lazy" width="40" height="40" onerror="this.style.opacity=0.15">
+          <img class="item-icon" src="${iconUrl(r.id, 80, r.qualidade)}" alt="" loading="lazy" width="40" height="40" onerror="this.style.opacity=0.15">
           <span class="item-name">${r.nome}
-            <span class="item-cat"><span class="tier-sigil">${r.tier}</span>${r.categoria} · <em>${r.en}</em></span>
+            <span class="item-cat"><span class="tier-sigil">${r.tier}</span><span class="quality-badge q${r.qualidade}">.${r.qualidade - 1}</span>${r.categoria} · <em>${r.en}</em></span>
           </span>
         </div>
       </td>
@@ -296,10 +314,10 @@ function renderDestaques(top3) {
     <div class="destaques-grid">
       ${top3.map((r, i) => `
         <div class="destaque-card ${i === 0 ? 'first' : ''}">
-          <img src="${iconUrl(r.id, 96)}" alt="${r.nome}" loading="lazy" width="56" height="56" onerror="this.style.opacity=0.15">
+          <img src="${iconUrl(r.id, 96, r.qualidade)}" alt="${r.nome}" loading="lazy" width="56" height="56" onerror="this.style.opacity=0.15">
           <div class="destaque-info">
-            <div class="destaque-nome"><span class="tier-sigil">${r.tier}</span>${r.nome}</div>
-            <div class="destaque-onde"><em>${r.en}</em> · vende em <strong>${r.cidade}</strong></div>
+            <div class="destaque-nome"><span class="tier-sigil">${r.tier}</span><span class="quality-badge q${r.qualidade}">.${r.qualidade - 1}</span>${r.nome}</div>
+            <div class="destaque-onde"><em>${r.en}</em> (${QUALITY_INFO[r.qualidade].nome}) · vende em <strong>${r.cidade}</strong></div>
             <div class="destaque-lucro ${r.lucro >= 0 ? 'profit-pos' : 'profit-neg'}">
               +${fmt(r.lucro)} prata/un. <span class="destaque-margem">(${r.margem.toFixed(0)}% margem)</span>
             </div>
@@ -317,17 +335,28 @@ function renderDetalhe(r) {
       .slice().sort((a, b) => b.lucro - a.lucro)
       .map(x => `<span class="city-pill ${x.cidade === r.cidade ? 'best' : ''}">${x.cidade}: ${fmt(x.lucro)}</span>`)
       .join('');
-    comparacao = `<div class="recipe-title" style="margin-top:16px;">Lucro por cidade</div><div class="city-compare">${pills}</div>`;
+    comparacao = `<div class="recipe-title" style="margin-top:16px;">Lucro por cidade (qualidade ${QUALITY_INFO[r.qualidade].nome})</div><div class="city-compare">${pills}</div>`;
+  }
+
+  const outrasQualidades = ROWS.filter(x => x.id === r.id && x.cidade === r.cidade && x.qualidade !== r.qualidade);
+  let qualidadesHtml = '';
+  if (outrasQualidades.length) {
+    const pills = [r, ...outrasQualidades]
+      .slice().sort((a, b) => a.qualidade - b.qualidade)
+      .map(x => `<span class="city-pill ${x.qualidade === r.qualidade ? 'best' : ''}">.${x.qualidade - 1} ${QUALITY_INFO[x.qualidade].nome}: ${fmt(x.venda)}</span>`)
+      .join('');
+    qualidadesHtml = `<div class="recipe-title" style="margin-top:16px;">Preço de venda por qualidade em ${r.cidade}</div><div class="city-compare">${pills}</div>`;
   }
 
   return `
-    <div class="recipe-title">Receita — ${r.qty}× ${r.material}</div>
+    <div class="recipe-title">Receita — ${r.qty}× ${r.material} <span style="color:var(--muted)">(materiais em qualidade Normal)</span></div>
     <div class="recipe-grid">
       <div class="h">Material</div><div class="h">Qtd.</div><div class="h">Preço un.</div><div class="h">Subtotal</div>
       <div class="mat-cell"><img class="mat-icon" src="${iconUrl(r.matId, 48)}" alt="" loading="lazy" width="22" height="22" onerror="this.style.opacity=0.15">${r.material}</div>
       <div>${r.qty}</div><div>${fmt(r.matUnit)}</div><div>${fmt(r.qty * r.matUnit)}</div>
       <div class="sum">Custo total</div><div class="sum"></div><div class="sum"></div><div class="sum">${fmt(r.custo)}</div>
     </div>
+    ${qualidadesHtml}
     ${comparacao}
   `;
 }
