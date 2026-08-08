@@ -77,6 +77,11 @@ function itemId(tier, base, enchant) {
   return enchant > 0 ? `${tier}_${base}@${enchant}` : `${tier}_${base}`;
 }
 
+// materiais refinados enchantados seguem o padrão T{tier}_{RECURSO}_LEVEL{n}@{n} (n=1..4); base é só T{tier}_{RECURSO}
+function matIdFor(tier, resourceKey, enchant) {
+  return enchant > 0 ? `${tier}_${resourceKey}_LEVEL${enchant}@${enchant}` : `${tier}_${resourceKey}`;
+}
+
 /* ---------- construir lista de item ids necessários ---------- */
 function idsNecessarios(tiers) {
   const finished = [];
@@ -84,11 +89,9 @@ function idsNecessarios(tiers) {
 
   for (const item of RECIPES.itens) {
     for (const t of tiers) {
-      const matTierIds = RECIPES.materials[item.material].tiers;
-      const tierIdx = TIERS.indexOf(t);
-      materials.add(matTierIds[tierIdx]);
-
       for (const e of ENCHANTS) {
+        // craftar um item .N precisa de materiais também .N (o encantamento do material tem de coincidir com o do item)
+        materials.add(matIdFor(t, item.material, e));
         finished.push({ ...item, tier: t, enchant: e, id: itemId(t, item.base, e) });
       }
     }
@@ -199,7 +202,8 @@ function calcularLinhas(finishedItems) {
   for (const item of finishedItems) {
     const qty = RECIPES.quantidades_por_tier[item.peso][item.tier];
     const matDef = RECIPES.materials[item.material];
-    const matId = matDef.tiers[TIERS.indexOf(item.tier)];
+    const matId = matIdFor(item.tier, item.material, item.enchant);
+    const matNome = `${RARIDADE_MATERIAL[item.enchant]} ${matDef.nome}`.trim();
 
     for (const city of CITIES) {
       const priceFinished = PRICE_INDEX[item.id]?.[city];
@@ -216,7 +220,7 @@ function calcularLinhas(finishedItems) {
       rows.push({
         id: item.id, nome: item.nome, en: item.en, tier: item.tier, enchant: item.enchant, categoria: item.categoria,
         cidade: city, venda, custo, lucro, margem, volume,
-        material: matDef.nome, matId, qty, matUnit: priceMat.sell_price_min,
+        material: matNome, matId, qty, matUnit: priceMat.sell_price_min,
       });
     }
   }
@@ -343,7 +347,7 @@ function renderDetalhe(r) {
   }
 
   return `
-    <div class="recipe-title">Receita — ${r.qty}× ${r.material} <span style="color:var(--muted)">(materiais base, sem encantamento)</span></div>
+    <div class="recipe-title">Receita — ${r.qty}× ${r.material} <span style="color:var(--muted)">(encantamento ${r.enchant} — igual ao do item)</span></div>
     <div class="recipe-grid">
       <div class="h">Material</div><div class="h">Qtd.</div><div class="h">Preço un.</div><div class="h">Subtotal</div>
       <div class="mat-cell"><img class="mat-icon" src="${iconUrl(r.matId, 48)}" alt="" loading="lazy" width="22" height="22" onerror="this.style.opacity=0.15">${r.material}</div>
