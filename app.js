@@ -7,6 +7,7 @@ const API_BASE = 'https://europe.albion-online-data.com/api/v2/stats';
 const CITIES = ['Martlock', 'Bridgewatch', 'Lymhurst', 'Fort Sterling', 'Thetford', 'Caerleon', 'Brecilien'];
 const TIERS = ['T4', 'T5', 'T6', 'T7', 'T8'];
 const ENCHANTS = [0, 1, 2, 3, 4]; // encantamento do item: base (.0) até .4
+const RARIDADE_MATERIAL = { 0: '', 1: 'Incomum', 2: 'Raro', 3: 'Excecional', 4: 'Pristino' };
 
 const els = {
   status: document.getElementById('status'),
@@ -134,7 +135,7 @@ async function atualizar() {
     renderTabela();
   } catch (err) {
     console.error(err);
-    setStatus('Não foi possível obter dados do mercado agora. Tenta novamente dentro de momentos.', true);
+    setStatus(`Erro ao processar dados: ${err.message}. Abre a consola do browser (F12) para mais detalhe.`, true);
   } finally {
     els.btn.disabled = false;
   }
