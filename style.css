@@ -64,10 +64,10 @@ a{ color: var(--gold); }
 }
 
 .sigil{
-  width: 56px; height: 56px;
+  width: 110px; height: auto;
   margin: 0 auto 18px;
-  color: var(--gold);
-  opacity: .92;
+  display: block;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.55));
 }
 
 .banner h1{
