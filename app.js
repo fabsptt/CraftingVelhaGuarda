@@ -141,23 +141,33 @@ async function atualizar() {
 }
 
 async function fetchPrices(ids, citiesParam) {
-  // a API aceita muitos ids numa só chamada, separados por vírgula
-  const chunks = chunk(ids, 150); // margem de segurança para o comprimento do URL
+  // a API/servidor têm um limite de comprimento de URL — lotes pequenos evitam erro "URI too long"
+  const chunks = chunk(ids, 45);
   const index = {};
+  let falhas = 0;
 
-  for (const c of chunks) {
+  for (let i = 0; i < chunks.length; i++) {
+    const c = chunks[i];
     const url = `${API_BASE}/prices/${c.join(',')}.json?locations=${citiesParam}&qualities=1`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`Falha ao obter preços (${res.status})`);
-    const data = await res.json();
-    for (const row of data) {
-      index[row.item_id] ??= {};
-      index[row.item_id][row.city] = {
-        sell_price_min: row.sell_price_min || 0,
-        buy_price_min: row.buy_price_min || 0,
-      };
+    try {
+      setStatus(`A obter preços… (lote ${i + 1}/${chunks.length})`);
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      for (const row of data) {
+        index[row.item_id] ??= {};
+        index[row.item_id][row.city] = {
+          sell_price_min: row.sell_price_min || 0,
+          buy_price_min: row.buy_price_min || 0,
+        };
+      }
+    } catch (e) {
+      falhas++;
+      console.warn(`Lote de preços ${i + 1}/${chunks.length} falhou:`, e);
     }
   }
+
+  if (falhas === chunks.length) throw new Error('Todos os pedidos de preços falharam.');
   return index;
 }
 
@@ -167,18 +177,23 @@ async function fetchVolume(ids, citiesParam) {
   start.setDate(start.getDate() - 6);
   const fmt = d => `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
 
-  const chunks = chunk(ids, 120);
+  const chunks = chunk(ids, 60);
   const index = {};
 
-  for (const c of chunks) {
+  for (let i = 0; i < chunks.length; i++) {
+    const c = chunks[i];
     const url = `${API_BASE}/history/${c.join(',')}.json?date=${fmt(start)}&end_date=${fmt(end)}&locations=${citiesParam}&time-scale=24`;
-    const res = await fetch(url);
-    if (!res.ok) continue;
-    const data = await res.json();
-    for (const entry of data) {
-      const total = (entry.data || []).reduce((s, p) => s + (p.item_count || 0), 0);
-      index[entry.item_id] ??= {};
-      index[entry.item_id][entry.location] = total;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const data = await res.json();
+      for (const entry of data) {
+        const total = (entry.data || []).reduce((s, p) => s + (p.item_count || 0), 0);
+        index[entry.item_id] ??= {};
+        index[entry.item_id][entry.location] = total;
+      }
+    } catch (e) {
+      console.warn(`Lote de histórico ${i + 1}/${chunks.length} falhou:`, e);
     }
   }
   return index;
