@@ -54,6 +54,55 @@
     { "base": "BAG", "nome": "Bolsa", "en": "Bag", "categoria": "Acessório - Bolsa",
       "materiais": [{ "material": "CLOTH", "qtd": 8 }, { "material": "LEATHER", "qtd": 8 }] },
 
+    { "base": "CAPEITEM_FW_MARTLOCK", "nome": "Capa de Martlock", "en": "Martlock Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_FW_MARTLOCK_BP", "nome": "Crest de Martlock", "qtd": 1 },
+        { "idFixo": "T1_FACTION_HIGHLAND_TOKEN_1", "nome": "Rockheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+    { "base": "CAPEITEM_FW_FORTSTERLING", "nome": "Capa de Fort Sterling", "en": "Fort Sterling Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_FW_FORTSTERLING_BP", "nome": "Crest de Fort Sterling", "qtd": 1 },
+        { "idFixo": "T1_FACTION_MOUNTAIN_TOKEN_1", "nome": "Mountainheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+    { "base": "CAPEITEM_FW_LYMHURST", "nome": "Capa de Lymhurst", "en": "Lymhurst Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_FW_LYMHURST_BP", "nome": "Crest de Lymhurst", "qtd": 1 },
+        { "idFixo": "T1_FACTION_FOREST_TOKEN_1", "nome": "Treeheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+    { "base": "CAPEITEM_FW_BRIDGEWATCH", "nome": "Capa de Bridgewatch", "en": "Bridgewatch Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_FW_BRIDGEWATCH_BP", "nome": "Crest de Bridgewatch", "qtd": 1 },
+        { "idFixo": "T1_FACTION_STEPPE_TOKEN_1", "nome": "Beastheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+    { "base": "CAPEITEM_FW_THETFORD", "nome": "Capa de Thetford", "en": "Thetford Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_FW_THETFORD_BP", "nome": "Crest de Thetford", "qtd": 1 },
+        { "idFixo": "T1_FACTION_SWAMP_TOKEN_1", "nome": "Vineheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+    { "base": "CAPEITEM_FW_CAERLEON", "nome": "Capa de Caerleon", "en": "Caerleon Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_FW_CAERLEON_BP", "nome": "Crest de Caerleon", "qtd": 1 },
+        { "idFixo": "T1_FACTION_CAERLEON_TOKEN_1", "nome": "Shadowheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+    { "base": "CAPEITEM_UNDEAD", "nome": "Capa Undead", "en": "Undead Cape", "categoria": "Capa - Facção (mob)", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_UNDEAD_BP", "nome": "Crest Undead", "qtd": 1 },
+        { "idFixo": "T1_FACTION_MOUNTAIN_TOKEN_1", "nome": "Mountainheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+    { "base": "CAPEITEM_HERETIC", "nome": "Capa Heretic", "en": "Heretic Cape", "categoria": "Capa - Facção (mob)", "semEncantamento": true,
+      "materiais": [
+        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
+        { "itemRef": "CAPEITEM_HERETIC_BP", "nome": "Crest Heretic", "qtd": 1 },
+        { "idFixo": "T1_FACTION_FOREST_TOKEN_1", "nome": "Treeheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
+      ] },
+
     { "base": "2H_TOOL_AXE", "nome": "Machado de Colheita", "en": "Axe", "categoria": "Ferramenta - Madeira", "semEncantamento": true,
       "materiais": [{ "material": "PLANKS", "qtd": 6 }, { "material": "METALBAR", "qtd": 2 }] },
     { "base": "2H_TOOL_PICK", "nome": "Picareta", "en": "Pickaxe", "categoria": "Ferramenta - Minério", "semEncantamento": true,
