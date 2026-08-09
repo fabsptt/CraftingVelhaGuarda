@@ -93,7 +93,8 @@ function resolverMaterial(entry, tier, enchant) {
     return { matId: entry.idFixo, nome: entry.nome, qty: qtyFor(entry, tier) };
   }
   if (entry.itemRef) {
-    return { matId: itemId(tier, entry.itemRef, enchant), nome: entry.nome, qty: qtyFor(entry, tier) };
+    const enchantMat = entry.semEncantamento ? 0 : enchant;
+    return { matId: itemId(tier, entry.itemRef, enchantMat), nome: entry.nome, qty: qtyFor(entry, tier) };
   }
   return {
     matId: matIdFor(tier, entry.material, enchant),
