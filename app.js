@@ -84,7 +84,22 @@ function matIdFor(tier, resourceKey, enchant) {
 }
 
 function qtyFor(materialEntry, tier) {
-  return materialEntry.qtd ?? RECIPES.quantidades_por_tier[materialEntry.peso][tier];
+  return materialEntry.qtd ?? materialEntry.qtdPorTier?.[tier] ?? RECIPES.quantidades_por_tier[materialEntry.peso][tier];
+}
+
+// resolve qualquer tipo de entrada de material (recurso refinado, item já fabricado como ingrediente, ou item de id fixo tipo Heart)
+function resolverMaterial(entry, tier, enchant) {
+  if (entry.idFixo) {
+    return { matId: entry.idFixo, nome: entry.nome, qty: qtyFor(entry, tier) };
+  }
+  if (entry.itemRef) {
+    return { matId: itemId(tier, entry.itemRef, enchant), nome: entry.nome, qty: qtyFor(entry, tier) };
+  }
+  return {
+    matId: matIdFor(tier, entry.material, enchant),
+    nome: `${RARIDADE_MATERIAL[enchant]} ${RECIPES.materials[entry.material].nome}`.trim(),
+    qty: qtyFor(entry, tier),
+  };
 }
 
 /* ---------- construir lista de item ids necessários ---------- */
@@ -98,7 +113,7 @@ function idsNecessarios(tiers) {
       for (const e of enchants) {
         finished.push({ ...item, tier: t, enchant: e, id: itemId(t, item.base, e) });
         for (const m of item.materiais) {
-          materials.add(matIdFor(t, m.material, e));
+          materials.add(resolverMaterial(m, t, e).matId);
         }
       }
     }
@@ -220,11 +235,7 @@ function calcularLinhas(finishedItems) {
 
   for (const item of finishedItems) {
     // resolve cada material da receita (pode ser 1 ou vários) para este tier/encantamento
-    const materiaisResolvidos = item.materiais.map(m => ({
-      matId: matIdFor(item.tier, m.material, item.enchant),
-      nome: `${RARIDADE_MATERIAL[item.enchant]} ${RECIPES.materials[m.material].nome}`.trim(),
-      qty: qtyFor(m, item.tier),
-    }));
+    const materiaisResolvidos = item.materiais.map(m => resolverMaterial(m, item.tier, item.enchant));
 
     for (const city of CITIES) {
       const priceFinished = PRICE_INDEX[item.id]?.[city];
