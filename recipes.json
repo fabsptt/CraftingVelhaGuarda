@@ -53,6 +53,12 @@
       "materiais": [{ "material": "CLOTH", "qtd": 4 }, { "material": "LEATHER", "qtd": 4 }] },
     { "base": "BAG", "nome": "Bolsa", "en": "Bag", "categoria": "Acessório - Bolsa",
       "materiais": [{ "material": "CLOTH", "qtd": 8 }, { "material": "LEATHER", "qtd": 8 }] },
+    { "base": "BAG_INSIGHT", "nome": "Sacola de Perspicácia", "en": "Satchel of Insight", "categoria": "Acessório - Bolsa",
+      "materiais": [
+        { "material": "CLOTH", "qtd": 8 },
+        { "material": "LEATHER", "qtd": 8 },
+        { "itemRef": "SKILLBOOK_STANDARD", "nome": "Tomo de Perspicácia", "qtd": 1, "semEncantamento": true }
+      ] },
 
     { "base": "CAPEITEM_FW_MARTLOCK", "nome": "Capa de Martlock", "en": "Martlock Cape", "categoria": "Capa - Facção", "semEncantamento": true,
       "materiais": [
