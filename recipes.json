@@ -256,7 +256,7 @@
     },
     {
       "base": "HEAD_CLOTH_SET1",
-      "nome": "Capuz de Erudito",
+      "nome": "Capote de Erudito",
       "en": "Scholar Cowl",
       "categoria": "Tecido - Cabeça",
       "materiais": [
@@ -268,7 +268,7 @@
     },
     {
       "base": "HEAD_CLOTH_SET2",
-      "nome": "Capuz de Clérigo",
+      "nome": "Capote de Clérigo",
       "en": "Cleric Cowl",
       "categoria": "Tecido - Cabeça",
       "materiais": [
@@ -280,7 +280,7 @@
     },
     {
       "base": "HEAD_CLOTH_SET3",
-      "nome": "Capuz de Mago",
+      "nome": "Capote de Mago",
       "en": "Mage Cowl",
       "categoria": "Tecido - Cabeça",
       "materiais": [
@@ -414,7 +414,7 @@
       "base": "MAIN_CURSEDSTAFF",
       "nome": "Cajado Amaldiçoado",
       "en": "Cursed Staff",
-      "categoria": "Arma - Cajado",
+      "categoria": "Arma - Cajado Amaldiçoado",
       "materiais": [
         {
           "material": "PLANKS",
@@ -426,7 +426,7 @@
       "base": "MAIN_HOLYSTAFF",
       "nome": "Cajado Sagrado",
       "en": "Holy Staff",
-      "categoria": "Arma - Cajado",
+      "categoria": "Arma - Cajado Sagrado",
       "materiais": [
         {
           "material": "PLANKS",
@@ -2370,6 +2370,222 @@
         {
           "material": "PLANKS",
           "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_PLATE_ROYAL",
+      "nome": "Elmo Real",
+      "en": "Royal Elmo Real",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "itemRef": "HEAD_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 2,
+            "T5": 2,
+            "T6": 6,
+            "T7": 10,
+            "T8": 20
+          }
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_ROYAL",
+      "nome": "Armadura Real",
+      "en": "Royal Armadura Real",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 4,
+            "T5": 4,
+            "T6": 12,
+            "T7": 20,
+            "T8": 40
+          }
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_ROYAL",
+      "nome": "Botas Reais",
+      "en": "Royal Botas Reais",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "itemRef": "SHOES_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 2,
+            "T5": 2,
+            "T6": 6,
+            "T7": 10,
+            "T8": 20
+          }
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_ROYAL",
+      "nome": "Capuz Real",
+      "en": "Royal Capuz Real",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "itemRef": "HEAD_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 2,
+            "T5": 2,
+            "T6": 6,
+            "T7": 10,
+            "T8": 20
+          }
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_ROYAL",
+      "nome": "Casaco Real",
+      "en": "Royal Casaco Real",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 4,
+            "T5": 4,
+            "T6": 12,
+            "T7": 20,
+            "T8": 40
+          }
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_ROYAL",
+      "nome": "Sapatos Reais",
+      "en": "Royal Sapatos Reais",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "itemRef": "SHOES_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 2,
+            "T5": 2,
+            "T6": 6,
+            "T7": 10,
+            "T8": 20
+          }
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_ROYAL",
+      "nome": "Capote Real",
+      "en": "Royal Capote Real",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "itemRef": "HEAD_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 2,
+            "T5": 2,
+            "T6": 6,
+            "T7": 10,
+            "T8": 20
+          }
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_ROYAL",
+      "nome": "Robe Real",
+      "en": "Royal Robe Real",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 4,
+            "T5": 4,
+            "T6": 12,
+            "T7": 20,
+            "T8": 40
+          }
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_ROYAL",
+      "nome": "Sandálias Reais",
+      "en": "Royal Sandálias Reais",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "itemRef": "SHOES_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        },
+        {
+          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "nome": "Selo Real",
+          "qtdPorTier": {
+            "T4": 2,
+            "T5": 2,
+            "T6": 6,
+            "T7": 10,
+            "T8": 20
+          }
         }
       ]
     }
