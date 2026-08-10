@@ -87,10 +87,13 @@ function qtyFor(materialEntry, tier) {
   return materialEntry.qtd ?? materialEntry.qtdPorTier?.[tier] ?? RECIPES.quantidades_por_tier[materialEntry.peso][tier];
 }
 
-// resolve qualquer tipo de entrada de material (recurso refinado, item já fabricado como ingrediente, ou item de id fixo tipo Heart)
+// resolve qualquer tipo de entrada de material (recurso refinado, item já fabricado como ingrediente, item de id fixo tipo Heart, ou id com o tier no meio tipo Selo Real)
 function resolverMaterial(entry, tier, enchant) {
   if (entry.idFixo) {
     return { matId: entry.idFixo, nome: entry.nome, qty: qtyFor(entry, tier) };
+  }
+  if (entry.idTemplate) {
+    return { matId: entry.idTemplate.replace('{tier}', tier), nome: entry.nome, qty: qtyFor(entry, tier) };
   }
   if (entry.itemRef) {
     const enchantMat = entry.semEncantamento ? 0 : enchant;
