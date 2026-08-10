@@ -400,8 +400,8 @@
     },
     {
       "base": "2H_BOW",
-      "nome": "Arco de Guerra",
-      "en": "Warbow",
+      "nome": "Arco",
+      "en": "Bow",
       "categoria": "Arma - Arco",
       "materiais": [
         {
@@ -1157,6 +1157,834 @@
       "materiais": [
         {
           "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_WARBOW",
+      "nome": "Arco de Guerra",
+      "en": "Warbow",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_LONGBOW",
+      "nome": "Arco Longo",
+      "en": "Longbow",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_BOW_MORGANA",
+      "nome": "Arco Sussurrante",
+      "en": "Whispering Bow",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_BOW_HELL",
+      "nome": "Arco Lamentoso",
+      "en": "Wailing Bow",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_BOW_KEEPER",
+      "nome": "Arco de Badon",
+      "en": "Bow of Badon",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_BOW_AVALON",
+      "nome": "Perfura-Névoa",
+      "en": "Mistpiercer",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_BOW_CRYSTAL",
+      "nome": "Arco Andarilho do Céu",
+      "en": "Skystrider Bow",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_SPEAR",
+      "nome": "Lança",
+      "en": "Spear",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SPEAR",
+      "nome": "Pique",
+      "en": "Pike",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SPEAR_MORGANA",
+      "nome": "Glaive",
+      "en": "Glaive",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SPEAR_HELL",
+      "nome": "Lança de Garça",
+      "en": "Heron Spear",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SPEAR_KEEPER",
+      "nome": "Caçador de Espíritos",
+      "en": "Spirithunter",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SPEAR_UNDEAD",
+      "nome": "Lança da Trindade",
+      "en": "Trinity Spear",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SPEAR_AVALON",
+      "nome": "Quebra-Alvorada",
+      "en": "Daybreaker",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SPEAR_CRYSTAL",
+      "nome": "Fenda-Abismo",
+      "en": "Rift Glave",
+      "categoria": "Arma - Lança",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_DAGGER",
+      "nome": "Adaga",
+      "en": "Dagger",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_DAGGERPAIR",
+      "nome": "Par de Adagas",
+      "en": "Dagger Pair",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_DAGGER_MORGANA",
+      "nome": "Garras",
+      "en": "Claws",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_DAGGERPAIR_HELL",
+      "nome": "Sangradora",
+      "en": "Bloodletter",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_DAGGER_KEEPER",
+      "nome": "Presa Demoníaca",
+      "en": "Demonfang",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_DAGGERPAIR_UNDEAD",
+      "nome": "Doadoras de Morte",
+      "en": "Deathgivers",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_DAGGERPAIR_AVALON",
+      "nome": "Fúria Contida",
+      "en": "Bridled Fury",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_DAGGERPAIR_CRYSTAL",
+      "nome": "Matadoras Gémeas",
+      "en": "Twin Slayers",
+      "categoria": "Arma - Adaga",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_NATURESTAFF",
+      "nome": "Cajado da Natureza",
+      "en": "Nature Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_NATURESTAFF",
+      "nome": "Grande Cajado da Natureza",
+      "en": "Great Nature Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_NATURESTAFF_MORGANA",
+      "nome": "Cajado Selvagem",
+      "en": "Wild Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_NATURESTAFF_HELL",
+      "nome": "Cajado Druida",
+      "en": "Druid Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_NATURESTAFF_KEEPER",
+      "nome": "Cajado da Praga",
+      "en": "Blight Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_NATURESTAFF_UNDEAD",
+      "nome": "Cajado Desenfreado",
+      "en": "Rampant Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_NATURESTAFF_AVALON",
+      "nome": "Cajado Raiz-de-Ferro",
+      "en": "Ironroot Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_NATURESTAFF_CRYSTAL",
+      "nome": "Cajado Casca-Forjada",
+      "en": "Forgebark Staff",
+      "categoria": "Arma - Cajado da Natureza",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_FIRESTAFF",
+      "nome": "Cajado de Fogo",
+      "en": "Fire Staff",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FIRESTAFF",
+      "nome": "Grande Cajado de Fogo",
+      "en": "Great Fire Staff",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FIRESTAFF_MORGANA",
+      "nome": "Cajado Infernal",
+      "en": "Infernal Staff",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FIRESTAFF_HELL",
+      "nome": "Cajado de Fogo Selvagem",
+      "en": "Wildfire Staff",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_FIRESTAFF_KEEPER",
+      "nome": "Cajado de Enxofre",
+      "en": "Brimstone Staff",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FIRESTAFF_UNDEAD",
+      "nome": "Cajado Flamejante",
+      "en": "Blazing Staff",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FIRESTAFF_AVALON",
+      "nome": "Canção do Amanhecer",
+      "en": "Dawnsong",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FIRESTAFF_CRYSTAL",
+      "nome": "Cajado Andarilho das Chamas",
+      "en": "Flamewalker Staff",
+      "categoria": "Arma - Cajado de Fogo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HOLYSTAFF",
+      "nome": "Grande Cajado Sagrado",
+      "en": "Great Holy Staff",
+      "categoria": "Arma - Cajado Sagrado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HOLYSTAFF_MORGANA",
+      "nome": "Cajado Divino",
+      "en": "Divine Staff",
+      "categoria": "Arma - Cajado Sagrado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HOLYSTAFF_HELL",
+      "nome": "Cajado do Toque de Vida",
+      "en": "Lifetouch Staff",
+      "categoria": "Arma - Cajado Sagrado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_HOLYSTAFF_KEEPER",
+      "nome": "Cajado Caído",
+      "en": "Fallen Staff",
+      "categoria": "Arma - Cajado Sagrado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HOLYSTAFF_UNDEAD",
+      "nome": "Cajado da Redenção",
+      "en": "Redemption Staff",
+      "categoria": "Arma - Cajado Sagrado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HOLYSTAFF_AVALON",
+      "nome": "Vazio Sombrio",
+      "en": "Hollowfall",
+      "categoria": "Arma - Cajado Sagrado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HOLYSTAFF_CRYSTAL",
+      "nome": "Cajado Exaltado",
+      "en": "Exalted Staff",
+      "categoria": "Arma - Cajado Sagrado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_ARCANESTAFF",
+      "nome": "Cajado Arcano",
+      "en": "Arcane Staff",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_ARCANESTAFF",
+      "nome": "Grande Cajado Arcano",
+      "en": "Great Arcane Staff",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_ARCANESTAFF_MORGANA",
+      "nome": "Cajado Enigmático",
+      "en": "Enigmatic Staff",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_ARCANESTAFF_HELL",
+      "nome": "Cajado de Feitiçaria",
+      "en": "Witchwork Staff",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_ARCANESTAFF_KEEPER",
+      "nome": "Cajado Oculto",
+      "en": "Occult Staff",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_ARCANESTAFF_UNDEAD",
+      "nome": "Foco Malévolo",
+      "en": "Malevolent Locus",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_ARCANESTAFF_AVALON",
+      "nome": "Canção do Entardecer",
+      "en": "Evensong",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_ARCANESTAFF_CRYSTAL",
+      "nome": "Cajado Astral",
+      "en": "Astral Staff",
+      "categoria": "Arma - Cajado Arcano",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_FROSTSTAFF",
+      "nome": "Cajado de Gelo",
+      "en": "Frost Staff",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FROSTSTAFF",
+      "nome": "Grande Cajado de Gelo",
+      "en": "Great Frost Staff",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FROSTSTAFF_MORGANA",
+      "nome": "Cajado Glacial",
+      "en": "Glacial Staff",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FROSTSTAFF_HELL",
+      "nome": "Cajado de Geada",
+      "en": "Hoarfrost Staff",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_FROSTSTAFF_KEEPER",
+      "nome": "Cajado de Gelo Pontiagudo",
+      "en": "Icicle Staff",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FROSTSTAFF_UNDEAD",
+      "nome": "Prisma Permafrost",
+      "en": "Permafrost Prism",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FROSTSTAFF_AVALON",
+      "nome": "Uivo Gélido",
+      "en": "Chillhowl",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_FROSTSTAFF_CRYSTAL",
+      "nome": "Cajado Ártico",
+      "en": "Arctic Staff",
+      "categoria": "Arma - Cajado de Gelo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CURSEDSTAFF",
+      "nome": "Grande Cajado Amaldiçoado",
+      "en": "Great Cursed Staff",
+      "categoria": "Arma - Cajado Amaldiçoado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CURSEDSTAFF_MORGANA",
+      "nome": "Cajado Demoníaco",
+      "en": "Demonic Staff",
+      "categoria": "Arma - Cajado Amaldiçoado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CURSEDSTAFF_HELL",
+      "nome": "Cajado da Maldição da Vida",
+      "en": "Lifecurse Staff",
+      "categoria": "Arma - Cajado Amaldiçoado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_CURSEDSTAFF_KEEPER",
+      "nome": "Caveira Amaldiçoada",
+      "en": "Cursed Skull",
+      "categoria": "Arma - Cajado Amaldiçoado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CURSEDSTAFF_UNDEAD",
+      "nome": "Cajado da Danação",
+      "en": "Damnation Staff",
+      "categoria": "Arma - Cajado Amaldiçoado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CURSEDSTAFF_AVALON",
+      "nome": "Invocador de Sombras",
+      "en": "Shadowcaller",
+      "categoria": "Arma - Cajado Amaldiçoado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CURSEDSTAFF_CRYSTAL",
+      "nome": "Invocador de Podridão",
+      "en": "Rotcaller",
+      "categoria": "Arma - Cajado Amaldiçoado",
+      "materiais": [
+        {
+          "material": "PLANKS",
           "peso": "arma"
         }
       ]
