@@ -1,123 +1,1165 @@
 {
   "_nota": "Quantidades de recursos são estimativas representativas para armas/armaduras (fórmula por tier), não os valores exatos do jogo. Capas, bolsas e ferramentas usam as quantidades reais do jogo (fixas, não escalam por tier). Ajusta 'quantidades_por_tier' com os valores reais do teu foco de crafting para armas/armaduras.",
   "materials": {
-    "METALBAR": { "nome": "Barra de Metal" },
-    "PLANKS":   { "nome": "Tábuas" },
-    "CLOTH":    { "nome": "Tecido" },
-    "LEATHER":  { "nome": "Couro" }
+    "METALBAR": {
+      "nome": "Barra de Metal"
+    },
+    "PLANKS": {
+      "nome": "Tábuas"
+    },
+    "CLOTH": {
+      "nome": "Tecido"
+    },
+    "LEATHER": {
+      "nome": "Couro"
+    }
   },
   "quantidades_por_tier": {
-    "peca_leve":  { "T4": 8,  "T5": 12, "T6": 16, "T7": 20, "T8": 24 },
-    "peca_pesada":{ "T4": 12, "T5": 18, "T6": 24, "T7": 30, "T8": 36 },
-    "arma":       { "T4": 16, "T5": 24, "T6": 32, "T7": 40, "T8": 48 }
+    "peca_leve": {
+      "T4": 8,
+      "T5": 12,
+      "T6": 16,
+      "T7": 20,
+      "T8": 24
+    },
+    "peca_pesada": {
+      "T4": 12,
+      "T5": 18,
+      "T6": 24,
+      "T7": 30,
+      "T8": 36
+    },
+    "arma": {
+      "T4": 16,
+      "T5": 24,
+      "T6": 32,
+      "T7": 40,
+      "T8": 48
+    }
   },
   "itens": [
-    { "base": "HEAD_PLATE_SET1",  "nome": "Elmo de Soldado",    "en": "Soldier Helmet",  "categoria": "Placas - Cabeça", "materiais": [{ "material": "METALBAR", "peso": "peca_leve" }] },
-    { "base": "HEAD_PLATE_SET2",  "nome": "Elmo de Cavaleiro",  "en": "Knight Helmet",   "categoria": "Placas - Cabeça", "materiais": [{ "material": "METALBAR", "peso": "peca_leve" }] },
-    { "base": "HEAD_PLATE_SET3",  "nome": "Elmo de Guardião",   "en": "Guardian Helmet", "categoria": "Placas - Cabeça", "materiais": [{ "material": "METALBAR", "peso": "peca_leve" }] },
-    { "base": "ARMOR_PLATE_SET1", "nome": "Armadura de Soldado",   "en": "Soldier Armor",   "categoria": "Placas - Peito", "materiais": [{ "material": "METALBAR", "peso": "peca_pesada" }] },
-    { "base": "ARMOR_PLATE_SET2", "nome": "Armadura de Cavaleiro", "en": "Knight Armor",    "categoria": "Placas - Peito", "materiais": [{ "material": "METALBAR", "peso": "peca_pesada" }] },
-    { "base": "ARMOR_PLATE_SET3", "nome": "Armadura de Guardião",  "en": "Guardian Armor",  "categoria": "Placas - Peito", "materiais": [{ "material": "METALBAR", "peso": "peca_pesada" }] },
-    { "base": "SHOES_PLATE_SET1", "nome": "Botas de Soldado",    "en": "Soldier Boots",  "categoria": "Placas - Pés", "materiais": [{ "material": "METALBAR", "peso": "peca_leve" }] },
-    { "base": "SHOES_PLATE_SET2", "nome": "Botas de Cavaleiro",  "en": "Knight Boots",   "categoria": "Placas - Pés", "materiais": [{ "material": "METALBAR", "peso": "peca_leve" }] },
-    { "base": "SHOES_PLATE_SET3", "nome": "Botas de Guardião",   "en": "Guardian Boots", "categoria": "Placas - Pés", "materiais": [{ "material": "METALBAR", "peso": "peca_leve" }] },
-
-    { "base": "HEAD_LEATHER_SET1",  "nome": "Capuz de Mercenário", "en": "Mercenary Hood",  "categoria": "Couro - Cabeça", "materiais": [{ "material": "LEATHER", "peso": "peca_leve" }] },
-    { "base": "HEAD_LEATHER_SET2",  "nome": "Capuz de Caçador",    "en": "Hunter Hood",     "categoria": "Couro - Cabeça", "materiais": [{ "material": "LEATHER", "peso": "peca_leve" }] },
-    { "base": "HEAD_LEATHER_SET3",  "nome": "Capuz de Assassino",  "en": "Assassin Hood",   "categoria": "Couro - Cabeça", "materiais": [{ "material": "LEATHER", "peso": "peca_leve" }] },
-    { "base": "ARMOR_LEATHER_SET1", "nome": "Casaco de Mercenário", "en": "Mercenary Jacket", "categoria": "Couro - Peito", "materiais": [{ "material": "LEATHER", "peso": "peca_pesada" }] },
-    { "base": "ARMOR_LEATHER_SET2", "nome": "Casaco de Caçador",    "en": "Hunter Jacket",    "categoria": "Couro - Peito", "materiais": [{ "material": "LEATHER", "peso": "peca_pesada" }] },
-    { "base": "ARMOR_LEATHER_SET3", "nome": "Casaco de Assassino",  "en": "Assassin Jacket",  "categoria": "Couro - Peito", "materiais": [{ "material": "LEATHER", "peso": "peca_pesada" }] },
-    { "base": "SHOES_LEATHER_SET1", "nome": "Sapatos de Mercenário", "en": "Mercenary Shoes", "categoria": "Couro - Pés", "materiais": [{ "material": "LEATHER", "peso": "peca_leve" }] },
-    { "base": "SHOES_LEATHER_SET2", "nome": "Sapatos de Caçador",    "en": "Hunter Shoes",    "categoria": "Couro - Pés", "materiais": [{ "material": "LEATHER", "peso": "peca_leve" }] },
-    { "base": "SHOES_LEATHER_SET3", "nome": "Sapatos de Assassino",  "en": "Assassin Shoes",  "categoria": "Couro - Pés", "materiais": [{ "material": "LEATHER", "peso": "peca_leve" }] },
-
-    { "base": "HEAD_CLOTH_SET1",  "nome": "Capuz de Erudito", "en": "Scholar Cowl", "categoria": "Tecido - Cabeça", "materiais": [{ "material": "CLOTH", "peso": "peca_leve" }] },
-    { "base": "HEAD_CLOTH_SET2",  "nome": "Capuz de Clérigo", "en": "Cleric Cowl",  "categoria": "Tecido - Cabeça", "materiais": [{ "material": "CLOTH", "peso": "peca_leve" }] },
-    { "base": "HEAD_CLOTH_SET3",  "nome": "Capuz de Mago",    "en": "Mage Cowl",    "categoria": "Tecido - Cabeça", "materiais": [{ "material": "CLOTH", "peso": "peca_leve" }] },
-    { "base": "ARMOR_CLOTH_SET1", "nome": "Túnica de Erudito", "en": "Scholar Robe", "categoria": "Tecido - Peito", "materiais": [{ "material": "CLOTH", "peso": "peca_pesada" }] },
-    { "base": "ARMOR_CLOTH_SET2", "nome": "Túnica de Clérigo", "en": "Cleric Robe",  "categoria": "Tecido - Peito", "materiais": [{ "material": "CLOTH", "peso": "peca_pesada" }] },
-    { "base": "ARMOR_CLOTH_SET3", "nome": "Túnica de Mago",    "en": "Mage Robe",    "categoria": "Tecido - Peito", "materiais": [{ "material": "CLOTH", "peso": "peca_pesada" }] },
-    { "base": "SHOES_CLOTH_SET1", "nome": "Sandálias de Erudito", "en": "Scholar Sandals", "categoria": "Tecido - Pés", "materiais": [{ "material": "CLOTH", "peso": "peca_leve" }] },
-    { "base": "SHOES_CLOTH_SET2", "nome": "Sandálias de Clérigo", "en": "Cleric Sandals",  "categoria": "Tecido - Pés", "materiais": [{ "material": "CLOTH", "peso": "peca_leve" }] },
-    { "base": "SHOES_CLOTH_SET3", "nome": "Sandálias de Mago",    "en": "Mage Sandals",    "categoria": "Tecido - Pés", "materiais": [{ "material": "CLOTH", "peso": "peca_leve" }] },
-
-    { "base": "MAIN_SWORD",        "nome": "Espada Larga",       "en": "Broadsword",   "categoria": "Arma - Espada",  "materiais": [{ "material": "METALBAR", "peso": "arma" }] },
-    { "base": "MAIN_AXE",          "nome": "Machado de Batalha", "en": "Battleaxe",    "categoria": "Arma - Machado", "materiais": [{ "material": "METALBAR", "peso": "arma" }] },
-    { "base": "MAIN_MACE",         "nome": "Maça",               "en": "Mace",         "categoria": "Arma - Maça",    "materiais": [{ "material": "METALBAR", "peso": "arma" }] },
-    { "base": "2H_BOW",            "nome": "Arco de Guerra",     "en": "Warbow",       "categoria": "Arma - Arco",    "materiais": [{ "material": "PLANKS", "peso": "arma" }] },
-    { "base": "MAIN_CURSEDSTAFF",  "nome": "Cajado Amaldiçoado", "en": "Cursed Staff", "categoria": "Arma - Cajado",  "materiais": [{ "material": "PLANKS", "peso": "arma" }] },
-    { "base": "MAIN_HOLYSTAFF",    "nome": "Cajado Sagrado",     "en": "Holy Staff",   "categoria": "Arma - Cajado",  "materiais": [{ "material": "PLANKS", "peso": "arma" }] },
-
-    { "base": "CAPE", "nome": "Capa", "en": "Cape", "categoria": "Acessório - Capa",
-      "materiais": [{ "material": "CLOTH", "qtd": 4 }, { "material": "LEATHER", "qtd": 4 }] },
-    { "base": "BAG", "nome": "Bolsa", "en": "Bag", "categoria": "Acessório - Bolsa",
-      "materiais": [{ "material": "CLOTH", "qtd": 8 }, { "material": "LEATHER", "qtd": 8 }] },
-    { "base": "BAG_INSIGHT", "nome": "Sacola de Perspicácia", "en": "Satchel of Insight", "categoria": "Acessório - Bolsa",
+    {
+      "base": "HEAD_PLATE_SET1",
+      "nome": "Elmo de Soldado",
+      "en": "Soldier Helmet",
+      "categoria": "Placas - Cabeça",
       "materiais": [
-        { "material": "CLOTH", "qtd": 8 },
-        { "material": "LEATHER", "qtd": 8 },
-        { "itemRef": "SKILLBOOK_STANDARD", "nome": "Tomo de Perspicácia", "qtd": 1, "semEncantamento": true }
-      ] },
-
-    { "base": "CAPEITEM_FW_MARTLOCK", "nome": "Capa de Martlock", "en": "Martlock Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_PLATE_SET2",
+      "nome": "Elmo de Cavaleiro",
+      "en": "Knight Helmet",
+      "categoria": "Placas - Cabeça",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_FW_MARTLOCK_BP", "nome": "Crest de Martlock", "qtd": 1 },
-        { "idFixo": "T1_FACTION_HIGHLAND_TOKEN_1", "nome": "Rockheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-    { "base": "CAPEITEM_FW_FORTSTERLING", "nome": "Capa de Fort Sterling", "en": "Fort Sterling Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_PLATE_SET3",
+      "nome": "Elmo de Guardião",
+      "en": "Guardian Helmet",
+      "categoria": "Placas - Cabeça",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_FW_FORTSTERLING_BP", "nome": "Crest de Fort Sterling", "qtd": 1 },
-        { "idFixo": "T1_FACTION_MOUNTAIN_TOKEN_1", "nome": "Mountainheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-    { "base": "CAPEITEM_FW_LYMHURST", "nome": "Capa de Lymhurst", "en": "Lymhurst Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_SET1",
+      "nome": "Armadura de Soldado",
+      "en": "Soldier Armor",
+      "categoria": "Placas - Peito",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_FW_LYMHURST_BP", "nome": "Crest de Lymhurst", "qtd": 1 },
-        { "idFixo": "T1_FACTION_FOREST_TOKEN_1", "nome": "Treeheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-    { "base": "CAPEITEM_FW_BRIDGEWATCH", "nome": "Capa de Bridgewatch", "en": "Bridgewatch Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_SET2",
+      "nome": "Armadura de Cavaleiro",
+      "en": "Knight Armor",
+      "categoria": "Placas - Peito",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_FW_BRIDGEWATCH_BP", "nome": "Crest de Bridgewatch", "qtd": 1 },
-        { "idFixo": "T1_FACTION_STEPPE_TOKEN_1", "nome": "Beastheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-    { "base": "CAPEITEM_FW_THETFORD", "nome": "Capa de Thetford", "en": "Thetford Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_SET3",
+      "nome": "Armadura de Guardião",
+      "en": "Guardian Armor",
+      "categoria": "Placas - Peito",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_FW_THETFORD_BP", "nome": "Crest de Thetford", "qtd": 1 },
-        { "idFixo": "T1_FACTION_SWAMP_TOKEN_1", "nome": "Vineheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-    { "base": "CAPEITEM_FW_CAERLEON", "nome": "Capa de Caerleon", "en": "Caerleon Cape", "categoria": "Capa - Facção", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_SET1",
+      "nome": "Botas de Soldado",
+      "en": "Soldier Boots",
+      "categoria": "Placas - Pés",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_FW_CAERLEON_BP", "nome": "Crest de Caerleon", "qtd": 1 },
-        { "idFixo": "T1_FACTION_CAERLEON_TOKEN_1", "nome": "Shadowheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-    { "base": "CAPEITEM_UNDEAD", "nome": "Capa Undead", "en": "Undead Cape", "categoria": "Capa - Facção (mob)", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_SET2",
+      "nome": "Botas de Cavaleiro",
+      "en": "Knight Boots",
+      "categoria": "Placas - Pés",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_UNDEAD_BP", "nome": "Crest Undead", "qtd": 1 },
-        { "idFixo": "T1_FACTION_MOUNTAIN_TOKEN_1", "nome": "Mountainheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-    { "base": "CAPEITEM_HERETIC", "nome": "Capa Heretic", "en": "Heretic Cape", "categoria": "Capa - Facção (mob)", "semEncantamento": true,
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_SET3",
+      "nome": "Botas de Guardião",
+      "en": "Guardian Boots",
+      "categoria": "Placas - Pés",
       "materiais": [
-        { "itemRef": "CAPE", "nome": "Capa", "qtd": 1 },
-        { "itemRef": "CAPEITEM_HERETIC_BP", "nome": "Crest Heretic", "qtd": 1 },
-        { "idFixo": "T1_FACTION_FOREST_TOKEN_1", "nome": "Treeheart", "qtdPorTier": { "T4": 1, "T5": 1, "T6": 3, "T7": 5, "T8": 10 } }
-      ] },
-
-    { "base": "2H_TOOL_AXE", "nome": "Machado de Colheita", "en": "Axe", "categoria": "Ferramenta - Madeira", "semEncantamento": true,
-      "materiais": [{ "material": "PLANKS", "qtd": 6 }, { "material": "METALBAR", "qtd": 2 }] },
-    { "base": "2H_TOOL_PICK", "nome": "Picareta", "en": "Pickaxe", "categoria": "Ferramenta - Minério", "semEncantamento": true,
-      "materiais": [{ "material": "PLANKS", "qtd": 6 }, { "material": "METALBAR", "qtd": 2 }] },
-    { "base": "2H_TOOL_SICKLE", "nome": "Foice", "en": "Sickle", "categoria": "Ferramenta - Fibra", "semEncantamento": true,
-      "materiais": [{ "material": "PLANKS", "qtd": 6 }, { "material": "METALBAR", "qtd": 2 }] },
-    { "base": "2H_TOOL_KNIFE", "nome": "Faca de Esfolar", "en": "Skinning Knife", "categoria": "Ferramenta - Couro", "semEncantamento": true,
-      "materiais": [{ "material": "PLANKS", "qtd": 6 }, { "material": "METALBAR", "qtd": 2 }] },
-    { "base": "2H_TOOL_HAMMER", "nome": "Martelo de Pedra", "en": "Stone Hammer", "categoria": "Ferramenta - Pedra", "semEncantamento": true,
-      "materiais": [{ "material": "PLANKS", "qtd": 6 }, { "material": "METALBAR", "qtd": 2 }] }
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_SET1",
+      "nome": "Capuz de Mercenário",
+      "en": "Mercenary Hood",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_SET2",
+      "nome": "Capuz de Caçador",
+      "en": "Hunter Hood",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_SET3",
+      "nome": "Capuz de Assassino",
+      "en": "Assassin Hood",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_SET1",
+      "nome": "Casaco de Mercenário",
+      "en": "Mercenary Jacket",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_SET2",
+      "nome": "Casaco de Caçador",
+      "en": "Hunter Jacket",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_SET3",
+      "nome": "Casaco de Assassino",
+      "en": "Assassin Jacket",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_SET1",
+      "nome": "Sapatos de Mercenário",
+      "en": "Mercenary Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_SET2",
+      "nome": "Sapatos de Caçador",
+      "en": "Hunter Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_SET3",
+      "nome": "Sapatos de Assassino",
+      "en": "Assassin Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_SET1",
+      "nome": "Capuz de Erudito",
+      "en": "Scholar Cowl",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_SET2",
+      "nome": "Capuz de Clérigo",
+      "en": "Cleric Cowl",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_SET3",
+      "nome": "Capuz de Mago",
+      "en": "Mage Cowl",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_SET1",
+      "nome": "Túnica de Erudito",
+      "en": "Scholar Robe",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_SET2",
+      "nome": "Túnica de Clérigo",
+      "en": "Cleric Robe",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_SET3",
+      "nome": "Túnica de Mago",
+      "en": "Mage Robe",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_SET1",
+      "nome": "Sandálias de Erudito",
+      "en": "Scholar Sandals",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_SET2",
+      "nome": "Sandálias de Clérigo",
+      "en": "Cleric Sandals",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_SET3",
+      "nome": "Sandálias de Mago",
+      "en": "Mage Sandals",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_SWORD",
+      "nome": "Espada Larga",
+      "en": "Broadsword",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_AXE",
+      "nome": "Machado de Batalha",
+      "en": "Battleaxe",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_MACE",
+      "nome": "Maça",
+      "en": "Mace",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_BOW",
+      "nome": "Arco de Guerra",
+      "en": "Warbow",
+      "categoria": "Arma - Arco",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_CURSEDSTAFF",
+      "nome": "Cajado Amaldiçoado",
+      "en": "Cursed Staff",
+      "categoria": "Arma - Cajado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_HOLYSTAFF",
+      "nome": "Cajado Sagrado",
+      "en": "Holy Staff",
+      "categoria": "Arma - Cajado",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "CAPE",
+      "nome": "Capa",
+      "en": "Cape",
+      "categoria": "Acessório - Capa",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 4
+        },
+        {
+          "material": "LEATHER",
+          "qtd": 4
+        }
+      ]
+    },
+    {
+      "base": "BAG",
+      "nome": "Bolsa",
+      "en": "Bag",
+      "categoria": "Acessório - Bolsa",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        },
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ]
+    },
+    {
+      "base": "BAG_INSIGHT",
+      "nome": "Sacola de Perspicácia",
+      "en": "Satchel of Insight",
+      "categoria": "Acessório - Bolsa",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        },
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        },
+        {
+          "itemRef": "SKILLBOOK_STANDARD",
+          "nome": "Tomo de Perspicácia",
+          "qtd": 1,
+          "semEncantamento": true
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_FW_MARTLOCK",
+      "nome": "Capa de Martlock",
+      "en": "Martlock Cape",
+      "categoria": "Capa - Facção",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_FW_MARTLOCK_BP",
+          "nome": "Crest de Martlock",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_HIGHLAND_TOKEN_1",
+          "nome": "Rockheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_FW_FORTSTERLING",
+      "nome": "Capa de Fort Sterling",
+      "en": "Fort Sterling Cape",
+      "categoria": "Capa - Facção",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_FW_FORTSTERLING_BP",
+          "nome": "Crest de Fort Sterling",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_MOUNTAIN_TOKEN_1",
+          "nome": "Mountainheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_FW_LYMHURST",
+      "nome": "Capa de Lymhurst",
+      "en": "Lymhurst Cape",
+      "categoria": "Capa - Facção",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_FW_LYMHURST_BP",
+          "nome": "Crest de Lymhurst",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_FOREST_TOKEN_1",
+          "nome": "Treeheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_FW_BRIDGEWATCH",
+      "nome": "Capa de Bridgewatch",
+      "en": "Bridgewatch Cape",
+      "categoria": "Capa - Facção",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_FW_BRIDGEWATCH_BP",
+          "nome": "Crest de Bridgewatch",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_STEPPE_TOKEN_1",
+          "nome": "Beastheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_FW_THETFORD",
+      "nome": "Capa de Thetford",
+      "en": "Thetford Cape",
+      "categoria": "Capa - Facção",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_FW_THETFORD_BP",
+          "nome": "Crest de Thetford",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_SWAMP_TOKEN_1",
+          "nome": "Vineheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_FW_CAERLEON",
+      "nome": "Capa de Caerleon",
+      "en": "Caerleon Cape",
+      "categoria": "Capa - Facção",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_FW_CAERLEON_BP",
+          "nome": "Crest de Caerleon",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_CAERLEON_TOKEN_1",
+          "nome": "Shadowheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_UNDEAD",
+      "nome": "Capa Undead",
+      "en": "Undead Cape",
+      "categoria": "Capa - Facção (mob)",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_UNDEAD_BP",
+          "nome": "Crest Undead",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_MOUNTAIN_TOKEN_1",
+          "nome": "Mountainheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "CAPEITEM_HERETIC",
+      "nome": "Capa Heretic",
+      "en": "Heretic Cape",
+      "categoria": "Capa - Facção (mob)",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "itemRef": "CAPE",
+          "nome": "Capa",
+          "qtd": 1
+        },
+        {
+          "itemRef": "CAPEITEM_HERETIC_BP",
+          "nome": "Crest Heretic",
+          "qtd": 1
+        },
+        {
+          "idFixo": "T1_FACTION_FOREST_TOKEN_1",
+          "nome": "Treeheart",
+          "qtdPorTier": {
+            "T4": 1,
+            "T5": 1,
+            "T6": 3,
+            "T7": 5,
+            "T8": 10
+          }
+        }
+      ]
+    },
+    {
+      "base": "2H_TOOL_AXE",
+      "nome": "Machado de Colheita",
+      "en": "Axe",
+      "categoria": "Ferramenta - Madeira",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "qtd": 6
+        },
+        {
+          "material": "METALBAR",
+          "qtd": 2
+        }
+      ]
+    },
+    {
+      "base": "2H_TOOL_PICK",
+      "nome": "Picareta",
+      "en": "Pickaxe",
+      "categoria": "Ferramenta - Minério",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "qtd": 6
+        },
+        {
+          "material": "METALBAR",
+          "qtd": 2
+        }
+      ]
+    },
+    {
+      "base": "2H_TOOL_SICKLE",
+      "nome": "Foice",
+      "en": "Sickle",
+      "categoria": "Ferramenta - Fibra",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "qtd": 6
+        },
+        {
+          "material": "METALBAR",
+          "qtd": 2
+        }
+      ]
+    },
+    {
+      "base": "2H_TOOL_KNIFE",
+      "nome": "Faca de Esfolar",
+      "en": "Skinning Knife",
+      "categoria": "Ferramenta - Couro",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "qtd": 6
+        },
+        {
+          "material": "METALBAR",
+          "qtd": 2
+        }
+      ]
+    },
+    {
+      "base": "2H_TOOL_HAMMER",
+      "nome": "Martelo de Pedra",
+      "en": "Stone Hammer",
+      "categoria": "Ferramenta - Pedra",
+      "semEncantamento": true,
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "qtd": 6
+        },
+        {
+          "material": "METALBAR",
+          "qtd": 2
+        }
+      ]
+    },
+    {
+      "base": "2H_CLAYMORE",
+      "nome": "Claymore",
+      "en": "Claymore",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_DUALSWORD",
+      "nome": "Espadas Duplas",
+      "en": "Dual Swords",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CLARENTBLADE",
+      "nome": "Lâmina de Clarent",
+      "en": "Clarent Blade",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CARVINGSWORD",
+      "nome": "Espada Entalhada",
+      "en": "Carving Sword",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_DUALSWORD_MORGANA",
+      "nome": "Galatine Pair",
+      "en": "Galatine Pair",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SWORD_AVALON",
+      "nome": "Kingmaker",
+      "en": "Kingmaker",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SWORD_CRYSTAL",
+      "nome": "Lâmina Infinita",
+      "en": "Infinity Blade",
+      "categoria": "Arma - Espada",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_AXE",
+      "nome": "Machado Grande",
+      "en": "Greataxe",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HALBERD",
+      "nome": "Alabarda",
+      "en": "Halberd",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_AXE_MORGANA",
+      "nome": "Invocador de Carniça",
+      "en": "Carrioncaller",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_SCYTHE_HELL",
+      "nome": "Foice Infernal",
+      "en": "Infernal Scythe",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_CLAWPAIR_KEEPER",
+      "nome": "Garras de Urso",
+      "en": "Bear Paws",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_AXE_AVALON",
+      "nome": "Quebra-Reinos",
+      "en": "Realmbreaker",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_AXE_CRYSTAL",
+      "nome": "Ceifeira de Cristal",
+      "en": "Crystal Reaper",
+      "categoria": "Arma - Machado",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_MACE",
+      "nome": "Maça Pesada",
+      "en": "Heavy Mace",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_MACE_MORGANA",
+      "nome": "Estrela da Manhã",
+      "en": "Morning Star",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_MACE_HELL",
+      "nome": "Maça de Rocha",
+      "en": "Bedrock Mace",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_MACE_KEEPER",
+      "nome": "Maça Súcubo",
+      "en": "Incubus Mace",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_MACE_UNDEAD",
+      "nome": "Maça de Camlann",
+      "en": "Camlann Mace",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_MACE_AVALON",
+      "nome": "Guardiões do Juramento",
+      "en": "Oathkeepers",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_MACE_CRYSTAL",
+      "nome": "Monarca da Tempestade",
+      "en": "Dreadstorm Monarch",
+      "categoria": "Arma - Maça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_HAMMER",
+      "nome": "Martelo",
+      "en": "Hammer",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HAMMER",
+      "nome": "Martelo de Haste",
+      "en": "Polehammer",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HAMMER_MORGANA",
+      "nome": "Martelo Grande",
+      "en": "Great Hammer",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_HAMMER_UNDEAD",
+      "nome": "Martelo Tumular",
+      "en": "Tombhammer",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HAMMER_HELL",
+      "nome": "Martelos de Forja",
+      "en": "Forge Hammers",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HAMMER_KEEPER",
+      "nome": "Guardião do Bosque",
+      "en": "Grovekeeper",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "2H_HAMMER_AVALON",
+      "nome": "Mão da Justiça",
+      "en": "Hand of Justice",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "MAIN_HAMMER_CRYSTAL",
+      "nome": "Martelo Relâmpago",
+      "en": "Truebolt Hammer",
+      "categoria": "Arma - Martelo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    }
   ]
 }
