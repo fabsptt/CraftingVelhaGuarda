@@ -2588,6 +2588,222 @@
           }
         }
       ]
+    },
+    {
+      "base": "OFF_SHIELD",
+      "nome": "Escudo",
+      "en": "Shield",
+      "categoria": "Mão Secundária - Escudo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_SARCOPHAGUS",
+      "nome": "Sarcófago",
+      "en": "Sarcophagus",
+      "categoria": "Mão Secundária - Escudo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_VAMPIRESHIELD",
+      "nome": "Escudo Vampírico",
+      "en": "Vampiric Shield",
+      "categoria": "Mão Secundária - Escudo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_FACEBREAKER",
+      "nome": "Quebra-rostos",
+      "en": "Facebreaker",
+      "categoria": "Mão Secundária - Escudo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_ASTRALAEGIS",
+      "nome": "Égide Astral",
+      "en": "Astral Aegis",
+      "categoria": "Mão Secundária - Escudo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_UNBREAKABLEBARRIER",
+      "nome": "Barreira Inquebrável",
+      "en": "Unbreakable Barrier",
+      "categoria": "Mão Secundária - Escudo",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_TORCH",
+      "nome": "Tocha",
+      "en": "Torch",
+      "categoria": "Mão Secundária - Tocha",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_FOGSTAFF",
+      "nome": "Brumário",
+      "en": "Fogstaff",
+      "categoria": "Mão Secundária - Tocha",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_BEDEVILINGTORCH",
+      "nome": "Bengala Maligna",
+      "en": "Bedeviling Torch",
+      "categoria": "Mão Secundária - Tocha",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_CRYPTCANDLE",
+      "nome": "Lume Críptico",
+      "en": "Cryptcandle",
+      "categoria": "Mão Secundária - Tocha",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_SACREDSCEPTER",
+      "nome": "Cetro Sagrado",
+      "en": "Sacred Scepter",
+      "categoria": "Mão Secundária - Tocha",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_BLUEFIRETORCH",
+      "nome": "Tocha Chama Azul",
+      "en": "Bluefire Torch",
+      "categoria": "Mão Secundária - Tocha",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_BOOK",
+      "nome": "Tomo de Feitiços",
+      "en": "Spellbook",
+      "categoria": "Mão Secundária - Tomo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_EYE",
+      "nome": "Olho dos Segredos",
+      "en": "Eye of Secrets",
+      "categoria": "Mão Secundária - Tomo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_MUISAK",
+      "nome": "Muisec",
+      "en": "Muisak",
+      "categoria": "Mão Secundária - Tomo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_MAINROOT",
+      "nome": "Raiz Mestra",
+      "en": "Mainroot",
+      "categoria": "Mão Secundária - Tomo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_CENSER",
+      "nome": "Incensário Celeste",
+      "en": "Celestial Censer",
+      "categoria": "Mão Secundária - Tomo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
+    },
+    {
+      "base": "OFF_GRIMOIRE",
+      "nome": "Grimório Estagnado",
+      "en": "Stagnant Grimoire",
+      "categoria": "Mão Secundária - Tomo",
+      "materiais": [
+        {
+          "material": "PLANKS",
+          "peso": "arma"
+        }
+      ]
     }
   ]
 }
