@@ -18,6 +18,7 @@ const els = {
   ordenar: document.getElementById('ordenar'),
   premium: document.getElementById('premium'),
   soConfirmados: document.getElementById('soConfirmados'),
+  maisVendidos: document.getElementById('maisVendidos'),
   btn: document.getElementById('btnAtualizar'),
   tiers: document.getElementById('tiers'),
 };
@@ -145,16 +146,16 @@ async function atualizar() {
 
     const citiesParam = CITIES.map(encodeURIComponent).join(',');
 
-    setStatus(`A obter preços de ${allIds.length} itens (todos os tiers × encantamentos) em ${CITIES.length} cidades…`);
-    PRICE_INDEX = await fetchPrices(allIds, citiesParam);
+    setStatus(`A obter preços de ${allIds.length} itens em ${CITIES.length} cidades…`);
 
-    setStatus('A obter histórico de transações (mais vendidos)…');
-    try {
-      VOLUME_INDEX = await fetchVolume(finished.map(f => f.id), citiesParam);
-    } catch (e) {
-      VOLUME_INDEX = {};
-      console.warn('Histórico indisponível:', e);
-    }
+    // preços e histórico correm em paralelo (não um a seguir ao outro) para não duplicar o tempo de espera
+    const querVolume = els.maisVendidos.checked;
+    const [precos, volume] = await Promise.all([
+      fetchPrices(allIds, citiesParam),
+      querVolume ? fetchVolume(finished.map(f => f.id), citiesParam).catch(e => { console.warn('Histórico indisponível:', e); return {}; }) : Promise.resolve({}),
+    ]);
+    PRICE_INDEX = precos;
+    VOLUME_INDEX = volume;
 
     calcularLinhas(finished);
     setStatus(`Atualizado — ${ROWS.length} combinações item/cidade/encantamento prontas. Fonte: Albion Online Data Project.`);
