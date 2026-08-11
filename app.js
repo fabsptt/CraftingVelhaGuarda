@@ -17,7 +17,6 @@ const els = {
   encantamento: document.getElementById('encantamento'),
   ordenar: document.getElementById('ordenar'),
   premium: document.getElementById('premium'),
-  soConfirmados: document.getElementById('soConfirmados'),
   maisVendidos: document.getElementById('maisVendidos'),
   btn: document.getElementById('btnAtualizar'),
   tiers: document.getElementById('tiers'),
@@ -112,10 +111,8 @@ function resolverMaterial(entry, tier, enchant) {
 function idsNecessarios(tiers) {
   const finished = [];
   const materials = new Set();
-  const soConfirmados = els.soConfirmados.checked;
 
   for (const item of RECIPES.itens) {
-    if (soConfirmados && !item.confiavel) continue;
     const enchants = item.semEncantamento ? [0] : ENCHANTS;
     for (const t of tiers) {
       for (const e of enchants) {
