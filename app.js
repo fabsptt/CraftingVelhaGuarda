@@ -1,3 +1,4 @@
+
 /* ===========================================================
    VELHA GUARDA — Ledger de Mercado
    Vanilla JS, sem dependências. Dados: Albion Online Data Project.
@@ -265,6 +266,7 @@ function calcularLinhas(finishedItems) {
       rows.push({
         id: item.id, nome: item.nome, en: item.en, tier: item.tier, enchant: item.enchant, categoria: item.categoria,
         cidade: city, venda, custo, lucro, margem, volume, materiais: materiaisLinha,
+        custoIncompleto: !!item.custoIncompleto,
       });
     }
   }
@@ -304,7 +306,7 @@ function renderTabela() {
     return;
   }
 
-  renderDestaques(grouped.slice().sort((a, b) => b.lucro - a.lucro).slice(0, 3));
+  renderDestaques(grouped.filter(r => !r.custoIncompleto).slice().sort((a, b) => b.lucro - a.lucro).slice(0, 3));
 
   const sortKey = mapOrdenarToKey(els.ordenar.value, sortState.key);
   grouped.sort((a, b) => {
@@ -329,7 +331,7 @@ function renderTabela() {
       </td>
       <td class="city-cell">${r.cidade}${cidadeSel === 'ALL' ? ' <span style="color:var(--muted)">(melhor)</span>' : ''}</td>
       <td class="num">${fmt(r.venda)}</td>
-      <td class="num">${fmt(r.custo)}</td>
+      <td class="num">${fmt(r.custo)}${r.custoIncompleto ? ' <span class="incompleto-badge" title="Falta um material desconhecido nesta receita — o custo real é maior que o mostrado">⚠ incompleto</span>' : ''}</td>
       <td class="num ${r.lucro >= 0 ? 'profit-pos' : 'profit-neg'}">${fmt(r.lucro)}</td>
       <td class="num ${r.lucro >= 0 ? 'profit-pos' : 'profit-neg'}">${r.margem.toFixed(0)}%</td>
       <td class="num"><span class="vol-badge ${r.volume >= maxVol * 0.5 ? 'hot' : ''}">${r.volume}</span></td>
@@ -396,7 +398,12 @@ function renderDetalhe(r) {
       <div>${m.qty}</div><div>${fmt(m.unit)}</div><div>${fmt(m.subtotal)}</div>
   `).join('');
 
+  const avisoIncompleto = r.custoIncompleto ? `
+    <div class="recipe-title" style="color:var(--rust); margin-bottom:10px;">⚠ Receita incompleta — falta um material de artefacto que ainda não foi confirmado. O custo (e por isso o lucro) mostrado é mais baixo do que o real.</div>
+  ` : '';
+
   return `
+    ${avisoIncompleto}
     <div class="recipe-title">Receita — ${r.materiais.length > 1 ? 'vários materiais' : '1 material'} <span style="color:var(--muted)">(encantamento ${r.enchant} — igual ao do item)</span></div>
     <div class="recipe-grid">
       <div class="h">Material</div><div class="h">Qtd.</div><div class="h">Preço un.</div><div class="h">Subtotal</div>
