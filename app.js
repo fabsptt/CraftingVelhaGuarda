@@ -1,4 +1,3 @@
-
 /* ===========================================================
    VELHA GUARDA — Ledger de Mercado
    Vanilla JS, sem dependências. Dados: Albion Online Data Project.
@@ -18,6 +17,7 @@ const els = {
   encantamento: document.getElementById('encantamento'),
   ordenar: document.getElementById('ordenar'),
   premium: document.getElementById('premium'),
+  soConfirmados: document.getElementById('soConfirmados'),
   btn: document.getElementById('btnAtualizar'),
   tiers: document.getElementById('tiers'),
 };
@@ -111,8 +111,10 @@ function resolverMaterial(entry, tier, enchant) {
 function idsNecessarios(tiers) {
   const finished = [];
   const materials = new Set();
+  const soConfirmados = els.soConfirmados.checked;
 
   for (const item of RECIPES.itens) {
+    if (soConfirmados && !item.confiavel) continue;
     const enchants = item.semEncantamento ? [0] : ENCHANTS;
     for (const t of tiers) {
       for (const e of enchants) {
@@ -169,12 +171,11 @@ async function fetchPrices(ids, citiesParam) {
   const chunks = chunk(ids, 45);
   const index = {};
   let falhas = 0;
+  let feitos = 0;
 
-  for (let i = 0; i < chunks.length; i++) {
-    const c = chunks[i];
+  await executarEmParalelo(chunks, 6, async (c) => {
     const url = `${API_BASE}/prices/${c.join(',')}.json?locations=${citiesParam}&qualities=1`;
     try {
-      setStatus(`A obter preços… (lote ${i + 1}/${chunks.length})`);
       const res = await fetch(url);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
@@ -187,12 +188,27 @@ async function fetchPrices(ids, citiesParam) {
       }
     } catch (e) {
       falhas++;
-      console.warn(`Lote de preços ${i + 1}/${chunks.length} falhou:`, e);
+      console.warn('Lote de preços falhou:', e);
+    } finally {
+      feitos++;
+      setStatus(`A obter preços… (${feitos}/${chunks.length} lotes)`);
     }
-  }
+  });
 
   if (falhas === chunks.length) throw new Error('Todos os pedidos de preços falharam.');
   return index;
+}
+
+// corre várias tarefas em paralelo, no máximo `limite` em simultâneo, para não sobrecarregar o servidor nem bloquear à vez
+async function executarEmParalelo(items, limite, tarefa) {
+  let indice = 0;
+  async function worker() {
+    while (indice < items.length) {
+      const meu = indice++;
+      await tarefa(items[meu]);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limite, items.length) }, worker));
 }
 
 async function fetchVolume(ids, citiesParam) {
@@ -204,12 +220,11 @@ async function fetchVolume(ids, citiesParam) {
   const chunks = chunk(ids, 60);
   const index = {};
 
-  for (let i = 0; i < chunks.length; i++) {
-    const c = chunks[i];
+  await executarEmParalelo(chunks, 6, async (c) => {
     const url = `${API_BASE}/history/${c.join(',')}.json?date=${fmt(start)}&end_date=${fmt(end)}&locations=${citiesParam}&time-scale=24`;
     try {
       const res = await fetch(url);
-      if (!res.ok) continue;
+      if (!res.ok) return;
       const data = await res.json();
       for (const entry of data) {
         const total = (entry.data || []).reduce((s, p) => s + (p.item_count || 0), 0);
@@ -217,9 +232,9 @@ async function fetchVolume(ids, citiesParam) {
         index[entry.item_id][entry.location] = total;
       }
     } catch (e) {
-      console.warn(`Lote de histórico ${i + 1}/${chunks.length} falhou:`, e);
+      console.warn('Lote de histórico falhou:', e);
     }
-  }
+  });
   return index;
 }
 
