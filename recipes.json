@@ -2804,6 +2804,636 @@
           "peso": "arma"
         }
       ]
+    },
+    {
+      "base": "HEAD_PLATE_UNDEAD",
+      "nome": "Elmo de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Placas - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_PLATE_UNDEAD",
+      "nome": "Armadura Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Placas - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_PLATE_UNDEAD",
+      "nome": "Botas de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Placas - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_LEATHER_UNDEAD",
+      "nome": "Capuz de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Couro - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_LEATHER_UNDEAD",
+      "nome": "Casaco de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Couro - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_LEATHER_UNDEAD",
+      "nome": "Sapatos de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Couro - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_CLOTH_UNDEAD",
+      "nome": "Capote de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Tecido - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_CLOTH_UNDEAD",
+      "nome": "Robe de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Tecido - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_CLOTH_UNDEAD",
+      "nome": "Sandálias de Guarda-tumbas",
+      "en": "Undead armor piece",
+      "categoria": "Tecido - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_PLATE_HELL",
+      "nome": "Elmo de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Placas - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_PLATE_HELL",
+      "nome": "Armadura Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Placas - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_PLATE_HELL",
+      "nome": "Botas de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Placas - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_LEATHER_HELL",
+      "nome": "Capuz de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Couro - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_LEATHER_HELL",
+      "nome": "Casaco de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Couro - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_LEATHER_HELL",
+      "nome": "Sapatos de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Couro - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_CLOTH_HELL",
+      "nome": "Capote de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Tecido - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_CLOTH_HELL",
+      "nome": "Robe de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Tecido - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_CLOTH_HELL",
+      "nome": "Sandálias de Demônia",
+      "en": "Hell armor piece",
+      "categoria": "Tecido - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_PLATE_KEEPER",
+      "nome": "Elmo de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Placas - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_PLATE_KEEPER",
+      "nome": "Armadura Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Placas - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_PLATE_KEEPER",
+      "nome": "Botas de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Placas - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_LEATHER_KEEPER",
+      "nome": "Capuz de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Couro - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_LEATHER_KEEPER",
+      "nome": "Casaco de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Couro - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_LEATHER_KEEPER",
+      "nome": "Sapatos de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Couro - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_CLOTH_KEEPER",
+      "nome": "Capote de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Tecido - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_CLOTH_KEEPER",
+      "nome": "Robe de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Tecido - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_CLOTH_KEEPER",
+      "nome": "Sandálias de Judicante",
+      "en": "Keeper armor piece",
+      "categoria": "Tecido - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_PLATE_MORGANA",
+      "nome": "Elmo de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Placas - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_PLATE_MORGANA",
+      "nome": "Armadura Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Placas - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_PLATE_MORGANA",
+      "nome": "Botas de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Placas - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_LEATHER_MORGANA",
+      "nome": "Capuz de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Couro - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_LEATHER_MORGANA",
+      "nome": "Casaco de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Couro - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_LEATHER_MORGANA",
+      "nome": "Sapatos de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Couro - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_CLOTH_MORGANA",
+      "nome": "Capote de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Tecido - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_CLOTH_MORGANA",
+      "nome": "Robe de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Tecido - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_CLOTH_MORGANA",
+      "nome": "Sandálias de Tecelão do Crepúsculo",
+      "en": "Morgana armor piece",
+      "categoria": "Tecido - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_PLATE_CRYSTAL",
+      "nome": "Elmo de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Placas - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_PLATE_CRYSTAL",
+      "nome": "Armadura Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Placas - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_PLATE_CRYSTAL",
+      "nome": "Botas de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Placas - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_PLATE_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_LEATHER_CRYSTAL",
+      "nome": "Capuz de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Couro - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_LEATHER_CRYSTAL",
+      "nome": "Casaco de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Couro - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_LEATHER_CRYSTAL",
+      "nome": "Sapatos de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Couro - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_LEATHER_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "HEAD_CLOTH_CRYSTAL",
+      "nome": "Capote de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Tecido - Cabeça (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "HEAD_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "ARMOR_CLOTH_CRYSTAL",
+      "nome": "Robe de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Tecido - Peito (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "ARMOR_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
+    },
+    {
+      "base": "SHOES_CLOTH_CRYSTAL",
+      "nome": "Sandálias de Bravura",
+      "en": "Crystal armor piece",
+      "categoria": "Tecido - Pés (Artefacto)",
+      "materiais": [
+        {
+          "itemRef": "SHOES_CLOTH_SET1",
+          "nome": "Peça base",
+          "qtd": 1
+        }
+      ],
+      "custoIncompleto": true
     }
   ]
 }
