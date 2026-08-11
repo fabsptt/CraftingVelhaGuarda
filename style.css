@@ -433,3 +433,15 @@ footer a{ color: var(--steel); }
   html{ scroll-behavior: auto; }
   *{ transition: none !important; }
 }
+
+.incompleto-badge{
+  display:inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--rust);
+  border: 1px solid var(--rust-dim);
+  border-radius: 999px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
