@@ -48,7 +48,8 @@
           "material": "METALBAR",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_PLATE_SET2",
@@ -60,7 +61,8 @@
           "material": "METALBAR",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_PLATE_SET3",
@@ -72,7 +74,8 @@
           "material": "METALBAR",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_PLATE_SET1",
@@ -84,7 +87,8 @@
           "material": "METALBAR",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_PLATE_SET2",
@@ -96,7 +100,8 @@
           "material": "METALBAR",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_PLATE_SET3",
@@ -108,7 +113,8 @@
           "material": "METALBAR",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_PLATE_SET1",
@@ -120,7 +126,8 @@
           "material": "METALBAR",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_PLATE_SET2",
@@ -132,7 +139,8 @@
           "material": "METALBAR",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_PLATE_SET3",
@@ -144,7 +152,8 @@
           "material": "METALBAR",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_LEATHER_SET1",
@@ -156,7 +165,8 @@
           "material": "LEATHER",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_LEATHER_SET2",
@@ -168,7 +178,8 @@
           "material": "LEATHER",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_LEATHER_SET3",
@@ -180,7 +191,8 @@
           "material": "LEATHER",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_LEATHER_SET1",
@@ -192,7 +204,8 @@
           "material": "LEATHER",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_LEATHER_SET2",
@@ -204,7 +217,8 @@
           "material": "LEATHER",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_LEATHER_SET3",
@@ -216,7 +230,8 @@
           "material": "LEATHER",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_LEATHER_SET1",
@@ -228,7 +243,8 @@
           "material": "LEATHER",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_LEATHER_SET2",
@@ -240,7 +256,8 @@
           "material": "LEATHER",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_LEATHER_SET3",
@@ -252,7 +269,8 @@
           "material": "LEATHER",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_CLOTH_SET1",
@@ -264,7 +282,8 @@
           "material": "CLOTH",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_CLOTH_SET2",
@@ -276,7 +295,8 @@
           "material": "CLOTH",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_CLOTH_SET3",
@@ -288,7 +308,8 @@
           "material": "CLOTH",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_CLOTH_SET1",
@@ -300,7 +321,8 @@
           "material": "CLOTH",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_CLOTH_SET2",
@@ -312,7 +334,8 @@
           "material": "CLOTH",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_CLOTH_SET3",
@@ -324,7 +347,8 @@
           "material": "CLOTH",
           "peso": "peca_pesada"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_CLOTH_SET1",
@@ -336,7 +360,8 @@
           "material": "CLOTH",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_CLOTH_SET2",
@@ -348,7 +373,8 @@
           "material": "CLOTH",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_CLOTH_SET3",
@@ -360,7 +386,8 @@
           "material": "CLOTH",
           "peso": "peca_leve"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "MAIN_SWORD",
@@ -372,7 +399,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "MAIN_AXE",
@@ -384,7 +412,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "MAIN_MACE",
@@ -396,7 +425,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "2H_BOW",
@@ -408,7 +438,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "MAIN_CURSEDSTAFF",
@@ -420,7 +451,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "MAIN_HOLYSTAFF",
@@ -432,7 +464,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPE",
@@ -448,7 +481,8 @@
           "material": "LEATHER",
           "qtd": 4
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "BAG",
@@ -464,7 +498,8 @@
           "material": "LEATHER",
           "qtd": 8
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "BAG_INSIGHT",
@@ -486,7 +521,8 @@
           "qtd": 1,
           "semEncantamento": true
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_FW_MARTLOCK",
@@ -516,7 +552,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_FW_FORTSTERLING",
@@ -546,7 +583,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_FW_LYMHURST",
@@ -576,7 +614,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_FW_BRIDGEWATCH",
@@ -606,7 +645,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_FW_THETFORD",
@@ -636,7 +676,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_FW_CAERLEON",
@@ -666,7 +707,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_UNDEAD",
@@ -696,7 +738,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "CAPEITEM_HERETIC",
@@ -726,7 +769,8 @@
             "T8": 10
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "2H_TOOL_AXE",
@@ -743,7 +787,8 @@
           "material": "METALBAR",
           "qtd": 2
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "2H_TOOL_PICK",
@@ -760,7 +805,8 @@
           "material": "METALBAR",
           "qtd": 2
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "2H_TOOL_SICKLE",
@@ -777,7 +823,8 @@
           "material": "METALBAR",
           "qtd": 2
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "2H_TOOL_KNIFE",
@@ -794,7 +841,8 @@
           "material": "METALBAR",
           "qtd": 2
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "2H_TOOL_HAMMER",
@@ -811,7 +859,8 @@
           "material": "METALBAR",
           "qtd": 2
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "2H_CLAYMORE",
@@ -823,7 +872,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_DUALSWORD",
@@ -835,7 +885,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CLARENTBLADE",
@@ -847,7 +898,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CARVINGSWORD",
@@ -859,7 +911,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_DUALSWORD_MORGANA",
@@ -871,7 +924,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SWORD_AVALON",
@@ -883,7 +937,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SWORD_CRYSTAL",
@@ -895,7 +950,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_AXE",
@@ -907,7 +963,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HALBERD",
@@ -919,7 +976,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_AXE_MORGANA",
@@ -931,7 +989,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SCYTHE_HELL",
@@ -943,7 +1002,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CLAWPAIR_KEEPER",
@@ -955,7 +1015,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_AXE_AVALON",
@@ -967,7 +1028,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_AXE_CRYSTAL",
@@ -979,7 +1041,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_MACE",
@@ -991,7 +1054,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_MACE_MORGANA",
@@ -1003,7 +1067,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_MACE_HELL",
@@ -1015,7 +1080,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_MACE_KEEPER",
@@ -1027,7 +1093,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_MACE_UNDEAD",
@@ -1039,7 +1106,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_MACE_AVALON",
@@ -1051,7 +1119,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_MACE_CRYSTAL",
@@ -1063,7 +1132,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_HAMMER",
@@ -1075,7 +1145,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HAMMER",
@@ -1087,7 +1158,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HAMMER_MORGANA",
@@ -1099,7 +1171,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_HAMMER_UNDEAD",
@@ -1111,7 +1184,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HAMMER_HELL",
@@ -1123,7 +1197,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HAMMER_KEEPER",
@@ -1135,7 +1210,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HAMMER_AVALON",
@@ -1147,7 +1223,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_HAMMER_CRYSTAL",
@@ -1159,7 +1236,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_WARBOW",
@@ -1171,7 +1249,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_LONGBOW",
@@ -1183,7 +1262,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_BOW_MORGANA",
@@ -1195,7 +1275,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_BOW_HELL",
@@ -1207,7 +1288,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_BOW_KEEPER",
@@ -1219,7 +1301,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_BOW_AVALON",
@@ -1231,7 +1314,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_BOW_CRYSTAL",
@@ -1243,7 +1327,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_SPEAR",
@@ -1255,7 +1340,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SPEAR",
@@ -1267,7 +1353,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SPEAR_MORGANA",
@@ -1279,7 +1366,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SPEAR_HELL",
@@ -1291,7 +1379,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SPEAR_KEEPER",
@@ -1303,7 +1392,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SPEAR_UNDEAD",
@@ -1315,7 +1405,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SPEAR_AVALON",
@@ -1327,7 +1418,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_SPEAR_CRYSTAL",
@@ -1339,7 +1431,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_DAGGER",
@@ -1351,7 +1444,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_DAGGERPAIR",
@@ -1363,7 +1457,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_DAGGER_MORGANA",
@@ -1375,7 +1470,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_DAGGERPAIR_HELL",
@@ -1387,7 +1483,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_DAGGER_KEEPER",
@@ -1399,7 +1496,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_DAGGERPAIR_UNDEAD",
@@ -1411,7 +1509,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_DAGGERPAIR_AVALON",
@@ -1423,7 +1522,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_DAGGERPAIR_CRYSTAL",
@@ -1435,7 +1535,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_NATURESTAFF",
@@ -1447,7 +1548,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURESTAFF",
@@ -1459,7 +1561,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURESTAFF_MORGANA",
@@ -1471,7 +1574,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURESTAFF_HELL",
@@ -1483,7 +1587,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_NATURESTAFF_KEEPER",
@@ -1495,7 +1600,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURESTAFF_UNDEAD",
@@ -1507,7 +1613,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURESTAFF_AVALON",
@@ -1519,7 +1626,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURESTAFF_CRYSTAL",
@@ -1531,7 +1639,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_FIRESTAFF",
@@ -1543,7 +1652,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FIRESTAFF",
@@ -1555,7 +1665,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FIRESTAFF_MORGANA",
@@ -1567,7 +1678,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FIRESTAFF_HELL",
@@ -1579,7 +1691,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_FIRESTAFF_KEEPER",
@@ -1591,7 +1704,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FIRESTAFF_UNDEAD",
@@ -1603,7 +1717,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FIRESTAFF_AVALON",
@@ -1615,7 +1730,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FIRESTAFF_CRYSTAL",
@@ -1627,7 +1743,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HOLYSTAFF",
@@ -1639,7 +1756,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HOLYSTAFF_MORGANA",
@@ -1651,7 +1769,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HOLYSTAFF_HELL",
@@ -1663,7 +1782,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_HOLYSTAFF_KEEPER",
@@ -1675,7 +1795,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HOLYSTAFF_UNDEAD",
@@ -1687,7 +1808,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HOLYSTAFF_AVALON",
@@ -1699,7 +1821,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_HOLYSTAFF_CRYSTAL",
@@ -1711,7 +1834,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_ARCANESTAFF",
@@ -1723,7 +1847,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_ARCANESTAFF",
@@ -1735,7 +1860,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_ARCANESTAFF_MORGANA",
@@ -1747,7 +1873,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_ARCANESTAFF_HELL",
@@ -1759,7 +1886,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_ARCANESTAFF_KEEPER",
@@ -1771,7 +1899,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_ARCANESTAFF_UNDEAD",
@@ -1783,7 +1912,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_ARCANESTAFF_AVALON",
@@ -1795,7 +1925,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_ARCANESTAFF_CRYSTAL",
@@ -1807,7 +1938,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_FROSTSTAFF",
@@ -1819,7 +1951,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FROSTSTAFF",
@@ -1831,7 +1964,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FROSTSTAFF_MORGANA",
@@ -1843,7 +1977,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FROSTSTAFF_HELL",
@@ -1855,7 +1990,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_FROSTSTAFF_KEEPER",
@@ -1867,7 +2003,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FROSTSTAFF_UNDEAD",
@@ -1879,7 +2016,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FROSTSTAFF_AVALON",
@@ -1891,7 +2029,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FROSTSTAFF_CRYSTAL",
@@ -1903,7 +2042,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CURSEDSTAFF",
@@ -1915,7 +2055,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CURSEDSTAFF_MORGANA",
@@ -1927,7 +2068,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CURSEDSTAFF_HELL",
@@ -1939,7 +2081,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_CURSEDSTAFF_KEEPER",
@@ -1951,7 +2094,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CURSEDSTAFF_UNDEAD",
@@ -1963,7 +2107,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CURSEDSTAFF_AVALON",
@@ -1975,7 +2120,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CURSEDSTAFF_CRYSTAL",
@@ -1987,7 +2133,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FISTS",
@@ -1999,7 +2146,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FISTS_MORGANA",
@@ -2011,7 +2159,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FISTS_HELL",
@@ -2023,7 +2172,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FISTS_KEEPER",
@@ -2035,7 +2185,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FISTS_UNDEAD",
@@ -2047,7 +2198,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_FISTS_UNDEAD",
@@ -2059,7 +2211,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FISTS_AVALON",
@@ -2071,7 +2224,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_FISTS_CRYSTAL",
@@ -2083,7 +2237,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CROSSBOW",
@@ -2095,7 +2250,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CROSSBOWLARGE",
@@ -2107,7 +2263,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_CROSSBOW",
@@ -2119,7 +2276,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CROSSBOW_MORGANA",
@@ -2131,7 +2289,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CROSSBOW_HELL",
@@ -2143,7 +2302,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CROSSBOW_KEEPER",
@@ -2155,7 +2315,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CROSSBOW_AVALON",
@@ -2167,7 +2328,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_CROSSBOW_CRYSTAL",
@@ -2179,7 +2341,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_1H_QUARTERSTAFF",
@@ -2191,7 +2354,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_QUARTERSTAFF",
@@ -2203,7 +2367,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_QUARTERSTAFF_MORGANA",
@@ -2215,7 +2380,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_QUARTERSTAFF_HELL",
@@ -2227,7 +2393,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_QUARTERSTAFF_KEEPER",
@@ -2239,7 +2406,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_QUARTERSTAFF_AVALON",
@@ -2251,7 +2419,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_QUARTERSTAFF_UNDEAD",
@@ -2263,7 +2432,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_QUARTERSTAFF_CRYSTAL",
@@ -2275,7 +2445,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_NATURE_SHAPESHIFTER",
@@ -2287,7 +2458,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER",
@@ -2299,7 +2471,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_MORGANA",
@@ -2311,7 +2484,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_HELL",
@@ -2323,7 +2497,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "MAIN_NATURE_SHAPESHIFTER_KEEPER",
@@ -2335,7 +2510,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_UNDEAD",
@@ -2347,7 +2523,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_AVALON",
@@ -2359,7 +2536,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_CRYSTAL",
@@ -2371,7 +2549,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "HEAD_PLATE_ROYAL",
@@ -2395,7 +2574,8 @@
             "T8": 20
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_PLATE_ROYAL",
@@ -2419,7 +2599,8 @@
             "T8": 40
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_PLATE_ROYAL",
@@ -2443,7 +2624,8 @@
             "T8": 20
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_LEATHER_ROYAL",
@@ -2467,7 +2649,8 @@
             "T8": 20
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_LEATHER_ROYAL",
@@ -2491,7 +2674,8 @@
             "T8": 40
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_LEATHER_ROYAL",
@@ -2515,7 +2699,8 @@
             "T8": 20
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "HEAD_CLOTH_ROYAL",
@@ -2539,7 +2724,8 @@
             "T8": 20
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "ARMOR_CLOTH_ROYAL",
@@ -2563,7 +2749,8 @@
             "T8": 40
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "SHOES_CLOTH_ROYAL",
@@ -2587,7 +2774,8 @@
             "T8": 20
           }
         }
-      ]
+      ],
+      "confiavel": true
     },
     {
       "base": "OFF_SHIELD",
@@ -2599,7 +2787,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_SARCOPHAGUS",
@@ -2611,7 +2800,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_VAMPIRESHIELD",
@@ -2623,7 +2813,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_FACEBREAKER",
@@ -2635,7 +2826,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_ASTRALAEGIS",
@@ -2647,7 +2839,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_UNBREAKABLEBARRIER",
@@ -2659,7 +2852,8 @@
           "material": "METALBAR",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_TORCH",
@@ -2671,7 +2865,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_FOGSTAFF",
@@ -2683,7 +2878,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_BEDEVILINGTORCH",
@@ -2695,7 +2891,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_CRYPTCANDLE",
@@ -2707,7 +2904,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_SACREDSCEPTER",
@@ -2719,7 +2917,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_BLUEFIRETORCH",
@@ -2731,7 +2930,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_BOOK",
@@ -2743,7 +2943,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_EYE",
@@ -2755,7 +2956,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_MUISAK",
@@ -2767,7 +2969,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_MAINROOT",
@@ -2779,7 +2982,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_CENSER",
@@ -2791,7 +2995,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "OFF_GRIMOIRE",
@@ -2803,7 +3008,8 @@
           "material": "PLANKS",
           "peso": "arma"
         }
-      ]
+      ],
+      "confiavel": false
     },
     {
       "base": "HEAD_PLATE_UNDEAD",
@@ -2817,7 +3023,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_PLATE_UNDEAD",
@@ -2831,7 +3038,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_PLATE_UNDEAD",
@@ -2845,7 +3053,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_LEATHER_UNDEAD",
@@ -2859,7 +3068,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_LEATHER_UNDEAD",
@@ -2873,7 +3083,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_LEATHER_UNDEAD",
@@ -2887,7 +3098,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_CLOTH_UNDEAD",
@@ -2901,7 +3113,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_CLOTH_UNDEAD",
@@ -2915,7 +3128,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_CLOTH_UNDEAD",
@@ -2929,7 +3143,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_PLATE_HELL",
@@ -2943,7 +3158,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_PLATE_HELL",
@@ -2957,7 +3173,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_PLATE_HELL",
@@ -2971,7 +3188,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_LEATHER_HELL",
@@ -2985,7 +3203,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_LEATHER_HELL",
@@ -2999,7 +3218,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_LEATHER_HELL",
@@ -3013,7 +3233,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_CLOTH_HELL",
@@ -3027,7 +3248,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_CLOTH_HELL",
@@ -3041,7 +3263,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_CLOTH_HELL",
@@ -3055,7 +3278,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_PLATE_KEEPER",
@@ -3069,7 +3293,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_PLATE_KEEPER",
@@ -3083,7 +3308,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_PLATE_KEEPER",
@@ -3097,7 +3323,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_LEATHER_KEEPER",
@@ -3111,7 +3338,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_LEATHER_KEEPER",
@@ -3125,7 +3353,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_LEATHER_KEEPER",
@@ -3139,7 +3368,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_CLOTH_KEEPER",
@@ -3153,7 +3383,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_CLOTH_KEEPER",
@@ -3167,7 +3398,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_CLOTH_KEEPER",
@@ -3181,7 +3413,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_PLATE_MORGANA",
@@ -3195,7 +3428,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_PLATE_MORGANA",
@@ -3209,7 +3443,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_PLATE_MORGANA",
@@ -3223,7 +3458,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_LEATHER_MORGANA",
@@ -3237,7 +3473,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_LEATHER_MORGANA",
@@ -3251,7 +3488,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_LEATHER_MORGANA",
@@ -3265,7 +3503,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_CLOTH_MORGANA",
@@ -3279,7 +3518,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_CLOTH_MORGANA",
@@ -3293,7 +3533,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_CLOTH_MORGANA",
@@ -3307,7 +3548,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_PLATE_CRYSTAL",
@@ -3321,7 +3563,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_PLATE_CRYSTAL",
@@ -3335,7 +3578,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_PLATE_CRYSTAL",
@@ -3349,7 +3593,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_LEATHER_CRYSTAL",
@@ -3363,7 +3608,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_LEATHER_CRYSTAL",
@@ -3377,7 +3623,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_LEATHER_CRYSTAL",
@@ -3391,7 +3638,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "HEAD_CLOTH_CRYSTAL",
@@ -3405,7 +3653,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "ARMOR_CLOTH_CRYSTAL",
@@ -3419,7 +3668,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     },
     {
       "base": "SHOES_CLOTH_CRYSTAL",
@@ -3433,7 +3683,8 @@
           "qtd": 1
         }
       ],
-      "custoIncompleto": true
+      "custoIncompleto": true,
+      "confiavel": false
     }
   ]
 }
