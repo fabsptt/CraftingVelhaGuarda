@@ -3640,6 +3640,771 @@
         }
       ],
       "confiavel": false
+    },
+    {
+      "base": "HEAD_PLATE_UNDEAD",
+      "nome": "Elmo de Guarda-tumbas",
+      "en": "Undead Head",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_PLATE_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_UNDEAD",
+      "nome": "Armadura Guarda-tumbas",
+      "en": "Undead Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_PLATE_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_UNDEAD",
+      "nome": "Botas de Guarda-tumbas",
+      "en": "Undead Shoes",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_PLATE_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_UNDEAD",
+      "nome": "Capuz de Guarda-tumbas",
+      "en": "Undead Head",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_LEATHER_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_UNDEAD",
+      "nome": "Casaco de Guarda-tumbas",
+      "en": "Undead Armor",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_LEATHER_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_UNDEAD",
+      "nome": "Sapatos de Guarda-tumbas",
+      "en": "Undead Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_LEATHER_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_UNDEAD",
+      "nome": "Capote de Guarda-tumbas",
+      "en": "Undead Head",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_CLOTH_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_UNDEAD",
+      "nome": "Robe de Guarda-tumbas",
+      "en": "Undead Armor",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_CLOTH_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_UNDEAD",
+      "nome": "Sandálias de Guarda-tumbas",
+      "en": "Undead Shoes",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_CLOTH_UNDEAD",
+          "nome": "Artefacto de Guarda-tumbas",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_PLATE_HELL",
+      "nome": "Elmo de Demônia",
+      "en": "Hell Head",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_PLATE_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_HELL",
+      "nome": "Armadura Demônia",
+      "en": "Hell Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_PLATE_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_HELL",
+      "nome": "Botas de Demônia",
+      "en": "Hell Shoes",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_PLATE_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_HELL",
+      "nome": "Capuz de Demônia",
+      "en": "Hell Head",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_LEATHER_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_HELL",
+      "nome": "Casaco de Demônia",
+      "en": "Hell Armor",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_LEATHER_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_HELL",
+      "nome": "Sapatos de Demônia",
+      "en": "Hell Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_LEATHER_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_HELL",
+      "nome": "Capote de Demônia",
+      "en": "Hell Head",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_CLOTH_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_HELL",
+      "nome": "Robe de Demônia",
+      "en": "Hell Armor",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_CLOTH_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_HELL",
+      "nome": "Sandálias de Demônia",
+      "en": "Hell Shoes",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_CLOTH_HELL",
+          "nome": "Artefacto de Demônia",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_PLATE_KEEPER",
+      "nome": "Elmo de Judicante",
+      "en": "Keeper Head",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_PLATE_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_KEEPER",
+      "nome": "Armadura Judicante",
+      "en": "Keeper Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_PLATE_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_KEEPER",
+      "nome": "Botas de Judicante",
+      "en": "Keeper Shoes",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_PLATE_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_KEEPER",
+      "nome": "Capuz de Judicante",
+      "en": "Keeper Head",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_LEATHER_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_KEEPER",
+      "nome": "Casaco de Judicante",
+      "en": "Keeper Armor",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_LEATHER_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_KEEPER",
+      "nome": "Sapatos de Judicante",
+      "en": "Keeper Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_LEATHER_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_KEEPER",
+      "nome": "Capote de Judicante",
+      "en": "Keeper Head",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_CLOTH_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_KEEPER",
+      "nome": "Robe de Judicante",
+      "en": "Keeper Armor",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_CLOTH_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_KEEPER",
+      "nome": "Sandálias de Judicante",
+      "en": "Keeper Shoes",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_CLOTH_KEEPER",
+          "nome": "Artefacto de Judicante",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_PLATE_MORGANA",
+      "nome": "Elmo de Tecelão do Crepúsculo",
+      "en": "Morgana Head",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_PLATE_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_MORGANA",
+      "nome": "Armadura Tecelão do Crepúsculo",
+      "en": "Morgana Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_PLATE_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_MORGANA",
+      "nome": "Botas de Tecelão do Crepúsculo",
+      "en": "Morgana Shoes",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_PLATE_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_MORGANA",
+      "nome": "Capuz de Tecelão do Crepúsculo",
+      "en": "Morgana Head",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_LEATHER_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_MORGANA",
+      "nome": "Casaco de Tecelão do Crepúsculo",
+      "en": "Morgana Armor",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_LEATHER_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_MORGANA",
+      "nome": "Sapatos de Tecelão do Crepúsculo",
+      "en": "Morgana Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_LEATHER_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_MORGANA",
+      "nome": "Capote de Tecelão do Crepúsculo",
+      "en": "Morgana Head",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_CLOTH_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_MORGANA",
+      "nome": "Robe de Tecelão do Crepúsculo",
+      "en": "Morgana Armor",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_CLOTH_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_MORGANA",
+      "nome": "Sandálias de Tecelão do Crepúsculo",
+      "en": "Morgana Shoes",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_CLOTH_MORGANA",
+          "nome": "Artefacto de Tecelão do Crepúsculo",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_PLATE_CRYSTAL",
+      "nome": "Elmo de Bravura",
+      "en": "Crystal Head",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_PLATE_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_PLATE_CRYSTAL",
+      "nome": "Armadura Bravura",
+      "en": "Crystal Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_PLATE_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_PLATE_CRYSTAL",
+      "nome": "Botas de Bravura",
+      "en": "Crystal Shoes",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_PLATE_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_LEATHER_CRYSTAL",
+      "nome": "Capuz de Bravura",
+      "en": "Crystal Head",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_LEATHER_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_LEATHER_CRYSTAL",
+      "nome": "Casaco de Bravura",
+      "en": "Crystal Armor",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_LEATHER_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_LEATHER_CRYSTAL",
+      "nome": "Sapatos de Bravura",
+      "en": "Crystal Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_LEATHER_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "HEAD_CLOTH_CRYSTAL",
+      "nome": "Capote de Bravura",
+      "en": "Crystal Head",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_HEAD_CLOTH_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "ARMOR_CLOTH_CRYSTAL",
+      "nome": "Robe de Bravura",
+      "en": "Crystal Armor",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_pesada"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_ARMOR_CLOTH_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "base": "SHOES_CLOTH_CRYSTAL",
+      "nome": "Sandálias de Bravura",
+      "en": "Crystal Shoes",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "peso": "peca_leve"
+        },
+        {
+          "idTemplate": "{tier}_ARTEFACT_SHOES_CLOTH_CRYSTAL",
+          "nome": "Artefacto de Bravura",
+          "qtd": 1
+        }
+      ]
     }
   ]
 }
