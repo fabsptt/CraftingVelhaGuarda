@@ -525,7 +525,7 @@ function renderDestaques(top3) {
           </div>
         </div>
       `).join('')}
-    </div>${rrrInfo}
+    </div>
   `;
 }
 
