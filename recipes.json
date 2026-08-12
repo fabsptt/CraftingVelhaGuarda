@@ -35,6 +35,20 @@
       "T6": 32,
       "T7": 40,
       "T8": 48
+    },
+    "arma_principal": {
+      "T4": 10,
+      "T5": 15,
+      "T6": 20,
+      "T7": 25,
+      "T8": 30
+    },
+    "arma_secundario": {
+      "T4": 6,
+      "T5": 9,
+      "T6": 12,
+      "T7": 15,
+      "T8": 18
     }
   },
   "itens": [
@@ -397,7 +411,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": true
@@ -410,7 +428,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": true
@@ -423,7 +445,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": true
@@ -436,7 +462,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": true
@@ -449,7 +479,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": true
@@ -462,7 +496,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": true
@@ -1112,7 +1150,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1125,7 +1167,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1138,7 +1184,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1151,7 +1201,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1164,7 +1218,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1177,7 +1235,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1190,7 +1252,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1203,7 +1269,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1216,7 +1286,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1229,7 +1303,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1242,7 +1320,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1255,7 +1337,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1268,7 +1354,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1281,7 +1371,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1294,7 +1388,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1307,7 +1405,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1320,7 +1422,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1333,7 +1439,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1346,7 +1456,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1359,7 +1473,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1372,7 +1490,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1385,7 +1507,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1398,7 +1524,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1411,7 +1541,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1424,7 +1558,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1437,7 +1575,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1450,7 +1592,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1463,7 +1609,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1476,7 +1626,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1489,7 +1643,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1502,7 +1660,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1515,7 +1677,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1528,7 +1694,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1541,7 +1711,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1554,7 +1728,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1567,7 +1745,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1580,7 +1762,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1593,7 +1779,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1606,7 +1796,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1619,7 +1813,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1632,7 +1830,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1645,7 +1847,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1658,7 +1864,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1671,7 +1881,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1684,7 +1898,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "qtd": 16
+        },
+        {
+          "material": "LEATHER",
+          "qtd": 16
         }
       ],
       "confiavel": false
@@ -1697,7 +1915,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1710,7 +1932,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1723,7 +1949,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1736,7 +1966,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1749,7 +1983,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1762,7 +2000,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1775,7 +2017,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1788,7 +2034,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1801,7 +2051,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1814,7 +2068,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1827,7 +2085,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1840,7 +2102,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1853,7 +2119,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1866,7 +2136,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1879,7 +2153,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1892,7 +2170,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1905,7 +2187,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1918,7 +2204,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1931,7 +2221,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1944,7 +2238,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1957,7 +2255,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1970,7 +2272,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1983,7 +2289,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -1996,7 +2306,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2009,7 +2323,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2022,7 +2340,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2035,7 +2357,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2048,7 +2374,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2061,7 +2391,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2074,7 +2408,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2087,7 +2425,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2100,7 +2442,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2113,7 +2459,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2126,7 +2476,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2139,7 +2493,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2152,7 +2510,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2165,7 +2527,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2178,7 +2544,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2191,7 +2561,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2204,7 +2578,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2217,7 +2595,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2230,7 +2612,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2243,7 +2629,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2256,7 +2646,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2269,7 +2663,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2282,7 +2680,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2295,7 +2697,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2308,7 +2714,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2321,7 +2731,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2334,7 +2748,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2347,7 +2765,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2360,7 +2782,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2373,7 +2799,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2386,7 +2816,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2399,7 +2833,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2412,7 +2850,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2425,7 +2867,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2438,7 +2884,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2451,7 +2901,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2464,7 +2918,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2477,7 +2935,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2490,7 +2952,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2503,7 +2969,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2516,7 +2986,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2529,7 +3003,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2542,7 +3020,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2555,7 +3037,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2568,7 +3054,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2581,7 +3071,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2594,7 +3088,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2607,7 +3105,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2620,7 +3122,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2633,7 +3139,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2646,7 +3156,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2659,7 +3173,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2672,7 +3190,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2685,7 +3207,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2698,7 +3224,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2711,7 +3241,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2724,7 +3258,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2737,7 +3275,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2750,7 +3292,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2763,7 +3309,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2776,7 +3326,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2789,7 +3343,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2802,7 +3360,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2815,7 +3377,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2828,7 +3394,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2841,7 +3411,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2854,7 +3428,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "LEATHER",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2867,7 +3445,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2880,7 +3462,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2893,7 +3479,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2906,7 +3496,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2919,7 +3513,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2932,7 +3530,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2945,7 +3547,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2958,7 +3564,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2971,7 +3581,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2984,7 +3598,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -2997,7 +3615,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
@@ -3010,7 +3632,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma"
+          "peso": "arma_principal"
+        },
+        {
+          "material": "CLOTH",
+          "peso": "arma_secundario"
         }
       ],
       "confiavel": false
