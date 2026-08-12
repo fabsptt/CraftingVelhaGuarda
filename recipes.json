@@ -1,5 +1,5 @@
 {
-  "_nota": "Receitas corrigidas para o cálculo de crafting: quantidades reais das peças de armadura, ferramentas sem encantamento, artefactos separados e receitas com alternativas de artefacto. Os IDs/receitas devem ser revistos quando o jogo alterar receitas.",
+  "_nota": "Base completa para equipamentos T4-T8. Corrigidos IDs atuais de Luvas de Guerra (KNUCKLES) e Cajados Metamorfos (SHAPESHIFTER), adicionadas famílias de armaduras de artefacto e Capa de Brecilien. Receitas de artefacto devem usar o artefacto correspondente; o site compara também substitutos cristalizados quando disponíveis.",
   "materials": {
     "METALBAR": {
       "nome": "Barra de Metal"
@@ -1990,149 +1990,147 @@
       "artefacto": "{tier}_ARTEFACT_2H_DAGGERPAIR_CRYSTAL"
     },
     {
-      "base": "2H_FISTS",
-      "nome": "Luvas de Lutador",
+      "base": "2H_KNUCKLES",
+      "nome": "Luvas de Brigão",
       "en": "Brawl Gloves",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "nome": "Barra de Metal",
           "qtd": 12
         },
         {
           "material": "LEATHER",
-          "nome": "Couro",
           "qtd": 20
         }
       ],
       "confiavel": true
     },
     {
-      "base": "2H_FISTS_MORGANA",
+      "base": "2H_KNUCKLES_MORGANA",
       "nome": "Braçadeiras de Batalha",
       "en": "Battle Bracers",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 20
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 12
+          "qtd": 20
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_FISTS_MORGANA"
+      "artefacto": "{tier}_ARTEFACT_2H_KNUCKLES_MORGANA"
     },
     {
-      "base": "2H_FISTS_HELL",
+      "base": "2H_KNUCKLES_HELL",
       "nome": "Manoplas Cravadas",
       "en": "Spiked Gauntlets",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 20
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 12
+          "qtd": 20
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_FISTS_HELL"
+      "artefacto": "{tier}_ARTEFACT_2H_KNUCKLES_HELL"
     },
     {
-      "base": "2H_FISTS_KEEPER",
+      "base": "2H_KNUCKLES_KEEPER",
       "nome": "Luvas Ursinas",
       "en": "Bear Fist",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 20
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 12
+          "qtd": 20
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_FISTS_KEEPER"
+      "artefacto": "{tier}_ARTEFACT_2H_KNUCKLES_KEEPER"
     },
     {
-      "base": "2H_FISTS_UNDEAD",
+      "base": "2H_KNUCKLES_UNDEAD",
       "nome": "Mãos Infernais",
       "en": "Hellfire Gloves",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 20
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 12
+          "qtd": 20
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_FISTS_UNDEAD"
+      "artefacto": "{tier}_ARTEFACT_2H_KNUCKLES_UNDEAD"
     },
     {
-      "base": "MAIN_FISTS_UNDEAD",
+      "base": "MAIN_KNUCKLES_UNDEAD",
       "nome": "Cestus Golpeadores",
       "en": "Raven Gloves",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 16
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 8
+          "qtd": 20
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_MAIN_FISTS_UNDEAD"
+      "artefacto": "{tier}_ARTEFACT_MAIN_KNUCKLES_UNDEAD"
     },
     {
-      "base": "2H_FISTS_AVALON",
+      "base": "2H_KNUCKLES_AVALON",
       "nome": "Punhos de Avalon",
       "en": "Fists of Avalon",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 20
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 12
+          "qtd": 20
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_FISTS_AVALON"
+      "artefacto": "{tier}_ARTEFACT_2H_KNUCKLES_AVALON"
     },
     {
-      "base": "2H_FISTS_CRYSTAL",
+      "base": "2H_KNUCKLES_CRYSTAL",
       "nome": "Braçadeiras Pulsantes",
       "en": "Forcepulse Bracers",
       "categoria": "Arma - Luvas de Guerra",
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 20
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 12
+          "qtd": 20
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_FISTS_CRYSTAL"
+      "artefacto": "{tier}_ARTEFACT_2H_KNUCKLES_CRYSTAL"
     },
     {
       "base": "2H_CROSSBOW",
@@ -3236,24 +3234,24 @@
       "artefacto": "{tier}_ARTEFACT_2H_CURSEDSTAFF_CRYSTAL"
     },
     {
-      "base": "MAIN_NATURE_SHAPESHIFTER",
-      "nome": "Cajado de Predador",
+      "base": "MAIN_SHAPESHIFTER",
+      "nome": "Cajado Prowling",
       "en": "Predator Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "qtd": 16
+          "qtd": 20
         },
         {
-          "material": "CLOTH",
-          "qtd": 8
+          "material": "LEATHER",
+          "qtd": 12
         }
       ],
       "confiavel": true
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER",
+      "base": "2H_SHAPESHIFTER",
       "nome": "Cajado Enraizado",
       "en": "Rootbound Staff",
       "categoria": "Arma - Cajado Metamorfo",
@@ -3263,15 +3261,15 @@
           "qtd": 20
         },
         {
-          "material": "CLOTH",
+          "material": "LEATHER",
           "qtd": 12
         }
       ],
       "confiavel": true
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_MORGANA",
-      "nome": "Cajado Primitivo",
+      "base": "2H_SHAPESHIFTER_MORGANA",
+      "nome": "Cajado Primal",
       "en": "Primeval Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
@@ -3280,16 +3278,16 @@
           "qtd": 20
         },
         {
-          "material": "CLOTH",
+          "material": "LEATHER",
           "qtd": 12
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_MORGANA"
+      "artefacto": "{tier}_ARTEFACT_2H_SHAPESHIFTER_MORGANA"
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_HELL",
-      "nome": "Cajado da Lua de Sangue",
+      "base": "2H_SHAPESHIFTER_HELL",
+      "nome": "Cajado Bloodmoon",
       "en": "Blood Moon Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
@@ -3298,34 +3296,34 @@
           "qtd": 20
         },
         {
-          "material": "CLOTH",
+          "material": "LEATHER",
           "qtd": 12
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_HELL"
+      "artefacto": "{tier}_ARTEFACT_2H_SHAPESHIFTER_HELL"
     },
     {
-      "base": "MAIN_NATURE_SHAPESHIFTER_KEEPER",
-      "nome": "Cajado Endemoniado",
+      "base": "MAIN_SHAPESHIFTER_KEEPER",
+      "nome": "Cajado Ursino",
       "en": "Enraged Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "qtd": 16
+          "qtd": 20
         },
         {
-          "material": "CLOTH",
-          "qtd": 8
+          "material": "LEATHER",
+          "qtd": 12
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_MAIN_NATURE_SHAPESHIFTER_KEEPER"
+      "artefacto": "{tier}_ARTEFACT_MAIN_SHAPESHIFTER_KEEPER"
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_UNDEAD",
-      "nome": "Cajado Rúnico da Terra",
+      "base": "2H_SHAPESHIFTER_UNDEAD",
+      "nome": "Cajado Earthrune",
       "en": "Earthrune Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
@@ -3334,16 +3332,16 @@
           "qtd": 20
         },
         {
-          "material": "CLOTH",
+          "material": "LEATHER",
           "qtd": 12
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_UNDEAD"
+      "artefacto": "{tier}_ARTEFACT_2H_SHAPESHIFTER_UNDEAD"
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_AVALON",
-      "nome": "Cajado Invocador da Luz",
+      "base": "2H_SHAPESHIFTER_AVALON",
+      "nome": "Cajado Lightcaller",
       "en": "Lightcaller Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
@@ -3352,16 +3350,16 @@
           "qtd": 20
         },
         {
-          "material": "CLOTH",
+          "material": "LEATHER",
           "qtd": 12
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_AVALON"
+      "artefacto": "{tier}_ARTEFACT_2H_SHAPESHIFTER_AVALON"
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_CRYSTAL",
-      "nome": "Cajado Petrificante",
+      "base": "2H_SHAPESHIFTER_CRYSTAL",
+      "nome": "Cajado Stillgaze",
       "en": "Petrifying Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
@@ -3370,12 +3368,12 @@
           "qtd": 20
         },
         {
-          "material": "CLOTH",
+          "material": "LEATHER",
           "qtd": 12
         }
       ],
       "confiavel": true,
-      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_CRYSTAL"
+      "artefacto": "{tier}_ARTEFACT_2H_SHAPESHIFTER_CRYSTAL"
     },
     {
       "base": "OFF_SHIELD",
@@ -3682,6 +3680,654 @@
         }
       ],
       "confiavel": false
+    },
+    {
+      "base": "HEAD_PLATE_UNDEAD",
+      "nome": "Elmo Graveguard",
+      "en": "Graveguard Helmet",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_PLATE_UNDEAD"
+    },
+    {
+      "base": "ARMOR_PLATE_UNDEAD",
+      "nome": "Armadura Graveguard",
+      "en": "Graveguard Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_PLATE_UNDEAD"
+    },
+    {
+      "base": "SHOES_PLATE_UNDEAD",
+      "nome": "Botas Graveguard",
+      "en": "Graveguard Boots",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_PLATE_UNDEAD"
+    },
+    {
+      "base": "HEAD_PLATE_HELL",
+      "nome": "Elmo Demoníaco",
+      "en": "Demon Helmet",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_PLATE_HELL"
+    },
+    {
+      "base": "ARMOR_PLATE_HELL",
+      "nome": "Armadura Demoníaco",
+      "en": "Demon Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_PLATE_HELL"
+    },
+    {
+      "base": "SHOES_PLATE_HELL",
+      "nome": "Botas Demoníaco",
+      "en": "Demon Boots",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_PLATE_HELL"
+    },
+    {
+      "base": "HEAD_PLATE_KEEPER",
+      "nome": "Elmo Judicator",
+      "en": "Judicator Helmet",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_PLATE_KEEPER"
+    },
+    {
+      "base": "ARMOR_PLATE_KEEPER",
+      "nome": "Armadura Judicator",
+      "en": "Judicator Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_PLATE_KEEPER"
+    },
+    {
+      "base": "SHOES_PLATE_KEEPER",
+      "nome": "Botas Judicator",
+      "en": "Judicator Boots",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_PLATE_KEEPER"
+    },
+    {
+      "base": "HEAD_PLATE_CRYSTAL",
+      "nome": "Elmo Duskweaver",
+      "en": "Duskweaver Helmet",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_PLATE_CRYSTAL"
+    },
+    {
+      "base": "ARMOR_PLATE_CRYSTAL",
+      "nome": "Armadura Duskweaver",
+      "en": "Duskweaver Armor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_PLATE_CRYSTAL"
+    },
+    {
+      "base": "SHOES_PLATE_CRYSTAL",
+      "nome": "Botas Duskweaver",
+      "en": "Duskweaver Boots",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_PLATE_CRYSTAL"
+    },
+    {
+      "base": "HEAD_PLATE_AVALON",
+      "nome": "Elmo do Valor",
+      "en": "Helmet of Valor",
+      "categoria": "Placas - Cabeça",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_PLATE_AVALON"
+    },
+    {
+      "base": "ARMOR_PLATE_AVALON",
+      "nome": "Armadura do Valor",
+      "en": "Armor of Valor",
+      "categoria": "Placas - Peito",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_PLATE_AVALON"
+    },
+    {
+      "base": "SHOES_PLATE_AVALON",
+      "nome": "Botas do Valor",
+      "en": "Boots of Valor",
+      "categoria": "Placas - Pés",
+      "materiais": [
+        {
+          "material": "METALBAR",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_PLATE_AVALON"
+    },
+    {
+      "base": "HEAD_LEATHER_HELL",
+      "nome": "Capuz Hellion",
+      "en": "Hellion Hood",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_LEATHER_HELL"
+    },
+    {
+      "base": "ARMOR_LEATHER_HELL",
+      "nome": "Casaco Hellion",
+      "en": "Hellion Jacket",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_LEATHER_HELL"
+    },
+    {
+      "base": "SHOES_LEATHER_HELL",
+      "nome": "Sapatos Hellion",
+      "en": "Hellion Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_LEATHER_HELL"
+    },
+    {
+      "base": "HEAD_LEATHER_KEEPER",
+      "nome": "Capuz Stalker",
+      "en": "Stalker Hood",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_LEATHER_KEEPER"
+    },
+    {
+      "base": "ARMOR_LEATHER_KEEPER",
+      "nome": "Casaco Stalker",
+      "en": "Stalker Jacket",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_LEATHER_KEEPER"
+    },
+    {
+      "base": "SHOES_LEATHER_KEEPER",
+      "nome": "Sapatos Stalker",
+      "en": "Stalker Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_LEATHER_KEEPER"
+    },
+    {
+      "base": "HEAD_LEATHER_UNDEAD",
+      "nome": "Capuz Specter",
+      "en": "Specter Hood",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_LEATHER_UNDEAD"
+    },
+    {
+      "base": "ARMOR_LEATHER_UNDEAD",
+      "nome": "Casaco Specter",
+      "en": "Specter Jacket",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_LEATHER_UNDEAD"
+    },
+    {
+      "base": "SHOES_LEATHER_UNDEAD",
+      "nome": "Sapatos Specter",
+      "en": "Specter Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_LEATHER_UNDEAD"
+    },
+    {
+      "base": "HEAD_LEATHER_CRYSTAL",
+      "nome": "Capuz Mistwalker",
+      "en": "Mistwalker Hood",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_LEATHER_CRYSTAL"
+    },
+    {
+      "base": "ARMOR_LEATHER_CRYSTAL",
+      "nome": "Casaco Mistwalker",
+      "en": "Mistwalker Jacket",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_LEATHER_CRYSTAL"
+    },
+    {
+      "base": "SHOES_LEATHER_CRYSTAL",
+      "nome": "Sapatos Mistwalker",
+      "en": "Mistwalker Shoes",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_LEATHER_CRYSTAL"
+    },
+    {
+      "base": "HEAD_LEATHER_AVALON",
+      "nome": "Capuz da Tenacidade",
+      "en": "Hood of Tenacity",
+      "categoria": "Couro - Cabeça",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_LEATHER_AVALON"
+    },
+    {
+      "base": "ARMOR_LEATHER_AVALON",
+      "nome": "Casaco da Tenacidade",
+      "en": "Jacket of Tenacity",
+      "categoria": "Couro - Peito",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_LEATHER_AVALON"
+    },
+    {
+      "base": "SHOES_LEATHER_AVALON",
+      "nome": "Sapatos da Tenacidade",
+      "en": "Shoes of Tenacity",
+      "categoria": "Couro - Pés",
+      "materiais": [
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_LEATHER_AVALON"
+    },
+    {
+      "base": "HEAD_CLOTH_KEEPER",
+      "nome": "Capuz Druida",
+      "en": "Druid Cowl",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_CLOTH_KEEPER"
+    },
+    {
+      "base": "ARMOR_CLOTH_KEEPER",
+      "nome": "Robe Druida",
+      "en": "Druid Robe",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_CLOTH_KEEPER"
+    },
+    {
+      "base": "SHOES_CLOTH_KEEPER",
+      "nome": "Sandálias Druida",
+      "en": "Druid Sandals",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_CLOTH_KEEPER"
+    },
+    {
+      "base": "HEAD_CLOTH_HELL",
+      "nome": "Capuz Fiend",
+      "en": "Fiend Cowl",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_CLOTH_HELL"
+    },
+    {
+      "base": "ARMOR_CLOTH_HELL",
+      "nome": "Robe Fiend",
+      "en": "Fiend Robe",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_CLOTH_HELL"
+    },
+    {
+      "base": "SHOES_CLOTH_HELL",
+      "nome": "Sandálias Fiend",
+      "en": "Fiend Sandals",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_CLOTH_HELL"
+    },
+    {
+      "base": "HEAD_CLOTH_UNDEAD",
+      "nome": "Capuz Cultista",
+      "en": "Cultist Cowl",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_CLOTH_UNDEAD"
+    },
+    {
+      "base": "ARMOR_CLOTH_UNDEAD",
+      "nome": "Robe Cultista",
+      "en": "Cultist Robe",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_CLOTH_UNDEAD"
+    },
+    {
+      "base": "SHOES_CLOTH_UNDEAD",
+      "nome": "Sandálias Cultista",
+      "en": "Cultist Sandals",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_CLOTH_UNDEAD"
+    },
+    {
+      "base": "HEAD_CLOTH_AVALON",
+      "nome": "Capuz da Pureza",
+      "en": "Cowl of Purity",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_CLOTH_AVALON"
+    },
+    {
+      "base": "ARMOR_CLOTH_AVALON",
+      "nome": "Robe da Pureza",
+      "en": "Robe of Purity",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_CLOTH_AVALON"
+    },
+    {
+      "base": "SHOES_CLOTH_AVALON",
+      "nome": "Sandálias da Pureza",
+      "en": "Sandals of Purity",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_CLOTH_AVALON"
+    },
+    {
+      "base": "HEAD_CLOTH_CRYSTAL",
+      "nome": "Chapéu Feyscale",
+      "en": "Feyscale Hat",
+      "categoria": "Tecido - Cabeça",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_HEAD_CLOTH_CRYSTAL"
+    },
+    {
+      "base": "ARMOR_CLOTH_CRYSTAL",
+      "nome": "Robe Feyscale",
+      "en": "Feyscale Robe",
+      "categoria": "Tecido - Peito",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 16
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_ARMOR_CLOTH_CRYSTAL"
+    },
+    {
+      "base": "SHOES_CLOTH_CRYSTAL",
+      "nome": "Sandálias Feyscale",
+      "en": "Feyscale Sandals",
+      "categoria": "Tecido - Pés",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        }
+      ],
+      "confiavel": false,
+      "artefacto": "{tier}_ARTEFACT_SHOES_CLOTH_CRYSTAL"
+    },
+    {
+      "base": "CAPEITEM_FW_BRECILIEN",
+      "nome": "Capa de Brecilien",
+      "en": "Brecilien Cape",
+      "categoria": "Capas",
+      "materiais": [
+        {
+          "material": "CLOTH",
+          "qtd": 8
+        },
+        {
+          "material": "LEATHER",
+          "qtd": 8
+        }
+      ],
+      "semEncantamento": true,
+      "confiavel": true
     }
   ]
 }

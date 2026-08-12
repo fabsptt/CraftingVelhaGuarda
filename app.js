@@ -382,6 +382,11 @@ function chunkByUrl(ids, citiesParam, maxChars = 3600) {
 }
 
 /* ---------- cálculo de lucro por item/cidade/encantamento ---------- */
+function optionFromGroup(group){
+  const first = group?.[0] || {};
+  return { matId: first.matId || '', nome: first.nome || 'Material em falta', qty: first.qty || 1, retornavel: false };
+}
+
 function calcularLinhas(finishedItems) {
   const tax = els.premium.checked ? 0.04 : 0.08;
   const rows = [];
@@ -407,7 +412,12 @@ function calcularLinhas(finishedItems) {
           const subtotal = p.sell_price_min * option.qty;
           if (!best || subtotal < best.subtotal) best = { ...option, unit: p.sell_price_min, subtotal };
         }
-        if (!best) { materiaisCompletos = false; break; }
+        if (!best) {
+          materiaisCompletos = false;
+          const missing = optionFromGroup(group);
+          materiaisLinha.push({ ...missing, unit: null, subtotal: null, depoisRetorno: 0, faltante: true });
+          continue;
+        }
 
         const depoisRetorno = best.retornavel ? best.subtotal * (1 - rrr) : best.subtotal;
         custoBruto += best.subtotal;
@@ -415,16 +425,16 @@ function calcularLinhas(finishedItems) {
       }
       if (!materiaisCompletos) continue;
 
-      const custo = materiaisLinha.reduce((s, m) => s + m.depoisRetorno, 0);
+      const custo = materiaisLinha.reduce((s, m) => s + (m.depoisRetorno || 0), 0);
       const venda = priceFinished.sell_price_min;
-      const lucro = venda * (1 - tax) - custo;
-      const margem = custo > 0 ? (lucro / custo) * 100 : 0;
+      const lucro = materiaisCompletos ? venda * (1 - tax) - custo : null;
+      const margem = materiaisCompletos && custo > 0 ? (lucro / custo) * 100 : null;
       const volume = VOLUME_INDEX[item.id]?.[city] || 0;
 
       rows.push({
         id: item.id, nome: item.nome, en: item.en, tier: item.tier, enchant: item.enchant, categoria: item.categoria,
         cidade: city, venda, custo, custoBruto, lucro, margem, volume, rrr,
-        materiais: materiaisLinha, custoIncompleto: false,
+        materiais: materiaisLinha, custoIncompleto: !materiaisCompletos,
       });
     }
   }
@@ -452,7 +462,7 @@ function renderTabela() {
       byItem[key].push(r);
     }
     grouped = Object.values(byItem).map(list => {
-      const melhor = list.slice().sort((a, b) => b.lucro - a.lucro)[0];
+      const melhor = list.slice().sort((a, b) => (b.lucro ?? -Infinity) - (a.lucro ?? -Infinity))[0];
       melhor._todas = list;
       return melhor;
     });
@@ -464,7 +474,7 @@ function renderTabela() {
     return;
   }
 
-  renderDestaques(grouped.filter(r => !r.custoIncompleto).slice().sort((a, b) => b.lucro - a.lucro).slice(0, 3));
+  renderDestaques(grouped.filter(r => !r.custoIncompleto).slice().sort((a, b) => (b.lucro ?? -Infinity) - (a.lucro ?? -Infinity)).slice(0, 3));
 
   const sortKey = mapOrdenarToKey(els.ordenar.value, sortState.key);
   grouped.sort((a, b) => {
@@ -490,8 +500,8 @@ function renderTabela() {
       <td class="city-cell">${r.cidade}${cidadeSel === 'ALL' ? ' <span style="color:var(--muted)">(melhor)</span>' : ''}</td>
       <td class="num">${fmt(r.venda)}</td>
       <td class="num">${fmt(r.custo)}${r.custoIncompleto ? ' <span class="incompleto-badge" title="Falta um material desconhecido nesta receita — o custo real é maior que o mostrado">⚠ incompleto</span>' : ''}</td>
-      <td class="num ${r.lucro >= 0 ? 'profit-pos' : 'profit-neg'}">${fmt(r.lucro)}</td>
-      <td class="num ${r.lucro >= 0 ? 'profit-pos' : 'profit-neg'}">${r.margem.toFixed(0)}%</td>
+      <td class="num ${r.custoIncompleto ? '' : (r.lucro >= 0 ? 'profit-pos' : 'profit-neg')}">${fmt(r.lucro)}</td>
+      <td class="num ${r.custoIncompleto ? '' : (r.lucro >= 0 ? 'profit-pos' : 'profit-neg')}">${r.margem == null ? '—' : r.margem.toFixed(0)+'%'}</td>
       <td class="num"><span class="vol-badge ${r.volume >= maxVol * 0.5 ? 'hot' : ''}">${r.volume}</span></td>
     `;
 
@@ -533,7 +543,7 @@ function renderDetalhe(r) {
   let comparacao = '';
   if (r._todas && r._todas.length > 1) {
     const pills = r._todas
-      .slice().sort((a, b) => b.lucro - a.lucro)
+      .slice().sort((a, b) => (b.lucro ?? -Infinity) - (a.lucro ?? -Infinity))
       .map(x => `<span class="city-pill ${x.cidade === r.cidade ? 'best' : ''}">${x.cidade}: ${fmt(x.lucro)}</span>`)
       .join('');
     comparacao = `<div class="recipe-title" style="margin-top:16px;">Lucro por cidade (${r.tier}.${r.enchant})</div><div class="city-compare">${pills}</div>`;
@@ -581,7 +591,8 @@ function mapOrdenarToKey(select, clicked) {
 }
 
 function fmt(n) {
-  return Math.round(n).toLocaleString('pt-PT');
+  if (n === null || n === undefined || !Number.isFinite(Number(n))) return '—';
+  return Math.round(Number(n)).toLocaleString('pt-PT');
 }
 
 function setStatus(msg, isErr = false) {
