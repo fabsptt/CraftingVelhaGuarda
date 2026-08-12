@@ -168,7 +168,10 @@ async function atualizar() {
     calcularLinhas(finished);
 
     if (ROWS.length === 0) {
-      setStatus(`Preços obtidos para ${idsComPreco} itens, mas nenhum combina em receita completa (item + todos os materiais na mesma cidade). Tenta outro tier ou liga "mostrar mais vendidos" desligado para simplificar.`, true);
+      const falhasInfo = fetchPrices.ultimasFalhas > 0
+        ? ` ${fetchPrices.ultimasFalhas} de ${fetchPrices.ultimoTotal} lotes de preços falharam mesmo depois de repetir — é provável que faltem exatamente os materiais destes itens por causa disso.`
+        : ' Os preços dos materiais e dos itens finais podem estar espalhados por cidades diferentes, sem nenhuma cidade a ter os dois ao mesmo tempo.';
+      setStatus(`Preços obtidos para ${idsComPreco} itens, mas nenhum combina em receita completa (item + todos os materiais na mesma cidade).${falhasInfo} Tenta com menos tiers/encantamentos de uma vez.`, true);
       return;
     }
 
@@ -187,30 +190,56 @@ async function fetchPrices(ids, citiesParam) {
   const index = {};
   let falhas = 0;
   let feitos = 0;
+  const falhados = [];
+
+  async function tentarLote(c) {
+    const url = `${API_BASE}/prices/${c.join(',')}.json?locations=${citiesParam}&qualities=1`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    for (const row of data) {
+      index[row.item_id] ??= {};
+      index[row.item_id][row.city] = {
+        sell_price_min: row.sell_price_min || 0,
+        buy_price_min: row.buy_price_min || 0,
+      };
+    }
+  }
 
   await executarEmParalelo(chunks, 6, async (c) => {
-    const url = `${API_BASE}/prices/${c.join(',')}.json?locations=${citiesParam}&qualities=1`;
     try {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      for (const row of data) {
-        index[row.item_id] ??= {};
-        index[row.item_id][row.city] = {
-          sell_price_min: row.sell_price_min || 0,
-          buy_price_min: row.buy_price_min || 0,
-        };
-      }
+      await tentarLote(c);
     } catch (e) {
-      falhas++;
-      console.warn('Lote de preços falhou:', e);
+      falhados.push(c);
+      console.warn('Lote de preços falhou (1ª tentativa):', e);
     } finally {
       feitos++;
       setStatus(`A obter preços… (${feitos}/${chunks.length} lotes)`);
     }
   });
 
+  // 2ª tentativa só para os lotes que falharam à primeira (rate-limit costuma ser passageiro)
+  if (falhados.length) {
+    setStatus(`A repetir ${falhados.length} lote(s) que falharam…`);
+    await new Promise(r => setTimeout(r, 1200));
+    const aindaFalhados = [];
+    await executarEmParalelo(falhados, 3, async (c) => {
+      try {
+        await tentarLote(c);
+      } catch (e) {
+        aindaFalhados.push(c);
+        console.warn('Lote de preços falhou (2ª tentativa):', e);
+      }
+    });
+    falhas = aindaFalhados.length;
+  }
+
   if (falhas === chunks.length) throw new Error('Todos os pedidos de preços falharam.');
+  if (falhas > 0) {
+    console.warn(`${falhas} de ${chunks.length} lotes de preços continuam em falta depois de repetir.`);
+  }
+  fetchPrices.ultimasFalhas = falhas;
+  fetchPrices.ultimoTotal = chunks.length;
   return index;
 }
 
