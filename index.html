@@ -120,8 +120,9 @@
     <p>
       Preços via <a href="https://www.albion-online-data.com/" target="_blank" rel="noopener">Albion Online Data Project</a> (dados enviados por jogadores — podem ter atraso ou faltar para itens pouco negociados).
       "Vol." é uma estimativa de itens transacionados nos últimos dias, usada como indicador de "mais vendido".
-      Quantidades de recursos em <code>recipes.json</code> são estimativas — ajusta conforme o teu foco de crafting para valores exatos.
-      Lucro = preço de venda instantâneo × (1 − imposto) − custo de compra instantânea dos materiais, na mesma cidade.
+      As receitas em <code>recipes.json</code> incluem quantidades corrigidas para as peças de equipamento suportadas e artefactos; ferramentas não usam encantamento.
+      O custo efetivo aplica o retorno de recursos: 15,2% base ou 24,8% quando a cidade tem o bónus de fabrico da categoria. Artefactos e itens especiais não recebem retorno.
+      Lucro = preço de venda instantâneo × (1 − imposto) − custo efetivo dos materiais.
     </p>
   </footer>
 

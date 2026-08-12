@@ -79,32 +79,102 @@ function itemId(tier, base, enchant) {
   return enchant > 0 ? `${tier}_${base}@${enchant}` : `${tier}_${base}`;
 }
 
-// materiais refinados (barra/tábua/tecido/couro) seguem uma nomenclatura diferente do equipamento quando encantados
+// Bónus de fabrico da imagem da Velha Guarda: +15% de RRR na cidade indicada.
+// Sem bónus de cidade, o RRR base considerado é 15,2%; com o bónus de cidade é 24,8%.
+const CRAFT_BONUS_CATEGORIES = {
+  'Martlock': ['Arma - Machado','Arma - Bordão','Arma - Cajado de Gelo','Placas - Pés','Mão Secundária - Escudo','Mão Secundária - Tocha','Mão Secundária - Tomo'],
+  'Lymhurst': ['Arma - Espada','Arma - Arco','Arma - Cajado Arcano','Couro - Cabeça','Couro - Pés'],
+  'Bridgewatch': ['Arma - Adaga','Arma - Besta','Arma - Cajado Amaldiçoado','Placas - Peito','Tecido - Pés'],
+  'Fort Sterling': ['Arma - Martelo','Arma - Lança','Arma - Cajado Sagrado','Placas - Cabeça','Tecido - Peito'],
+  'Thetford': ['Arma - Maça','Arma - Cajado da Natureza','Arma - Cajado de Fogo','Tecido - Cabeça','Couro - Peito'],
+};
+const BASE_RRR = 0.152;
+const BONUS_RRR = 0.248;
+
+function craftRRR(city, categoria) {
+  return (CRAFT_BONUS_CATEGORIES[city] || []).includes(categoria) ? BONUS_RRR : BASE_RRR;
+}
+
+function itemId(tier, base, enchant) {
+  return enchant > 0 ? `${tier}_${base}@${enchant}` : `${tier}_${base}`;
+}
+
 function matIdFor(tier, resourceKey, enchant) {
   return enchant > 0 ? `${tier}_${resourceKey}_LEVEL${enchant}@${enchant}` : `${tier}_${resourceKey}`;
 }
 
 function qtyFor(materialEntry, tier) {
-  return materialEntry.qtd ?? materialEntry.qtdPorTier?.[tier] ?? RECIPES.quantidades_por_tier[materialEntry.peso][tier];
+  return materialEntry.qtd ?? materialEntry.qtdPorTier?.[tier] ?? RECIPES.quantidades_por_tier?.[materialEntry.peso]?.[tier] ?? 1;
 }
 
-// resolve qualquer tipo de entrada de material (recurso refinado, item já fabricado como ingrediente, item de id fixo tipo Heart, ou id com o tier no meio tipo Selo Real)
-function resolverMaterial(entry, tier, enchant) {
+// Cada material passa a ser uma lista de opções de compra. Isto é importante
+// para artefactos: muitas receitas aceitam o artefacto normal OU o artefacto cristalizado.
+function resolverMaterialOptions(entry, tier, enchant) {
+  const qty = qtyFor(entry, tier);
+  const options = [];
+
   if (entry.idFixo) {
-    return { matId: entry.idFixo, nome: entry.nome, qty: qtyFor(entry, tier) };
-  }
-  if (entry.idTemplate) {
-    return { matId: entry.idTemplate.replace('{tier}', tier), nome: entry.nome, qty: qtyFor(entry, tier) };
-  }
-  if (entry.itemRef) {
+    options.push({ matId: entry.idFixo, nome: entry.nome, qty, retornavel: false });
+  } else if (entry.idTemplate) {
+    options.push({ matId: entry.idTemplate.replace('{tier}', tier), nome: entry.nome, qty, retornavel: false });
+  } else if (entry.itemRef) {
     const enchantMat = entry.semEncantamento ? 0 : enchant;
-    return { matId: itemId(tier, entry.itemRef, enchantMat), nome: entry.nome, qty: qtyFor(entry, tier) };
+    options.push({ matId: itemId(tier, entry.itemRef, enchantMat), nome: entry.nome, qty, retornavel: false });
+  } else if (entry.material) {
+    options.push({
+      matId: matIdFor(tier, entry.material, enchant),
+      nome: `${RARIDADE_MATERIAL[enchant]} ${RECIPES.materials[entry.material]?.nome || entry.material}`.trim(),
+      qty,
+      retornavel: true,
+    });
   }
-  return {
-    matId: matIdFor(tier, entry.material, enchant),
-    nome: `${RARIDADE_MATERIAL[enchant]} ${RECIPES.materials[entry.material].nome}`.trim(),
-    qty: qtyFor(entry, tier),
-  };
+
+  // Ingrediente de artefacto específico do item.
+  if (entry.artefacto) {
+    options.push({
+      matId: entry.artefacto.replace('{tier}', tier),
+      nome: 'Artefacto',
+      qty,
+      retornavel: false,
+    });
+  }
+  return options;
+}
+
+function resolverMaterial(entry, tier, enchant) {
+  const options = resolverMaterialOptions(entry, tier, enchant);
+  return options[0] || { matId: '', nome: entry.nome || 'Material', qty: qtyFor(entry, tier), retornavel: false };
+}
+
+function materialOptions(item, tier, enchant) {
+  const out = [];
+  for (const m of item.materiais) {
+    const opts = resolverMaterialOptions(m, tier, enchant);
+    if (m.artefacto) {
+      // A entrada de artefacto no próprio item é adicionada como opção separada.
+      out.push([{ matId: m.artefacto.replace('{tier}', tier), nome: 'Artefacto', qty: qtyFor(m, tier), retornavel: false }]);
+    } else {
+      out.push(opts);
+    }
+  }
+  if (item.artefacto) {
+    out.push([
+      { matId: item.artefacto.replace('{tier}', tier), nome: 'Artefacto', qty: 1, retornavel: false },
+      ...artifactAlternativeIds(item, tier),
+    ]);
+  }
+  return out;
+}
+
+function artifactAlternativeIds(item, tier) {
+  const b = item.base;
+  let token = null;
+  if (b.includes('_MORGANA') || b.includes('_KEEPER')) token = `${tier}_ARTEFACT_TOKEN_FAVOR_1`;
+  else if (b.includes('_HELL')) token = `${tier}_ARTEFACT_TOKEN_FAVOR_2`;
+  else if (b.includes('_UNDEAD')) token = `${tier}_ARTEFACT_TOKEN_FAVOR_3`;
+  else if (b.includes('_AVALON')) token = `${tier}_ARTEFACT_TOKEN_FAVOR_4`;
+  if (!token) return [];
+  return [{ matId: token, nome: 'Artefacto Cristalizado', qty: 1, retornavel: false }];
 }
 
 /* ---------- construir lista de item ids necessários ---------- */
@@ -116,14 +186,15 @@ function idsNecessarios(tiers) {
     const enchants = item.semEncantamento ? [0] : ENCHANTS;
     for (const t of tiers) {
       for (const e of enchants) {
-        finished.push({ ...item, tier: t, enchant: e, id: itemId(t, item.base, e) });
-        for (const m of item.materiais) {
-          materials.add(resolverMaterial(m, t, e).matId);
+        const finishedItem = { ...item, tier: t, enchant: e, id: itemId(t, item.base, e) };
+        finished.push(finishedItem);
+        for (const m of materialOptions(finishedItem, t, e)) {
+          for (const option of m) materials.add(option.matId);
         }
       }
     }
   }
-  return { finished, materialIds: [...materials] };
+  return { finished, materialIds: [...materials].filter(Boolean) };
 }
 
 /* ---------- fetch preços + histórico ---------- */
@@ -186,7 +257,7 @@ async function atualizar() {
 }
 
 async function fetchPrices(ids, citiesParam) {
-  const chunks = chunk(ids, 80);
+  const chunks = chunkByUrl(ids, citiesParam, 3600);
   const index = {};
   let falhas = 0;
   let feitos = 0;
@@ -298,31 +369,53 @@ function chunk(arr, size) {
   return out;
 }
 
+function chunkByUrl(ids, citiesParam, maxChars = 3600) {
+  const out = []; let current = [];
+  for (const id of ids) {
+    const candidate = [...current, id];
+    const test = `${API_BASE}/prices/${candidate.join(',')}.json?locations=${citiesParam}&qualities=1`;
+    if (current.length && test.length > maxChars) { out.push(current); current = [id]; }
+    else current = candidate;
+  }
+  if (current.length) out.push(current);
+  return out;
+}
+
 /* ---------- cálculo de lucro por item/cidade/encantamento ---------- */
 function calcularLinhas(finishedItems) {
   const tax = els.premium.checked ? 0.04 : 0.08;
   const rows = [];
 
   for (const item of finishedItems) {
-    // resolve cada material da receita (pode ser 1 ou vários) para este tier/encantamento
-    const materiaisResolvidos = item.materiais.map(m => resolverMaterial(m, item.tier, item.enchant));
+    const materialGroups = materialOptions(item, item.tier, item.enchant);
 
     for (const city of CITIES) {
       const priceFinished = PRICE_INDEX[item.id]?.[city];
       if (!priceFinished || !priceFinished.sell_price_min) continue;
 
-      let custo = 0;
+      let custoBruto = 0;
       let materiaisCompletos = true;
       const materiaisLinha = [];
-      for (const m of materiaisResolvidos) {
-        const priceMat = PRICE_INDEX[m.matId]?.[city];
-        if (!priceMat || !priceMat.sell_price_min) { materiaisCompletos = false; break; }
-        const subtotal = priceMat.sell_price_min * m.qty;
-        custo += subtotal;
-        materiaisLinha.push({ ...m, unit: priceMat.sell_price_min, subtotal });
+      const rrr = craftRRR(city, item.categoria);
+
+      for (const group of materialGroups) {
+        // Escolhe a opção de ingrediente mais barata disponível nessa cidade.
+        let best = null;
+        for (const option of group) {
+          const p = PRICE_INDEX[option.matId]?.[city];
+          if (!p || !p.sell_price_min) continue;
+          const subtotal = p.sell_price_min * option.qty;
+          if (!best || subtotal < best.subtotal) best = { ...option, unit: p.sell_price_min, subtotal };
+        }
+        if (!best) { materiaisCompletos = false; break; }
+
+        const depoisRetorno = best.retornavel ? best.subtotal * (1 - rrr) : best.subtotal;
+        custoBruto += best.subtotal;
+        materiaisLinha.push({ ...best, depoisRetorno });
       }
       if (!materiaisCompletos) continue;
 
+      const custo = materiaisLinha.reduce((s, m) => s + m.depoisRetorno, 0);
       const venda = priceFinished.sell_price_min;
       const lucro = venda * (1 - tax) - custo;
       const margem = custo > 0 ? (lucro / custo) * 100 : 0;
@@ -330,8 +423,8 @@ function calcularLinhas(finishedItems) {
 
       rows.push({
         id: item.id, nome: item.nome, en: item.en, tier: item.tier, enchant: item.enchant, categoria: item.categoria,
-        cidade: city, venda, custo, lucro, margem, volume, materiais: materiaisLinha,
-        custoIncompleto: !!item.custoIncompleto,
+        cidade: city, venda, custo, custoBruto, lucro, margem, volume, rrr,
+        materiais: materiaisLinha, custoIncompleto: false,
       });
     }
   }
@@ -432,7 +525,7 @@ function renderDestaques(top3) {
           </div>
         </div>
       `).join('')}
-    </div>
+    </div>${rrrInfo}
   `;
 }
 
@@ -466,6 +559,7 @@ function renderDetalhe(r) {
   const avisoIncompleto = r.custoIncompleto ? `
     <div class="recipe-title" style="color:var(--rust); margin-bottom:10px;">⚠ Receita incompleta — falta um material de artefacto que ainda não foi confirmado. O custo (e por isso o lucro) mostrado é mais baixo do que o real.</div>
   ` : '';
+  const rrrInfo = `<div class="recipe-title" style="margin-top:12px;">Retorno de recursos: <strong>${(r.rrr * 100).toFixed(1)}%</strong> · custo bruto ${fmt(r.custoBruto)} → custo efetivo ${fmt(r.custo)}</div>`;
 
   return `
     ${avisoIncompleto}
@@ -475,6 +569,7 @@ function renderDetalhe(r) {
       ${linhasMateriais}
       <div class="sum">Custo total</div><div class="sum"></div><div class="sum"></div><div class="sum">${fmt(r.custo)}</div>
     </div>
+    ${rrrInfo}
     ${enchantsHtml}
     ${comparacao}
   `;

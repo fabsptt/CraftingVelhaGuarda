@@ -445,3 +445,5 @@ footer a{ color: var(--steel); }
   margin-left: 6px;
   vertical-align: middle;
 }
+
+.recipe-title strong{color:var(--gold);}

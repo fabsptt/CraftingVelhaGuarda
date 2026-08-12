@@ -1,5 +1,5 @@
 {
-  "_nota": "Quantidades de recursos são estimativas representativas para armas/armaduras (fórmula por tier), não os valores exatos do jogo. Capas, bolsas e ferramentas usam as quantidades reais do jogo (fixas, não escalam por tier). Ajusta 'quantidades_por_tier' com os valores reais do teu foco de crafting para armas/armaduras.",
+  "_nota": "Receitas corrigidas para o cálculo de crafting: quantidades reais das peças de armadura, ferramentas sem encantamento, artefactos separados e receitas com alternativas de artefacto. Os IDs/receitas devem ser revistos quando o jogo alterar receitas.",
   "materials": {
     "METALBAR": {
       "nome": "Barra de Metal"
@@ -60,7 +60,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -73,7 +73,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -86,7 +86,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -99,7 +99,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -112,7 +112,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -125,7 +125,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -138,7 +138,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -151,7 +151,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -164,7 +164,7 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -177,7 +177,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -190,7 +190,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -203,7 +203,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -216,7 +216,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -229,7 +229,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -242,7 +242,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -255,7 +255,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -268,7 +268,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -281,7 +281,7 @@
       "materiais": [
         {
           "material": "LEATHER",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -294,7 +294,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -307,7 +307,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -320,7 +320,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -333,7 +333,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -346,7 +346,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -359,7 +359,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_pesada"
+          "qtd": 16
         }
       ],
       "confiavel": true
@@ -372,7 +372,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -385,7 +385,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -398,7 +398,7 @@
       "materiais": [
         {
           "material": "CLOTH",
-          "peso": "peca_leve"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -411,11 +411,13 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "nome": "Barra de Metal",
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "nome": "Couro",
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -428,11 +430,13 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "nome": "Barra de Metal",
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "nome": "Couro",
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -445,11 +449,13 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "nome": "Barra de Metal",
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "nome": "Couro",
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -462,11 +468,8 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
-        },
-        {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "nome": "Tábuas",
+          "qtd": 32
         }
       ],
       "confiavel": true
@@ -479,11 +482,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -496,11 +499,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
       "confiavel": true
@@ -912,15 +915,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 2,
-            "T5": 2,
-            "T6": 6,
-            "T7": 10,
-            "T8": 20
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -937,15 +934,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 4,
-            "T5": 4,
-            "T6": 12,
-            "T7": 20,
-            "T8": 40
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -962,15 +953,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 2,
-            "T5": 2,
-            "T6": 6,
-            "T7": 10,
-            "T8": 20
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -987,15 +972,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 2,
-            "T5": 2,
-            "T6": 6,
-            "T7": 10,
-            "T8": 20
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -1012,15 +991,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 4,
-            "T5": 4,
-            "T6": 12,
-            "T7": 20,
-            "T8": 40
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -1037,15 +1010,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 2,
-            "T5": 2,
-            "T6": 6,
-            "T7": 10,
-            "T8": 20
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -1062,15 +1029,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 2,
-            "T5": 2,
-            "T6": 6,
-            "T7": 10,
-            "T8": 20
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -1087,15 +1048,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 4,
-            "T5": 4,
-            "T6": 12,
-            "T7": 20,
-            "T8": 40
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -1112,15 +1067,9 @@
           "qtd": 1
         },
         {
-          "idTemplate": "QUESTITEM_TOKEN_ROYAL_{tier}",
+          "idTemplate": "{tier}_ROYAL_SIGIL",
           "nome": "Selo Real",
-          "qtdPorTier": {
-            "T4": 2,
-            "T5": 2,
-            "T6": 6,
-            "T7": 10,
-            "T8": 20
-          }
+          "qtd": 2
         }
       ],
       "confiavel": true
@@ -1140,7 +1089,7 @@
           "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_DUALSWORD",
@@ -1150,99 +1099,104 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "2H_CLARENTBLADE",
+      "base": "MAIN_SCIMITAR_MORGANA",
       "nome": "Lâmina Aclarada",
       "en": "Clarent Blade",
       "categoria": "Arma - Espada",
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_SCIMITAR_MORGANA"
     },
     {
-      "base": "2H_CARVINGSWORD",
+      "base": "2H_CLEAVER_HELL",
       "nome": "Espada Entalhada",
       "en": "Carving Sword",
       "categoria": "Arma - Espada",
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CLEAVER_HELL"
     },
     {
-      "base": "2H_DUALSWORD_MORGANA",
+      "base": "2H_DUALSCIMITAR_UNDEAD",
       "nome": "Par de Galatinas",
       "en": "Galatine Pair",
       "categoria": "Arma - Espada",
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_DUALSCIMITAR_UNDEAD"
     },
     {
-      "base": "2H_SWORD_AVALON",
+      "base": "2H_CLAYMORE_AVALON",
       "nome": "Cria-reis",
       "en": "Kingmaker",
       "categoria": "Arma - Espada",
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CLAYMORE_AVALON"
     },
     {
-      "base": "2H_SWORD_CRYSTAL",
+      "base": "2H_CLAYMORE_CRYSTAL",
       "nome": "Lâmina da Infinidade",
       "en": "Infinity Blade",
       "categoria": "Arma - Espada",
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CLAYMORE_CRYSTAL"
     },
     {
       "base": "2H_AXE",
@@ -1252,14 +1206,14 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HALBERD",
@@ -1269,14 +1223,14 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_AXE_MORGANA",
@@ -1286,14 +1240,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_AXE_MORGANA"
     },
     {
       "base": "2H_SCYTHE_HELL",
@@ -1303,14 +1258,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_SCYTHE_HELL"
     },
     {
       "base": "2H_CLAWPAIR_KEEPER",
@@ -1320,14 +1276,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CLAWPAIR_KEEPER"
     },
     {
       "base": "2H_AXE_AVALON",
@@ -1337,14 +1294,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_AXE_AVALON"
     },
     {
       "base": "2H_AXE_CRYSTAL",
@@ -1354,14 +1312,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_AXE_CRYSTAL"
     },
     {
       "base": "2H_MACE",
@@ -1371,14 +1330,14 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_MACE_MORGANA",
@@ -1388,14 +1347,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_MACE_MORGANA"
     },
     {
       "base": "MAIN_MACE_HELL",
@@ -1405,14 +1365,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_MACE_HELL"
     },
     {
       "base": "MAIN_MACE_KEEPER",
@@ -1422,14 +1383,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_MACE_KEEPER"
     },
     {
       "base": "2H_MACE_UNDEAD",
@@ -1439,14 +1401,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_MACE_UNDEAD"
     },
     {
       "base": "2H_MACE_AVALON",
@@ -1456,14 +1419,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_MACE_AVALON"
     },
     {
       "base": "MAIN_MACE_CRYSTAL",
@@ -1473,14 +1437,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_MACE_CRYSTAL"
     },
     {
       "base": "MAIN_HAMMER",
@@ -1490,14 +1455,10 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
-        },
-        {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 24
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HAMMER",
@@ -1507,14 +1468,14 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HAMMER_MORGANA",
@@ -1524,14 +1485,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HAMMER_MORGANA"
     },
     {
       "base": "MAIN_HAMMER_UNDEAD",
@@ -1541,14 +1503,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_HAMMER_UNDEAD"
     },
     {
       "base": "2H_HAMMER_HELL",
@@ -1558,14 +1521,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HAMMER_HELL"
     },
     {
       "base": "2H_HAMMER_KEEPER",
@@ -1575,14 +1539,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HAMMER_KEEPER"
     },
     {
       "base": "2H_HAMMER_AVALON",
@@ -1592,14 +1557,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HAMMER_AVALON"
     },
     {
       "base": "MAIN_HAMMER_CRYSTAL",
@@ -1609,14 +1575,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "LEATHER",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_HAMMER_CRYSTAL"
     },
     {
       "base": "2H_WARBOW",
@@ -1626,14 +1593,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
-        },
-        {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "nome": "Tábuas",
+          "qtd": 32
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_LONGBOW",
@@ -1643,14 +1607,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
-        },
-        {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "nome": "Tábuas",
+          "qtd": 32
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_BOW_MORGANA",
@@ -1660,14 +1621,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_BOW_MORGANA"
     },
     {
       "base": "2H_BOW_HELL",
@@ -1677,14 +1639,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_BOW_HELL"
     },
     {
       "base": "2H_BOW_KEEPER",
@@ -1694,14 +1657,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_BOW_KEEPER"
     },
     {
       "base": "2H_BOW_AVALON",
@@ -1711,14 +1675,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_BOW_AVALON"
     },
     {
       "base": "2H_BOW_CRYSTAL",
@@ -1728,14 +1693,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_BOW_CRYSTAL"
     },
     {
       "base": "MAIN_SPEAR",
@@ -1744,15 +1710,17 @@
       "categoria": "Arma - Lança",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "nome": "Barra de Metal",
+          "qtd": 16
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "nome": "Couro",
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SPEAR",
@@ -1762,14 +1730,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SPEAR_MORGANA",
@@ -1779,14 +1747,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_SPEAR_MORGANA"
     },
     {
       "base": "2H_SPEAR_HELL",
@@ -1796,14 +1765,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_SPEAR_HELL"
     },
     {
       "base": "2H_SPEAR_KEEPER",
@@ -1813,14 +1783,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_SPEAR_KEEPER"
     },
     {
       "base": "2H_SPEAR_UNDEAD",
@@ -1830,14 +1801,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_SPEAR_UNDEAD"
     },
     {
       "base": "2H_SPEAR_AVALON",
@@ -1847,14 +1819,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_SPEAR_AVALON"
     },
     {
       "base": "2H_SPEAR_CRYSTAL",
@@ -1864,14 +1837,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_SPEAR_CRYSTAL"
     },
     {
       "base": "MAIN_DAGGER",
@@ -1881,14 +1855,14 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_DAGGERPAIR",
@@ -1898,14 +1872,14 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "qtd": 16
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "qtd": 16
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_DAGGER_MORGANA",
@@ -1915,14 +1889,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_DAGGER_MORGANA"
     },
     {
       "base": "2H_DAGGERPAIR_HELL",
@@ -1932,14 +1907,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_DAGGERPAIR_HELL"
     },
     {
       "base": "MAIN_DAGGER_KEEPER",
@@ -1949,14 +1925,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_DAGGER_KEEPER"
     },
     {
       "base": "2H_DAGGERPAIR_UNDEAD",
@@ -1966,14 +1943,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_DAGGERPAIR_UNDEAD"
     },
     {
       "base": "2H_DAGGERPAIR_AVALON",
@@ -1983,14 +1961,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_DAGGERPAIR_AVALON"
     },
     {
       "base": "2H_DAGGERPAIR_CRYSTAL",
@@ -2000,14 +1979,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_DAGGERPAIR_CRYSTAL"
     },
     {
       "base": "2H_FISTS",
@@ -2017,14 +1997,16 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "nome": "Barra de Metal",
+          "qtd": 12
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "nome": "Couro",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FISTS_MORGANA",
@@ -2034,14 +2016,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FISTS_MORGANA"
     },
     {
       "base": "2H_FISTS_HELL",
@@ -2051,14 +2034,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FISTS_HELL"
     },
     {
       "base": "2H_FISTS_KEEPER",
@@ -2068,14 +2052,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FISTS_KEEPER"
     },
     {
       "base": "2H_FISTS_UNDEAD",
@@ -2085,14 +2070,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FISTS_UNDEAD"
     },
     {
       "base": "MAIN_FISTS_UNDEAD",
@@ -2102,14 +2088,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_FISTS_UNDEAD"
     },
     {
       "base": "2H_FISTS_AVALON",
@@ -2119,14 +2106,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FISTS_AVALON"
     },
     {
       "base": "2H_FISTS_CRYSTAL",
@@ -2136,14 +2124,15 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FISTS_CRYSTAL"
     },
     {
       "base": "2H_CROSSBOW",
@@ -2153,14 +2142,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CROSSBOWLARGE",
@@ -2170,14 +2159,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_CROSSBOW",
@@ -2187,14 +2176,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CROSSBOW_MORGANA",
@@ -2204,14 +2193,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CROSSBOW_MORGANA"
     },
     {
       "base": "2H_CROSSBOW_HELL",
@@ -2221,14 +2211,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CROSSBOW_HELL"
     },
     {
       "base": "2H_CROSSBOW_KEEPER",
@@ -2238,14 +2229,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CROSSBOW_KEEPER"
     },
     {
       "base": "2H_CROSSBOW_AVALON",
@@ -2255,14 +2247,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CROSSBOW_AVALON"
     },
     {
       "base": "2H_CROSSBOW_CRYSTAL",
@@ -2272,14 +2265,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CROSSBOW_CRYSTAL"
     },
     {
       "base": "MAIN_1H_QUARTERSTAFF",
@@ -2288,15 +2282,15 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_QUARTERSTAFF",
@@ -2305,15 +2299,15 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_QUARTERSTAFF_MORGANA",
@@ -2322,15 +2316,16 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_QUARTERSTAFF_MORGANA"
     },
     {
       "base": "2H_QUARTERSTAFF_HELL",
@@ -2339,15 +2334,16 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_QUARTERSTAFF_HELL"
     },
     {
       "base": "MAIN_QUARTERSTAFF_KEEPER",
@@ -2356,15 +2352,16 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_QUARTERSTAFF_KEEPER"
     },
     {
       "base": "2H_QUARTERSTAFF_AVALON",
@@ -2373,15 +2370,16 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_QUARTERSTAFF_AVALON"
     },
     {
       "base": "2H_QUARTERSTAFF_UNDEAD",
@@ -2390,15 +2388,16 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_QUARTERSTAFF_UNDEAD"
     },
     {
       "base": "2H_QUARTERSTAFF_CRYSTAL",
@@ -2407,15 +2406,16 @@
       "categoria": "Arma - Bordão",
       "materiais": [
         {
-          "material": "PLANKS",
-          "peso": "arma_principal"
+          "material": "METALBAR",
+          "qtd": 12
         },
         {
-          "material": "CLOTH",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 20
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_QUARTERSTAFF_CRYSTAL"
     },
     {
       "base": "MAIN_NATURESTAFF",
@@ -2425,14 +2425,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURESTAFF",
@@ -2442,14 +2442,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURESTAFF_MORGANA",
@@ -2459,14 +2459,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURESTAFF_MORGANA"
     },
     {
       "base": "2H_NATURESTAFF_HELL",
@@ -2476,14 +2477,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURESTAFF_HELL"
     },
     {
       "base": "MAIN_NATURESTAFF_KEEPER",
@@ -2493,14 +2495,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_NATURESTAFF_KEEPER"
     },
     {
       "base": "2H_NATURESTAFF_UNDEAD",
@@ -2510,14 +2513,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURESTAFF_UNDEAD"
     },
     {
       "base": "2H_NATURESTAFF_AVALON",
@@ -2527,14 +2531,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURESTAFF_AVALON"
     },
     {
       "base": "2H_NATURESTAFF_CRYSTAL",
@@ -2544,14 +2549,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURESTAFF_CRYSTAL"
     },
     {
       "base": "MAIN_FIRESTAFF",
@@ -2561,14 +2567,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FIRESTAFF",
@@ -2578,14 +2584,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FIRESTAFF_MORGANA",
@@ -2595,14 +2601,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FIRESTAFF_MORGANA"
     },
     {
       "base": "2H_FIRESTAFF_HELL",
@@ -2612,14 +2619,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FIRESTAFF_HELL"
     },
     {
       "base": "MAIN_FIRESTAFF_KEEPER",
@@ -2629,14 +2637,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_FIRESTAFF_KEEPER"
     },
     {
       "base": "2H_FIRESTAFF_UNDEAD",
@@ -2646,14 +2655,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FIRESTAFF_UNDEAD"
     },
     {
       "base": "2H_FIRESTAFF_AVALON",
@@ -2663,14 +2673,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FIRESTAFF_AVALON"
     },
     {
       "base": "2H_FIRESTAFF_CRYSTAL",
@@ -2680,14 +2691,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FIRESTAFF_CRYSTAL"
     },
     {
       "base": "2H_HOLYSTAFF",
@@ -2697,14 +2709,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HOLYSTAFF_MORGANA",
@@ -2714,14 +2726,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HOLYSTAFF_MORGANA"
     },
     {
       "base": "2H_HOLYSTAFF_HELL",
@@ -2731,14 +2744,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HOLYSTAFF_HELL"
     },
     {
       "base": "MAIN_HOLYSTAFF_KEEPER",
@@ -2748,14 +2762,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_HOLYSTAFF_KEEPER"
     },
     {
       "base": "2H_HOLYSTAFF_UNDEAD",
@@ -2765,14 +2780,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HOLYSTAFF_UNDEAD"
     },
     {
       "base": "2H_HOLYSTAFF_AVALON",
@@ -2782,14 +2798,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HOLYSTAFF_AVALON"
     },
     {
       "base": "2H_HOLYSTAFF_CRYSTAL",
@@ -2799,14 +2816,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_HOLYSTAFF_CRYSTAL"
     },
     {
       "base": "MAIN_ARCANESTAFF",
@@ -2816,14 +2834,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_ARCANESTAFF",
@@ -2833,14 +2851,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_ARCANESTAFF_MORGANA",
@@ -2850,14 +2868,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_ARCANESTAFF_MORGANA"
     },
     {
       "base": "2H_ARCANESTAFF_HELL",
@@ -2867,14 +2886,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_ARCANESTAFF_HELL"
     },
     {
       "base": "MAIN_ARCANESTAFF_KEEPER",
@@ -2884,14 +2904,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_ARCANESTAFF_KEEPER"
     },
     {
       "base": "2H_ARCANESTAFF_UNDEAD",
@@ -2901,14 +2922,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_ARCANESTAFF_UNDEAD"
     },
     {
       "base": "2H_ARCANESTAFF_AVALON",
@@ -2918,14 +2940,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_ARCANESTAFF_AVALON"
     },
     {
       "base": "2H_ARCANESTAFF_CRYSTAL",
@@ -2935,14 +2958,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_ARCANESTAFF_CRYSTAL"
     },
     {
       "base": "MAIN_FROSTSTAFF",
@@ -2952,14 +2976,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FROSTSTAFF",
@@ -2969,14 +2993,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FROSTSTAFF_MORGANA",
@@ -2986,14 +3010,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FROSTSTAFF_MORGANA"
     },
     {
       "base": "2H_FROSTSTAFF_HELL",
@@ -3003,14 +3028,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FROSTSTAFF_HELL"
     },
     {
       "base": "MAIN_FROSTSTAFF_KEEPER",
@@ -3020,14 +3046,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_FROSTSTAFF_KEEPER"
     },
     {
       "base": "2H_FROSTSTAFF_UNDEAD",
@@ -3037,14 +3064,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FROSTSTAFF_UNDEAD"
     },
     {
       "base": "2H_FROSTSTAFF_AVALON",
@@ -3054,14 +3082,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FROSTSTAFF_AVALON"
     },
     {
       "base": "2H_FROSTSTAFF_CRYSTAL",
@@ -3071,14 +3100,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_FROSTSTAFF_CRYSTAL"
     },
     {
       "base": "2H_CURSEDSTAFF",
@@ -3088,14 +3118,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CURSEDSTAFF_MORGANA",
@@ -3105,14 +3135,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CURSEDSTAFF_MORGANA"
     },
     {
       "base": "2H_CURSEDSTAFF_HELL",
@@ -3122,14 +3153,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CURSEDSTAFF_HELL"
     },
     {
       "base": "MAIN_CURSEDSTAFF_KEEPER",
@@ -3139,14 +3171,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_CURSEDSTAFF_KEEPER"
     },
     {
       "base": "2H_CURSEDSTAFF_UNDEAD",
@@ -3156,14 +3189,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CURSEDSTAFF_UNDEAD"
     },
     {
       "base": "2H_CURSEDSTAFF_AVALON",
@@ -3173,14 +3207,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CURSEDSTAFF_AVALON"
     },
     {
       "base": "2H_CURSEDSTAFF_CRYSTAL",
@@ -3190,14 +3225,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_CURSEDSTAFF_CRYSTAL"
     },
     {
       "base": "MAIN_NATURE_SHAPESHIFTER",
@@ -3207,14 +3243,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER",
@@ -3224,14 +3260,14 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_MORGANA",
@@ -3241,14 +3277,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_MORGANA"
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_HELL",
@@ -3258,14 +3295,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_HELL"
     },
     {
       "base": "MAIN_NATURE_SHAPESHIFTER_KEEPER",
@@ -3275,14 +3313,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 16
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 8
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_MAIN_NATURE_SHAPESHIFTER_KEEPER"
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_UNDEAD",
@@ -3292,14 +3331,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_UNDEAD"
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_AVALON",
@@ -3309,14 +3349,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_AVALON"
     },
     {
       "base": "2H_NATURE_SHAPESHIFTER_CRYSTAL",
@@ -3326,14 +3367,15 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
           "material": "CLOTH",
-          "peso": "arma_secundario"
+          "qtd": 12
         }
       ],
-      "confiavel": false
+      "confiavel": true,
+      "artefacto": "{tier}_ARTEFACT_2H_NATURE_SHAPESHIFTER_CRYSTAL"
     },
     {
       "base": "OFF_SHIELD",
