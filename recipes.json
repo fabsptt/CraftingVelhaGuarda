@@ -1095,7 +1095,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma"
+          "qtd": 20
+        },
+        {
+          "material": "LEATHER",
+          "qtd": 12
         }
       ],
       "confiavel": false
