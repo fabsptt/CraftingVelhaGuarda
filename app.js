@@ -186,15 +186,17 @@ async function atualizar() {
 }
 
 async function fetchPrices(ids, citiesParam) {
-  const chunks = chunk(ids, 45);
+  const chunks = chunk(ids, 80);
   const index = {};
   let falhas = 0;
   let feitos = 0;
   const falhados = [];
+  let apanhadoLimite = false;
 
   async function tentarLote(c) {
     const url = `${API_BASE}/prices/${c.join(',')}.json?locations=${citiesParam}&qualities=1`;
     const res = await fetch(url);
+    if (res.status === 429) { apanhadoLimite = true; throw new Error('HTTP 429 (limite de pedidos excedido)'); }
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     for (const row of data) {
@@ -206,7 +208,8 @@ async function fetchPrices(ids, citiesParam) {
     }
   }
 
-  await executarEmParalelo(chunks, 6, async (c) => {
+  // no máximo 3 pedidos em simultâneo — a API só aceita 180/min, 300/5min no total
+  await executarEmParalelo(chunks, 3, async (c) => {
     try {
       await tentarLote(c);
     } catch (e) {
@@ -218,12 +221,13 @@ async function fetchPrices(ids, citiesParam) {
     }
   });
 
-  // 2ª tentativa só para os lotes que falharam à primeira (rate-limit costuma ser passageiro)
+  // 2ª tentativa só para os lotes que falharam — espera mais tempo se foi mesmo o limite de pedidos
   if (falhados.length) {
-    setStatus(`A repetir ${falhados.length} lote(s) que falharam…`);
-    await new Promise(r => setTimeout(r, 1200));
+    const espera = apanhadoLimite ? 15000 : 2000;
+    setStatus(`A repetir ${falhados.length} lote(s) que falharam — a aguardar ${Math.round(espera / 1000)}s (limite de pedidos do servidor)…`);
+    await new Promise(r => setTimeout(r, espera));
     const aindaFalhados = [];
-    await executarEmParalelo(falhados, 3, async (c) => {
+    await executarEmParalelo(falhados, 2, async (c) => {
       try {
         await tentarLote(c);
       } catch (e) {
@@ -234,7 +238,9 @@ async function fetchPrices(ids, citiesParam) {
     falhas = aindaFalhados.length;
   }
 
-  if (falhas === chunks.length) throw new Error('Todos os pedidos de preços falharam.');
+  if (falhas === chunks.length) throw new Error(apanhadoLimite
+    ? 'O servidor recusou os pedidos por excesso de pedidos (limite: 180/minuto). Espera 1-2 minutos sem clicar em "Atualizar" antes de tentar de novo.'
+    : 'Todos os pedidos de preços falharam.');
   if (falhas > 0) {
     console.warn(`${falhas} de ${chunks.length} lotes de preços continuam em falta depois de repetir.`);
   }
