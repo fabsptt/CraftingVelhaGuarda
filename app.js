@@ -141,6 +141,11 @@ async function atualizar() {
     const { finished, materialIds } = idsNecessarios(tiers);
     const allIds = [...new Set([...finished.map(f => f.id), ...materialIds])];
 
+    if (finished.length === 0) {
+      setStatus('O recipes.json não tem nenhum item — verifica se o ficheiro no repositório está completo (deve ter mais de 200 itens).', true);
+      return;
+    }
+
     const citiesParam = CITIES.map(encodeURIComponent).join(',');
 
     setStatus(`A obter preços de ${allIds.length} itens em ${CITIES.length} cidades…`);
@@ -154,7 +159,19 @@ async function atualizar() {
     PRICE_INDEX = precos;
     VOLUME_INDEX = volume;
 
+    const idsComPreco = Object.keys(PRICE_INDEX).length;
+    if (idsComPreco === 0) {
+      setStatus(`O servidor respondeu, mas devolveu preços para 0 de ${allIds.length} itens — provavelmente o Albion Online Data Project está em baixo ou a bloquear pedidos deste site agora. Tenta de novo daqui a uns minutos.`, true);
+      return;
+    }
+
     calcularLinhas(finished);
+
+    if (ROWS.length === 0) {
+      setStatus(`Preços obtidos para ${idsComPreco} itens, mas nenhum combina em receita completa (item + todos os materiais na mesma cidade). Tenta outro tier ou liga "mostrar mais vendidos" desligado para simplificar.`, true);
+      return;
+    }
+
     setStatus(`Atualizado — ${ROWS.length} combinações item/cidade/encantamento prontas. Fonte: Albion Online Data Project.`);
     renderTabela();
   } catch (err) {
