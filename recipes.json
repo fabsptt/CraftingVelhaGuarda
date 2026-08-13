@@ -1,5 +1,5 @@
 {
-  "_nota": "Quantidades de recursos são estimativas representativas para armas/armaduras (fórmula por tier), não os valores exatos do jogo. Capas, bolsas e ferramentas usam as quantidades reais do jogo (fixas, não escalam por tier). Ajusta 'quantidades_por_tier' com os valores reais do teu foco de crafting para armas/armaduras.",
+  "_nota": "Receitas corrigidas: cabeça/pés = 8, peito = 16; armas normais = 16+8; famílias especiais = 20+12; Luvas de Guerra e Cajados Metamorfos corrigidos. Ingredientes de tracking são preços consultáveis; artefactos aparecem como necessários mesmo quando o ID de mercado não é conhecido neste ficheiro.",
   "materials": {
     "METALBAR": {
       "nome": "Barra de Metal"
@@ -17,38 +17,52 @@
   "quantidades_por_tier": {
     "peca_leve": {
       "T4": 8,
-      "T5": 12,
-      "T6": 16,
-      "T7": 20,
-      "T8": 24
+      "T5": 8,
+      "T6": 8,
+      "T7": 8,
+      "T8": 8
     },
     "peca_pesada": {
-      "T4": 12,
-      "T5": 18,
-      "T6": 24,
-      "T7": 30,
-      "T8": 36
+      "T4": 16,
+      "T5": 16,
+      "T6": 16,
+      "T7": 16,
+      "T8": 16
     },
     "arma": {
       "T4": 16,
-      "T5": 24,
-      "T6": 32,
-      "T7": 40,
-      "T8": 48
+      "T5": 16,
+      "T6": 16,
+      "T7": 16,
+      "T8": 16
     },
     "arma_principal": {
-      "T4": 10,
-      "T5": 15,
-      "T6": 20,
-      "T7": 25,
-      "T8": 30
+      "T4": 16,
+      "T5": 16,
+      "T6": 16,
+      "T7": 16,
+      "T8": 16
     },
     "arma_secundario": {
-      "T4": 6,
-      "T5": 9,
+      "T4": 8,
+      "T5": 8,
+      "T6": 8,
+      "T7": 8,
+      "T8": 8
+    },
+    "arma_20": {
+      "T4": 20,
+      "T5": 20,
+      "T6": 20,
+      "T7": 20,
+      "T8": 20
+    },
+    "arma_12": {
+      "T4": 12,
+      "T5": 12,
       "T6": 12,
-      "T7": 15,
-      "T8": 18
+      "T7": 12,
+      "T8": 12
     }
   },
   "itens": [
@@ -1150,11 +1164,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
         }
       ],
       "confiavel": false
@@ -1201,14 +1215,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SWORD_AVALON",
@@ -1218,14 +1239,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SWORD_CRYSTAL",
@@ -1235,14 +1263,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_AXE",
@@ -1286,14 +1321,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SCYTHE_HELL",
@@ -1303,14 +1345,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_DUALAXE_KEEPER",
@@ -1320,14 +1369,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_AXE_AVALON",
@@ -1337,14 +1393,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_AXE_CRYSTAL",
@@ -1354,14 +1417,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_MACE",
@@ -1388,14 +1458,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_MACE_HELL",
@@ -1405,14 +1482,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_MACE_KEEPER",
@@ -1422,14 +1506,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_MACE_UNDEAD",
@@ -1439,14 +1530,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_MACE_AVALON",
@@ -1456,14 +1554,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_MACE_CRYSTAL",
@@ -1473,14 +1578,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_HAMMER",
@@ -1524,14 +1636,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_HAMMER_UNDEAD",
@@ -1541,14 +1660,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HAMMER_HELL",
@@ -1558,14 +1684,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_RAM_KEEPER",
@@ -1575,14 +1708,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HAMMER_AVALON",
@@ -1592,14 +1732,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_HAMMER_CRYSTAL",
@@ -1609,14 +1756,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_WARBOW",
@@ -1660,14 +1814,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_BOW_HELL",
@@ -1677,14 +1838,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_BOW_KEEPER",
@@ -1694,14 +1862,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_BOW_AVALON",
@@ -1711,14 +1886,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_BOW_CRYSTAL",
@@ -1728,14 +1910,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_SPEAR",
@@ -1779,14 +1968,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SPEAR_HELL",
@@ -1796,14 +1992,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SPEAR_KEEPER",
@@ -1813,14 +2016,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SPEAR_UNDEAD",
@@ -1830,14 +2040,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SPEAR_AVALON",
@@ -1847,14 +2064,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SPEAR_CRYSTAL",
@@ -1864,14 +2088,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_DAGGER",
@@ -1915,14 +2146,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_DAGGERPAIR_HELL",
@@ -1932,14 +2170,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_DAGGER_KEEPER",
@@ -1949,14 +2194,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_DAGGERPAIR_UNDEAD",
@@ -1966,14 +2218,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_DAGGERPAIR_AVALON",
@@ -1983,14 +2242,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_DAGGERPAIR_CRYSTAL",
@@ -2000,14 +2266,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FISTS",
@@ -2017,11 +2290,11 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
         }
       ],
       "confiavel": false
@@ -2034,14 +2307,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FISTS_HELL",
@@ -2051,14 +2331,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FISTS_KEEPER",
@@ -2068,14 +2355,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FISTS_UNDEAD",
@@ -2085,14 +2379,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_FISTS_UNDEAD",
@@ -2102,14 +2403,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FISTS_AVALON",
@@ -2119,14 +2427,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FISTS_CRYSTAL",
@@ -2136,14 +2451,21 @@
       "materiais": [
         {
           "material": "METALBAR",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "LEATHER",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CROSSBOW",
@@ -2204,14 +2526,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CROSSBOW_HELL",
@@ -2221,14 +2550,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CROSSBOW_KEEPER",
@@ -2238,14 +2574,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CROSSBOW_AVALON",
@@ -2255,14 +2598,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CROSSBOW_CRYSTAL",
@@ -2272,14 +2622,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_1H_QUARTERSTAFF",
@@ -2306,11 +2663,11 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
         }
       ],
       "confiavel": false
@@ -2323,14 +2680,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_QUARTERSTAFF_HELL",
@@ -2340,14 +2704,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_QUARTERSTAFF_KEEPER",
@@ -2357,14 +2728,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_QUARTERSTAFF_AVALON",
@@ -2374,14 +2752,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_QUARTERSTAFF_UNDEAD",
@@ -2391,14 +2776,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_QUARTERSTAFF_CRYSTAL",
@@ -2408,14 +2800,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_NATURESTAFF",
@@ -2459,14 +2858,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURESTAFF_HELL",
@@ -2476,14 +2882,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_NATURESTAFF_KEEPER",
@@ -2493,14 +2906,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURESTAFF_UNDEAD",
@@ -2510,14 +2930,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURESTAFF_AVALON",
@@ -2527,14 +2954,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_NATURESTAFF_CRYSTAL",
@@ -2544,14 +2978,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_FIRESTAFF",
@@ -2595,14 +3036,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FIRESTAFF_HELL",
@@ -2612,14 +3060,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_FIRESTAFF_KEEPER",
@@ -2629,14 +3084,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FIRESTAFF_UNDEAD",
@@ -2646,14 +3108,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FIRESTAFF_AVALON",
@@ -2663,14 +3132,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FIRESTAFF_CRYSTAL",
@@ -2680,14 +3156,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HOLYSTAFF",
@@ -2714,14 +3197,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HOLYSTAFF_HELL",
@@ -2731,14 +3221,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_HOLYSTAFF_KEEPER",
@@ -2748,14 +3245,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HOLYSTAFF_UNDEAD",
@@ -2765,14 +3269,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HOLYSTAFF_AVALON",
@@ -2782,14 +3293,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_HOLYSTAFF_CRYSTAL",
@@ -2799,14 +3317,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_ARCANESTAFF",
@@ -2850,14 +3375,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_ARCANESTAFF_HELL",
@@ -2867,14 +3399,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_ARCANESTAFF_KEEPER",
@@ -2884,14 +3423,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_ARCANESTAFF_UNDEAD",
@@ -2901,14 +3447,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_ARCANESTAFF_AVALON",
@@ -2918,14 +3471,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_ARCANESTAFF_CRYSTAL",
@@ -2935,14 +3495,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_FROSTSTAFF",
@@ -2986,14 +3553,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FROSTSTAFF_HELL",
@@ -3003,14 +3577,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_FROSTSTAFF_KEEPER",
@@ -3020,14 +3601,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FROSTSTAFF_UNDEAD",
@@ -3037,14 +3625,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FROSTSTAFF_AVALON",
@@ -3054,14 +3649,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_FROSTSTAFF_CRYSTAL",
@@ -3071,14 +3673,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CURSEDSTAFF",
@@ -3105,14 +3714,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morgana",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CURSEDSTAFF_HELL",
@@ -3122,14 +3738,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Infernal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "MAIN_CURSEDSTAFF_KEEPER",
@@ -3139,14 +3762,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Keeper",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CURSEDSTAFF_UNDEAD",
@@ -3156,14 +3786,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Morto-vivo",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CURSEDSTAFF_AVALON",
@@ -3173,14 +3810,21 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto Avalon",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_CURSEDSTAFF_CRYSTAL",
@@ -3190,99 +3834,149 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "peso": "arma_20"
         },
         {
           "material": "METALBAR",
-          "peso": "arma_secundario"
+          "peso": "arma_12"
+        },
+        {
+          "nome": "Artefacto de Cristal",
+          "qty": 1,
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "MAIN_NATURE_SHAPESHIFTER",
+      "base": "2H_SHAPESHIFTER_SET1",
       "nome": "Cajado de Predador",
       "en": "Predator Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 12
+        },
+        {
+          "idFixo": "T3_ALCHEMY_RARE_PANTHER",
+          "nome": "Rugged Shadow Claws",
+          "qtd": 2
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER",
+      "base": "2H_SHAPESHIFTER_SET2",
       "nome": "Cajado Enraizado",
       "en": "Rootbound Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 12
+        },
+        {
+          "idFixo": "T3_ALCHEMY_RARE_ENT",
+          "nome": "Rugged Sylvian Root",
+          "qtd": 2
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_MORGANA",
+      "base": "2H_SHAPESHIFTER_UNDEAD",
       "nome": "Cajado Primitivo",
       "en": "Primeval Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
+        },
+        {
+          "nome": "Artefacto do Urso",
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
+        },
+        {
+          "idFixo": "T3_ALCHEMY_RARE_BEAR",
+          "nome": "Rugged Spirit Paws",
+          "qtd": 2
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_HELL",
+      "base": "2H_SHAPESHIFTER_MORGANA",
       "nome": "Cajado da Lua de Sangue",
       "en": "Blood Moon Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 12
+        },
+        {
+          "nome": "Artefacto do Lobisomem",
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
+        },
+        {
+          "idFixo": "T3_ALCHEMY_RARE_WEREWOLF",
+          "nome": "Rugged Werewolf Fangs",
+          "qtd": 2
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "MAIN_NATURE_SHAPESHIFTER_KEEPER",
+      "base": "2H_SHAPESHIFTER_HELL",
       "nome": "Cajado Endemoniado",
       "en": "Enraged Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 12
+        },
+        {
+          "nome": "Artefacto do Demónio",
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
+        },
+        {
+          "idFixo": "T3_ALCHEMY_RARE_IMP",
+          "nome": "Rugged Imp's Horn",
+          "qtd": 2
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "2H_SHAPESHIFTER_KEEPER",
@@ -3292,48 +3986,76 @@
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "LEATHER",
+          "qtd": 12
+        },
+        {
+          "nome": "Artefacto do Golem",
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
+        },
+        {
+          "idFixo": "T3_ALCHEMY_RARE_ELEMENTAL",
+          "nome": "Rugged Runestone Tooth",
+          "qtd": 2
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_AVALON",
+      "base": "2H_SHAPESHIFTER_AVALON",
       "nome": "Cajado Invocador da Luz",
       "en": "Lightcaller Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
+        },
+        {
+          "nome": "Artefacto da Ave da Aurora",
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
+        },
+        {
+          "idFixo": "T3_ALCHEMY_RARE_DAWNBIRD",
+          "nome": "Rugged Dawnfeather",
+          "qtd": 2
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_CRYSTAL",
+      "base": "2H_SHAPESHIFTER_CRYSTAL",
       "nome": "Cajado Petrificante",
       "en": "Petrifying Staff",
       "categoria": "Arma - Cajado Metamorfo",
       "materiais": [
         {
           "material": "PLANKS",
-          "peso": "arma_principal"
+          "qtd": 20
         },
         {
-          "material": "METALBAR",
-          "peso": "arma_secundario"
+          "material": "CLOTH",
+          "qtd": 12
+        },
+        {
+          "nome": "Cristal de Serpente",
+          "qtd": 1,
+          "displayOnly": true,
+          "retornavel": false
         }
       ],
-      "confiavel": false
+      "confiavel": true
     },
     {
       "base": "OFF_SHIELD",

@@ -113,6 +113,12 @@ function resolverMaterialOptions(entry, tier, enchant) {
   const qty = qtyFor(entry, tier);
   const options = [];
 
+  // Componentes que sabemos que fazem parte da receita, mas cujo ID de mercado
+  // ainda não está mapeado neste ficheiro. Mostram-se na receita sem inventar um preço.
+  if (entry.displayOnly) {
+    return [{ matId: '', nome: entry.nome || 'Artefacto', qty, retornavel: false, displayOnly: true }];
+  }
+
   if (entry.idFixo) {
     options.push({ matId: entry.idFixo, nome: entry.nome, qty, retornavel: false });
   } else if (entry.idTemplate) {
@@ -405,8 +411,10 @@ function calcularLinhas(finishedItems) {
 
       for (const group of materialGroups) {
         // Escolhe a opção de ingrediente mais barata disponível nessa cidade.
+        // Se não houver preço, a receita NÃO desaparece: fica visível como incompleta.
         let best = null;
         for (const option of group) {
+          if (!option.matId) continue;
           const p = PRICE_INDEX[option.matId]?.[city];
           if (!p || !p.sell_price_min) continue;
           const subtotal = p.sell_price_min * option.qty;
@@ -423,18 +431,18 @@ function calcularLinhas(finishedItems) {
         custoBruto += best.subtotal;
         materiaisLinha.push({ ...best, depoisRetorno });
       }
-      if (!materiaisCompletos) continue;
 
       const custo = materiaisLinha.reduce((s, m) => s + (m.depoisRetorno || 0), 0);
-      const venda = priceFinished.sell_price_min;
-      const lucro = materiaisCompletos ? venda * (1 - tax) - custo : null;
-      const margem = materiaisCompletos && custo > 0 ? (lucro / custo) * 100 : null;
+      const venda = priceFinished?.sell_price_min || null;
+      const lucro = (materiaisCompletos && venda != null) ? venda * (1 - tax) - custo : null;
+      const margem = (lucro != null && custo > 0) ? (lucro / custo) * 100 : null;
       const volume = VOLUME_INDEX[item.id]?.[city] || 0;
 
       rows.push({
         id: item.id, nome: item.nome, en: item.en, tier: item.tier, enchant: item.enchant, categoria: item.categoria,
         cidade: city, venda, custo, custoBruto, lucro, margem, volume, rrr,
         materiais: materiaisLinha, custoIncompleto: !materiaisCompletos,
+        vendaIndisponivel: venda == null,
       });
     }
   }
@@ -474,7 +482,7 @@ function renderTabela() {
     return;
   }
 
-  renderDestaques(grouped.filter(r => !r.custoIncompleto).slice().sort((a, b) => (b.lucro ?? -Infinity) - (a.lucro ?? -Infinity)).slice(0, 3));
+  renderDestaques(grouped.filter(r => !r.custoIncompleto && r.lucro != null && r.margem != null).slice().sort((a, b) => (b.lucro ?? -Infinity) - (a.lucro ?? -Infinity)).slice(0, 3));
 
   const sortKey = mapOrdenarToKey(els.ordenar.value, sortState.key);
   grouped.sort((a, b) => {
@@ -498,8 +506,8 @@ function renderTabela() {
         </div>
       </td>
       <td class="city-cell">${r.cidade}${cidadeSel === 'ALL' ? ' <span style="color:var(--muted)">(melhor)</span>' : ''}</td>
-      <td class="num">${fmt(r.venda)}</td>
-      <td class="num">${fmt(r.custo)}${r.custoIncompleto ? ' <span class="incompleto-badge" title="Falta um material desconhecido nesta receita — o custo real é maior que o mostrado">⚠ incompleto</span>' : ''}</td>
+      <td class="num">${r.venda == null ? '<span class="missing-price">—</span>' : fmt(r.venda)}</td>
+      <td class="num">${fmt(r.custo)}${r.custoIncompleto ? ' <span class="incompleto-badge" title="Falta preço de um ou mais ingredientes — a receita continua visível">⚠ incompleto</span>' : ''}</td>
       <td class="num ${r.custoIncompleto ? '' : (r.lucro >= 0 ? 'profit-pos' : 'profit-neg')}">${fmt(r.lucro)}</td>
       <td class="num ${r.custoIncompleto ? '' : (r.lucro >= 0 ? 'profit-pos' : 'profit-neg')}">${r.margem == null ? '—' : r.margem.toFixed(0)+'%'}</td>
       <td class="num"><span class="vol-badge ${r.volume >= maxVol * 0.5 ? 'hot' : ''}">${r.volume}</span></td>
@@ -562,14 +570,14 @@ function renderDetalhe(r) {
   }
 
   const linhasMateriais = r.materiais.map(m => `
-      <div class="mat-cell"><img class="mat-icon" src="${iconUrl(m.matId, 48)}" alt="" loading="lazy" width="22" height="22" onerror="this.style.opacity=0.15">${m.nome}</div>
-      <div>${m.qty}</div><div>${fmt(m.unit)}</div><div>${fmt(m.subtotal)}</div>
+      <div class="mat-cell">${m.matId ? `<img class="mat-icon" src="${iconUrl(m.matId, 48)}" alt="" loading="lazy" width="22" height="22" onerror="this.style.opacity=0.15">` : '🧩'}${m.nome}</div>
+      <div>${m.qty}</div><div>${m.unit == null ? '<span class="missing-price">Sem preço</span>' : fmt(m.unit)}</div><div>${m.subtotal == null ? '—' : fmt(m.subtotal)}</div>
   `).join('');
 
-  const avisoIncompleto = r.custoIncompleto ? `
-    <div class="recipe-title" style="color:var(--rust); margin-bottom:10px;">⚠ Receita incompleta — falta um material de artefacto que ainda não foi confirmado. O custo (e por isso o lucro) mostrado é mais baixo do que o real.</div>
+  const avisoIncompleto = (r.custoIncompleto || r.vendaIndisponivel) ? `
+    <div class="recipe-title" style="color:var(--rust); margin-bottom:10px;">⚠ Alguns preços estão indisponíveis. A receita continua visível; o custo/lucro apresentado é apenas parcial quando falta um ingrediente.</div>
   ` : '';
-  const rrrInfo = `<div class="recipe-title" style="margin-top:12px;">Retorno de recursos: <strong>${(r.rrr * 100).toFixed(1)}%</strong> · custo bruto ${fmt(r.custoBruto)} → custo efetivo ${fmt(r.custo)}</div>`;
+  const rrrInfo = `<div class="recipe-title" style="margin-top:12px;">Retorno de recursos: <strong>${(r.rrr * 100).toFixed(1)}%</strong> · custo conhecido ${fmt(r.custoBruto)} → custo efetivo conhecido ${fmt(r.custo)}</div>`;
 
   return `
     ${avisoIncompleto}
