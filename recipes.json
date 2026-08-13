@@ -427,11 +427,11 @@
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1251,11 +1251,11 @@
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1268,11 +1268,11 @@
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1285,11 +1285,11 @@
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1302,28 +1302,28 @@
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
       "confiavel": false
     },
     {
-      "base": "2H_CLAWPAIR_KEEPER",
+      "base": "2H_DUALAXE_KEEPER",
       "nome": "Patas de Urso",
       "en": "Bear Paws",
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1336,11 +1336,11 @@
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1353,11 +1353,11 @@
       "categoria": "Arma - Machado",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1489,11 +1489,11 @@
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1506,11 +1506,11 @@
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1523,11 +1523,11 @@
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1540,11 +1540,11 @@
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1557,28 +1557,28 @@
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
       "confiavel": false
     },
     {
-      "base": "2H_HAMMER_KEEPER",
+      "base": "2H_RAM_KEEPER",
       "nome": "Guarda-Bosques",
       "en": "Grovekeeper",
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1591,11 +1591,11 @@
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1608,11 +1608,11 @@
       "categoria": "Arma - Martelo",
       "materiais": [
         {
-          "material": "METALBAR",
+          "material": "PLANKS",
           "peso": "arma_principal"
         },
         {
-          "material": "LEATHER",
+          "material": "METALBAR",
           "peso": "arma_secundario"
         }
       ],
@@ -1653,7 +1653,7 @@
       "confiavel": false
     },
     {
-      "base": "2H_BOW_MORGANA",
+      "base": "2H_LONGBOW_UNDEAD",
       "nome": "Arco Sussurrante",
       "en": "Whispering Bow",
       "categoria": "Arma - Arco",
@@ -3285,7 +3285,7 @@
       "confiavel": false
     },
     {
-      "base": "2H_NATURE_SHAPESHIFTER_UNDEAD",
+      "base": "2H_SHAPESHIFTER_KEEPER",
       "nome": "Cajado Rúnico da Terra",
       "en": "Earthrune Staff",
       "categoria": "Arma - Cajado Metamorfo",
